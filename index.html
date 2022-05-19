@@ -18,47 +18,34 @@
 
 <body>
   <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
-    <div><a style=" padding-top: 1%; padding-right:5%; font-size: xx-large; color: black;" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><!--&times;-->close</a></div>
-    <div class="sideMenuLeft">
-      <div class="sideMenu hoverBlock" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
-        <a href="About/index.html">ABOUT</a>
-      </div>
-      <div class="sideMenu hoverBlock" onmouseover="menuHover(); careerHover()" onmouseleave="menuHide()">
-        <a  href="career/index.html">CAREER</a>
-      </div>
-      <div class="sideMenu hoverBlock" onmouseover="menuHover(); contactHover()" onmouseleave="menuHide()">
-        <a href="Team/index.html">CONTACT</a>
-      </div>
-      <div class="sideMenu hoverBlock" onmouseover="menuHover(); servicesHover()" onmouseleave="menuHide()">
-        <a href="services/index.html">SERVICES</a>
-      </div>
+    <div><a style="padding-top: 2%; padding-right: 2%; font-size: xx-large; color: black;" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><!--&times;-->close</a></div>
+    <div class="sideMenu menuParent" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
+        <a style="padding-top: 5%;" href="about/index.html">ABOUT</a>
     </div>
-    <div class="sideMenuCenter">
+      <div class="menuChild">
+        <p style="color: black; font-size: 125%;padding-top: 14%;">Tulsium's mission and beginnings</p>
+      </div>
+    <div class="sideMenu menuParent" onmouseover="menuHover()" onmouseleave="menuHide()">
+      <a  href="career/index.html">CAREER</a>
+    </div>
       <div class="menuChild" id="tryHard">
         <p style="font-size: 125%;padding-top: 10%;">Come and make your impact at Tulsium</p>
       </div>
-
+    <div class="sideMenu menuParent">
+      <a style="transform: translate(0,-20%);" href="contact/index.html">CONTACT</a>
     </div>
-    <div class="sideMenuRight">
-
-    </div>
-    
-
-
-
-
-
-      
-        
+      <div class="menuChild">
+        <p style="color: white; font-size: 125%;padding-top: 6%;">Find out what we can do for you</p>
+      </div>
   </div>
 
 
   <!--makes an unordered list that sticked to the top of the screen as a menu-->
   <div>
     <ul class="menuNav" style=" font-size: 120%;">
-      <li class="menuli"><a class="fuckoff" style="padding-left: 20%;" href="../Tulsium/index.html">TOIR</a></li>
+      <li class="menuli"><a class="fuckoff" style="padding-left: 20%;" href="index.html">TOIR</a></li>
       <!--link to contact page-->
-      <li class="menuli" style="text-align: right;"><a href="../Tulsium/contact/index.html">CONTACT</a></li>
+      <li class="menuli" style="text-align: right;"><a href="contact/index.html">CONTACT</a></li>
       <li class="menuli" style="text-align: right;"><a style="padding-right: 20%;" onclick="openNav()">MENU</a></li> 
     </ul>
   </div> 
@@ -99,13 +86,13 @@
             <td style="width: 33.33%;  border: none;">
               <div class="footerContact" style="margin-top: -5%;">
                 <p style="color:white">Useful links</p>
-                <a href="../index.html">Home</a>
+                <a href="index.html">Home</a>
                 <br>
-                <a href="../Team/index.html">Team</a>
+                <a href="contact/">Team</a>
                 <br>
-                <a href="../career/index.html">Career</a>
+                <a href="career/">Career</a>
                 <br>
-                <a href="../About/index.html">About</a>
+                <a href="about/">About</a>
                 <br>
               </div>
             </td>
