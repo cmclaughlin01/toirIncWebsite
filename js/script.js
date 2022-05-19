@@ -1,12 +1,14 @@
 function openNav() {
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("mySidenav").style.height = "100%";
-  }
+  document.getElementById("mySidenav").style.height = "100%";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   
-  function closeNav() {
-    document.body.style.backgroundColor = "white";
-    document.getElementById("mySidenav").style.height = "0%";
-  }
+  console.log("bruhhhhhhhhhhhhhhhhh");
+}
+  
+function closeNav() {
+  document.body.style.backgroundColor = "white";
+  document.getElementById("mySidenav").style.height = "0%";
+}
 
 function menuHover(){
   document.getElementById("tryHard").style.color = "Black";
