@@ -1,10 +1,22 @@
 html {
     background-color: #dedede;
+
 }
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 
 .justifyText{
     text-align: justify;
     font-size: 1000%;
+
+    
 }
 
 .mainText{
@@ -118,3 +130,21 @@ html {
     background-color: transparent;
 }
 
+/*animation stuff*/
+
+.anime{
+    display: inline-block;
+    position: fixed; /* make sure it stays put so we can see it! */
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    /*mix-blend-mode: difference;*/
+}
+@keyframes rotate {
+    to {
+      transform:translateY(-70%);
+      transition-timing-function: ease;
+    }   
+}

@@ -32,3 +32,7 @@ function contactHover(){
 function servicesHover(){
   document.getElementById("tryHard").innerHTML = "New text! NEW TEXT AND medium WORDS!";
 }
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
