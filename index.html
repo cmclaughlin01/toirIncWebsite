@@ -18,25 +18,38 @@
 
 <body>
   <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
-    <div><a style="padding-top: 2%; padding-right: 2%; font-size: xx-large; color: black;" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><!--&times;-->close</a></div>
-    <div class="sideMenu menuParent" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
-        <a style="padding-top: 5%;" href="about/index.html">ABOUT</a>
-    </div>
-      <div class="menuChild">
-        <p style="color: black; font-size: 125%;padding-top: 14%;">Tulsium's mission and beginnings</p>
+    <div><a style=" padding-top: 1%; padding-right:5%; font-size: xx-large; color: black;" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><!--&times;-->close</a></div>
+    <div class="sideMenuLeft">
+      <div class="sideMenu hoverBlock" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
+        <a href="About/index.html">ABOUT</a>
       </div>
-    <div class="sideMenu menuParent" onmouseover="menuHover()" onmouseleave="menuHide()">
-      <a  href="career/index.html">CAREER</a>
+      <div class="sideMenu hoverBlock" onmouseover="menuHover(); careerHover()" onmouseleave="menuHide()">
+        <a  href="career/index.html">CAREER</a>
+      </div>
+      <div class="sideMenu menuParent" onmouseover="menuHover(); contactHover()" onmouseleave="menuHide()">
+        <a href="Team/index.html">CONTACT</a>
+      </div>
+      <div class="sideMenu menuParent" onmouseover="menuHover(); servicesHover()" onmouseleave="menuHide()">
+        <a href="services/index.html">SERVICES</a>
+      </div>
     </div>
+    <div class="sideMenuCenter">
       <div class="menuChild" id="tryHard">
         <p style="font-size: 125%;padding-top: 10%;">Come and make your impact at Tulsium</p>
       </div>
-    <div class="sideMenu menuParent">
-      <a style="transform: translate(0,-20%);" href="contact/index.html">CONTACT</a>
+
     </div>
-      <div class="menuChild">
-        <p style="color: white; font-size: 125%;padding-top: 6%;">Find out what we can do for you</p>
-      </div>
+    <div class="sideMenuRight">
+
+    </div>
+    
+
+
+
+
+
+      
+        
   </div>
 
 
@@ -86,13 +99,13 @@
             <td style="width: 33.33%;  border: none;">
               <div class="footerContact" style="margin-top: -5%;">
                 <p style="color:white">Useful links</p>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <br>
-                <a href="contact/">Team</a>
+                <a href="../Team/index.html">Team</a>
                 <br>
-                <a href="career/">Career</a>
+                <a href="../career/index.html">Career</a>
                 <br>
-                <a href="about/">About</a>
+                <a href="../About/index.html">About</a>
                 <br>
               </div>
             </td>
