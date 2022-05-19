@@ -3,10 +3,11 @@ html {
 }
 
 .menuli {
-    margin-top: 1%;
+    margin-top: 0%;
     float: left;
     font-weight: 700;
     width: 33%;
+
 }
 
 .menuli a {
@@ -14,12 +15,38 @@ html {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
+    transition:0.5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transform: translateY(0%);
 }
 
 .menuli a:hover {
-    /* background-color: #1f86a1;
-    old highlight color #144f5e */
+    /*background-color: aliceblue;*/
+    /*old highlight color #144f5e */
     color: #1f86a1;
+    transition:0.5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transform: translateY(-41.5%);
+    
+}
+
+.topText a:hover{
+    /*transition:0.5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;*/
+    color: #ffffff;
+}
+
+.pointer{
+    cursor:pointer;
 }
 
 .menuNav {
