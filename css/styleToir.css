@@ -1,5 +1,14 @@
 html {
-    background-color: #212121;
+    background-color: #dedede;
+}
+
+.justifyText{
+    text-align: justify;
+    font-size: 1000%;
+}
+
+.mainText{
+    background-color: #dedede;
 }
 
 .sidenav {
