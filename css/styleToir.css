@@ -2,6 +2,44 @@ html {
     background-color: #212121;
 }
 
+.sidenav {
+    height: 0%;
+    width: 100%;
+    top: 0;
+}
+.sidenav a:hover, .sidenav a:focus {
+    color: black;
+}
+
+.sideMenuRight{
+    height: 100%;
+    width: 25%;
+    float: right;
+    /*-webkit-text-stroke: 2px rgba(0,0,0,.25);*/
+    font-family: 'Rubik', sans-serif;
+    background-color: aqua;
+}
+.sideMenuCenter{
+    height: 100%;
+    width: 25%;
+    float: left;
+    /*-webkit-text-stroke: 2px rgba(0,0,0,.25);*/
+    font-family: 'Rubik', sans-serif;
+    background-color: purple;
+}
+.sideMenuLeft{
+    height: 100%;
+    width: 50%;
+    float: left;
+    -webkit-text-stroke: 2px rgba(0,0,0,.25);
+    font-family: 'Rubik', sans-serif;
+    background-color: green;
+}
+
+.hoverBlock{
+    display: inline-block;
+}
+
 .menuli {
     margin-top: 0%;
     float: left;
