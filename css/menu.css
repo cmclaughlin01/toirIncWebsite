@@ -93,6 +93,13 @@
     left: 53%;
     display: block;
 }
+#menuLeftTrans{
+    padding-left: 7vh;
+    padding-top: 11vh;
+}
+#menuLeftSpacer{
+    padding: 0.5vw;
+}
 
 .hoverBlock{
     display: inline-block;

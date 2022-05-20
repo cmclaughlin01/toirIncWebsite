@@ -21,17 +21,22 @@
   <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
     <div><a style=" padding-top: 1%; padding-right:5%; font-size: 1.25vw; color: black;" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><!--&times;-->close</a></div>
     <div class="sideMenuLeft">
-      <div class="sideMenu hoverBlock" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
-        <a href="about/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25); display: inline-block;">ABOUT</a>
-      </div>
-      <div class="sideMenu hoverBlock" onmouseover="menuHover(); careerHover()" onmouseleave="menuHide()">
-        <a href="career/index.html">CAREER</a>
-      </div>
-      <div class="sideMenu menuParent hoverBlock" onmouseover="menuHover(); contactHover()" onmouseleave="menuHide()">
-        <a href="contact/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CONTACT</a>
-      </div>
-      <div class="sideMenu menuParent hoverBlock" onmouseover="menuHover(); servicesHover()" onmouseleave="menuHide()">
-        <a href="services/index.html">SERVICES</a>
+      <div id="menuLeftTrans">
+        <div class="hoverBlock" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
+          <a href="about/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">ABOUT</a>
+        </div>
+        <div id="menuLeftSpacer"></div>
+        <div class="hoverBlock" onmouseover="menuHover(); careerHover()" onmouseleave="menuHide()">
+          <a href="career/index.html">CAREER</a>
+        </div>
+        <div id="menuLeftSpacer"></div>
+        <div class="hoverBlock" onmouseover="menuHover(); contactHover()" onmouseleave="menuHide()">
+          <a href="contact/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CONTACT</a>
+        </div>
+        <div id="menuLeftSpacer"></div>
+        <div class="hoverBlock" onmouseover="menuHover(); servicesHover()" onmouseleave="menuHide()">
+          <a href="services/index.html">SERVICES</a>
+        </div>
       </div>
     </div>
     <div class="sideMenuCenter">
@@ -48,7 +53,7 @@
 
     </div>
     <div class="sideMenuRight">
-      <div style="margin-top: 35%; padding-left: 2%;">
+      <div style="margin-top: 35%; padding-left: 4%;">
         <a href="mailto:contact@toirinc.com" data-track-action="email submission" data-track-category="contact">
           <!--creates the email svg with the dot class the makes a cricle that the svg is held in-->
           <p style="margin: 0;">
