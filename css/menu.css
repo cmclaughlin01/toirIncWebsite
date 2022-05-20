@@ -18,12 +18,13 @@
     font-size: 1000%;
     color: white;
     display: block;
-    transition: 0.3;
-    padding-left: 15%;
+    transition: 0.5;
 }
 .sideMenu {
+    width: 100%;
+    height: 25%;
     margin: 0 0 0 0;
-    padding-left: 0%;
+
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -38,22 +39,6 @@
     right: 35px;
     font-size: 36px;
     margin-left: 50px;
-}
-.menuParent {
-    /*background: orange; */
-    height: 33%;
-    width: 51%;
-    float: left;
-    -webkit-text-stroke: 2px rgba(0,0,0,.25);
-    font-family: 'Rubik', sans-serif;
-}
-.menuChild {
-    /*background: pink; */
-    height: 33%;
-    width: 90%;
-    float: right;
-    margin-top: 0%;
-    color: #fefefe;
 }
 
 .sideMenuRight{
@@ -78,11 +63,16 @@
     float: left;
     -webkit-text-stroke: 2px rgba(0,0,0,.25);
     font-family: 'Rubik', sans-serif;
-    background-color: green;
+    /*background-color: green;*/
 }
 
 .hoverBlock{
     display: inline-block;
+}
+
+.infoDivSpacing{
+    width: 100%;
+    height: 33.3%;
 }
 @media only screen and (max-width: 600px) {
     .sidenav {
