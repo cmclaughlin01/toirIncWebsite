@@ -11,26 +11,31 @@ function closeNav() {
 }
 
 function menuHover(){
-  document.getElementById("tryHard").style.color = "Black";
+  document.getElementById("infoHeader").style.color = "Black";
+  document.getElementById("infoMenu").style.color = "Black";
 }
 
 function menuHide(){
-  document.getElementById("tryHard").style.color = "#fefefe";
-
+  document.getElementById("infoHeader").innerHTML = "";
+  document.getElementById("infoMenu").innerHTML = "";
 }
 
 function aboutHover(){
-  document.getElementById("tryHard").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
+  document.getElementById("infoHeader").innerHTML = "ABOUT";
+  document.getElementById("infoMenu").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
 }
 
 function careerHover(){
-  document.getElementById("tryHard").innerHTML = "New text! NEW TEXT!";
+  document.getElementById("infoHeader").innerHTML = "CAREER";
+  document.getElementById("infoMenu").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
 }
 function contactHover(){
-  document.getElementById("tryHard").innerHTML = "New text! NEW TEXT AND less WORDS!";
+  document.getElementById("infoHeader").innerHTML = "CONTACT";
+  document.getElementById("infoMenu").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
 }
 function servicesHover(){
-  document.getElementById("tryHard").innerHTML = "New text! NEW TEXT AND medium WORDS!";
+  document.getElementById("infoHeader").innerHTML = "SERVICES";
+  document.getElementById("infoMenu").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
 }
 
 window.addEventListener('scroll', () => {
