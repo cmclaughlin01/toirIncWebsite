@@ -27,7 +27,7 @@
 
 }
 .sideMenu a{
-    text-align: center;
+    margin-left: 10%;
 }
 /* When you mouse over the navigation links, change their color */
 .sideMenuLeft a:hover {
