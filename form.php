@@ -16,10 +16,10 @@ error_reporting( E_ALL );
 $from = "contact@toirinc.com";
 $to = "contact@toirinc.com";
 $subject = "Checking PHP mail";
-$message = "Name: "+$_REQUEST["name"]+"\n
-            Email: "+$_REQUEST["email"]+"\n
-            Number: "+$_REQUEST["num"]+"\n
-            Comments: "+$_REQUEST["comments"];
+$message = "Name: ".$_REQUEST["name"]."\n
+            Email: ".$_REQUEST["email"]."\n
+            Number: ".$_REQUEST["num"]."\n
+            Comments: ".$_REQUEST["comments"];
 $headers = "From:" . $from;
 if(mail($to,$subject,$message, $headers)) {
     echo "The email message was sent.";
