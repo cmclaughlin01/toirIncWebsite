@@ -39,7 +39,24 @@ img {
     text-align: center;
 }
 
+/* Top Bar */
 
+.menuNav {
+    font-family: aktiv-grotesk, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    /*background: rgba(255,255,255,0.1);*/
+    height: 4vw;
+    font-size: 1vw; 
+    background-color: #f2f2f2;
+}
 
 .menuli {
     margin-top: 0%;
@@ -52,7 +69,6 @@ img {
 .menuli a {
     display: block;
     color: black;
-    padding: 14px 16px;
     text-decoration: none;
     transition: 0.5s;
     transition-property: all;
@@ -62,6 +78,14 @@ img {
     transform: translateY(0%);
 }
 
+/* Contact and Menu */
+
+.sides a {
+    padding-left: 6.5vw;
+    padding-right: 6.5vw;
+    padding-top: 1.5vw;
+}
+
 .sides a:hover{
     color: #1f86a1;
     transition: 0.5s;
@@ -69,7 +93,20 @@ img {
     transition-duration: 0.5s;
     transition-delay: 0s;
     transition-timing-function: ease;
-    transform: translateY(-4vw);
+    transform: translateY(-4.5vw);
+}
+
+.sides p {
+    padding-top:2.2vw;
+}
+
+/* "Logo" */
+
+.center a {
+    text-align: left;
+    font-size: 3vw; 
+    padding-left:12vw; 
+    padding-top:0.3vw;
 }
 
 .center a:hover {
@@ -94,20 +131,6 @@ img {
 
 .pointer {
     cursor: pointer;
-}
-
-.menuNav {
-    font-family: aktiv-grotesk, sans-serif;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 2;
-    /*background: rgba(255,255,255,0.1);*/
 }
 
 .fuckoff {

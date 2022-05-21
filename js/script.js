@@ -1,12 +1,10 @@
 function openNav() {
   document.getElementById("mySidenav").style.height = "100%";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 
   console.log("bruhhhhhhhhhhhhhhhhh");
 }
 
 function closeNav() {
-  document.body.style.backgroundColor = "white";
   document.getElementById("mySidenav").style.height = "0%";
 }
 
