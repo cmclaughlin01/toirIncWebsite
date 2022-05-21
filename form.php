@@ -1,12 +1,22 @@
-<div>
+<div class="form">
     <?php
-    echo "<form method='post'>\n";
+    echo "<div>";
+    echo "<form method='post' style='center'>\n";
+    echo "";
+    echo "<p>Name</p>";
     echo "<input name='name'>\n";
+    echo "<p>Email</p>";
     echo "<input name='email'>\n";
+    echo "<p>Mobile Number</p>";
     echo "<input name='num'>\n";
-    echo "<input name='comments'>\n";
-    echo "<input name='submit'type='submit'>\n";
+    echo "<p>Comments</p>";
+    echo "<input name='comments' style='height:10vw; width:20vw;'>\n";
+    echo "<br>";
+    echo "<input name='submit' class='submitButton' type='submit'value='Send us a message!'>\n";
+    echo "";
+    echo "";
     echo "</form>";
+    echo "</div>";
     if ($_REQUEST['email']!=""){
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
@@ -24,4 +34,4 @@
     $_POST['email']='';
     }
     ?>
-</div>
+  </div>
