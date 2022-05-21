@@ -104,17 +104,20 @@
     display: block;
 }
 
-#menuLeftTrans {
-    margin-top: 8vh;
-    margin-right: 10vh;
-}
-
 #menuLeftSpacer {
     padding: 0.25vw;
 }
-
+.vertical-center {
+    margin: 0;
+    width: 53%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .hoverBlock {
-    float: right;
+    display: inline-block;
+    padding-right: 4vw;
 }
 
 .infoDivSpacing {
