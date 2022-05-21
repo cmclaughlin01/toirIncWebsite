@@ -20,22 +20,27 @@
     display: block;
     transition: 0.5;
 }
+
 .sideMenu {
     width: 100%;
     height: 25%;
     margin: 0 0 0 0;
 
 }
-.sideMenu a{
+
+.sideMenu a {
     margin-left: 10%;
 }
+
 /* When you mouse over the navigation links, change their color */
 .sideMenuLeft a:hover {
     color: black;
 }
-.sidenav svg:hover{
-    fill:black;
+
+.sidenav svg:hover {
+    fill: black;
 }
+
 .sidenav .closebtn {
     position: absolute;
     top: 10px;
@@ -44,7 +49,7 @@
     margin-left: 50px;
 }
 
-.sideMenuRight{
+.sideMenuRight {
     height: 100%;
     width: 23.5%;
     float: right;
@@ -52,11 +57,13 @@
     /*font-family: 'Rubik', sans-serif;*/
     /*background-color: aqua;*/
 }
-.sideMenuRight p{
+
+.sideMenuRight p {
     font-size: 125%;
     color: black;
 }
-.sideMenuCenter{
+
+.sideMenuCenter {
     height: 100%;
     width: 23.5%;
     float: left;
@@ -64,9 +71,10 @@
     /*font-family: 'Rubik', sans-serif;*/
     /*background-color: purple;*/
 }
-.sideMenuCenter::after{
+
+.sideMenuCenter::after {
     content: "";
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     position: absolute;
     width: 1px;
     height: 100%;
@@ -74,41 +82,46 @@
     left: 76.5%;
     display: block;
 }
-.sideMenuLeft{
+
+.sideMenuLeft {
     height: 100%;
     width: 53%;
     float: left;
     font-size: 7.5vw;
-    -webkit-text-stroke: 2px rgba(0,0,0,.25);
+    -webkit-text-stroke: 2px rgba(0, 0, 0, .25);
     /*font-family: 'Rubik', sans-serif;*/
     /*background-color: green;*/
 }
-.sideMenuLeft:after{
+
+.sideMenuLeft:after {
     content: "";
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     position: absolute;
-    width: 1px;
+    width: 0px;
     height: 100%;
     top: 0px;
     left: 53%;
     display: block;
 }
-#menuLeftTrans{
-    padding-left: 7vh;
-    padding-top: 11vh;
-}
-#menuLeftSpacer{
-    padding: 0.5vw;
+
+#menuLeftTrans {
+    margin-top: 8vh;
+    margin-right: 10vh;
 }
 
-.hoverBlock{
-    display: inline-block;
+#menuLeftSpacer {
+    padding: 0.25vw;
 }
 
-.infoDivSpacing{
+.hoverBlock {
+    float: right;
+}
+
+.infoDivSpacing {
     width: 100%;
     height: 33.3%;
 }
+
 @media only screen and (max-width: 600px) {
     .sidenav {
         padding-top: 15px;
@@ -137,25 +150,26 @@
     }
 }
 
-.hiddenHover{
+.hiddenHover {
     display: none;
 }
 
-.menuParent:hover + .hiddenHover{
+.menuParent:hover+.hiddenHover {
     display: block;
 }
 
-.textan{
+.textan {
     animation: an 0.5s ease-out 1 both;
     display: inline-block;
 }
 
-@keyframes an{
-    from{
+@keyframes an {
+    from {
         opacity: 0;
         transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: perspective(500px) translate3d(0, 0, 0);
     }

@@ -1,34 +1,38 @@
-html, body {
+html,
+body {
     background-color: #e2e2e2;
 
 }
-.image{
+
+.image {
     background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-02/220209-barack-obama-jm-0958-a70f3b.jpg');
 }
+
 /* grayscale
 img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 *
     filter: grayscale(100%);
   }*/
-.scroll::-webkit-scrollbar{
+.scroll::-webkit-scrollbar {
     display: none;
 }
 
-.scroll{
+.scroll {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
 
-.justifyText{
+.justifyText {
     text-align: justify;
-    font-size: 8.5vw; 
+    font-size: 8.5vw;
 }
 
-.mainText{
+.mainText {
     background-color: #e2e2e2;
 }
-.titleText{
+
+.titleText {
     color: #217990;
     -webkit-text-stroke: #000000;
     -webkit-text-stroke-width: 0px;
@@ -50,7 +54,7 @@ img {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
-    transition:0.5s;
+    transition: 0.5s;
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 0s;
@@ -62,16 +66,16 @@ img {
     /*background-color: aliceblue;*/
     /*old highlight color #144f5e */
     color: #1f86a1;
-    transition:0.5s;
+    transition: 0.5s;
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 0s;
     transition-timing-function: ease;
     transform: translateY(-44%);
-    
+
 }
 
-.topText a:hover{
+.topText a:hover {
     /*transition:0.5s;
     transition-property: all;
     transition-duration: 0.5s;
@@ -80,8 +84,8 @@ img {
     color: #ffffff;
 }
 
-.pointer{
-    cursor:pointer;
+.pointer {
+    cursor: pointer;
 }
 
 .menuNav {
@@ -108,9 +112,10 @@ img {
 
 /*animation stuff*/
 
-.anime{
+.anime {
     display: inline-block;
-    position:relative; /* make sure it stays put so we can see it! */
+    position: relative;
+    /* make sure it stays put so we can see it! */
     animation: rotate 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -118,15 +123,17 @@ img {
     animation-fill-mode: both;
     background-blend-mode: difference;
 }
+
 @keyframes rotate {
     to {
-      transform:translateY(100%);
-      transition-timing-function:ease;
-    }   
+        transform: translateY(100%);
+        transition-timing-function: ease;
+    }
 }
-.animeBottom{
+
+.animeBottom {
     position: relative;
- /* make sure it stays put so we can see it! */
+    /* make sure it stays put so we can see it! */
     animation: cool 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -134,9 +141,10 @@ img {
     animation-fill-mode: both;
     background-blend-mode: difference;
 }
+
 @keyframes cool {
     to {
-      transform:translateY(-0%);
-      transition-timing-function: ease;
-    }   
+        transform: translateY(-0%);
+        transition-timing-function: ease;
+    }
 }
