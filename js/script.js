@@ -20,13 +20,13 @@ function menuHide() {
 
 function aboutHover() {
   document.getElementById("infoHeader").innerHTML = "ABOUT";
-  document.getElementById("infoMenu").innerHTML = "Learn more about ";
+  document.getElementById("infoMenu").innerHTML = "Come find out what sets our company apart from the rest. From the story of how Toir began; to the mission we commit ourselves to.";
   menuInfoAn();
 }
 
 function careerHover() {
   document.getElementById("infoHeader").innerHTML = "CAREER";
-  document.getElementById("infoMenu").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
+  document.getElementById("infoMenu").innerHTML = "Does this just happen after an amount of text for some reason because this is terrible im not sure why it wont just rap like a normal thing";
   menuInfoAn();
 }
 
@@ -45,7 +45,7 @@ function servicesHover() {
 function menuInfoAn() {
   var text = document.getElementById('infoMenu');
   var newDom = '';
-  var animationDelay = 6;
+  var animationDelay = 2;
 
   for (let i = 0; i < text.innerText.length; i++) {
     newDom += '<span class="textan">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]) + '</span>';

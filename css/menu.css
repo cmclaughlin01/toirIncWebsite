@@ -107,6 +107,7 @@
 #menuLeftSpacer {
     padding: 0.25vw;
 }
+
 .vertical-center {
     margin: 0;
     width: 53%;
@@ -123,6 +124,10 @@
 .infoDivSpacing {
     width: 100%;
     height: 33.3%;
+}
+
+.menuChild{
+    padding-left: 4vw;
 }
 
 @media only screen and (max-width: 600px) {
