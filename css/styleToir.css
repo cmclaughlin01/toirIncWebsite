@@ -189,7 +189,10 @@ img {
     height: 3vw;
     width: 10vw;
     border: 0.1vw solid #1f86a1;
+    border-radius: 1vw;
     margin: 1vw 1vw 1vw 1vw;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
     color: #1f86a1;
     text-transform: uppercase;
     text-decoration: none;
@@ -198,8 +201,7 @@ img {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    font-family: aktiv-grotesk, sans-serif;
-    font-weight: 700;
+    transform: translateY(-3vw);
 }
 
 .success{
