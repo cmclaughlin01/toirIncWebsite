@@ -136,6 +136,7 @@ img {
 }
 
 .form {
+    margin-top: 5vw;
     margin-left: 25vw;
     width: 50vw; 
     height: 15vw;
@@ -187,9 +188,9 @@ img {
     display: inline-flex;
     height: 3vw;
     width: 10vw;
-    border: 0.1vw solid #BFC0C0;
+    border: 0.1vw solid #1f86a1;
     margin: 1vw 1vw 1vw 1vw;
-    color: #BFC0C0;
+    color: #1f86a1;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 0.7vw;
@@ -197,6 +198,20 @@ img {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+}
+
+.success{
+    border: 0.1vw solid #1fa186;
+    color: #1fa186;
+    background-color: #a2e2a2;
+}
+
+.failure{
+    border: 0.1vw solid #a11f1f;
+    color: #a11f1f;
+    background-color: #e2a2a2;
 }
 
 .textBox{
