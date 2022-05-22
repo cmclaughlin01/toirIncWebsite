@@ -26,19 +26,19 @@ function aboutHover() {
 
 function careerHover() {
   document.getElementById("infoHeader").innerHTML = "CAREER";
-  document.getElementById("infoMenu").innerHTML = "Does this just happen after an amount of text for some reason because this is terrible im not sure why it wont just rap like a normal thing";
+  document.getElementById("infoMenu").innerHTML = "SEEs";
   menuInfoAn();
 }
 
 function contactHover() {
   document.getElementById("infoHeader").innerHTML = "CONTACT";
-  document.getElementById("infoMenu").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
+  document.getElementById("infoMenu").innerHTML = "We are so excited to chat with you! Find out about all the ways you can get into contact with us.";
   menuInfoAn();
 }
 
 function servicesHover() {
   document.getElementById("infoHeader").innerHTML = "SERVICES";
-  document.getElementById("infoMenu").innerHTML = "New text! NEW TEXT AND MORE WORDS!";
+  document.getElementById("infoMenu").innerHTML = "At Toir we want to slove all of your businesses need. Take a look at all the services we can offer your company!";
   menuInfoAn();
 }
 
@@ -48,7 +48,8 @@ function menuInfoAn() {
   var animationDelay = 2;
 
   for (let i = 0; i < text.innerText.length; i++) {
-    newDom += '<span class="textan">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]) + '</span>';
+    newDom += '<span class="textan" >' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]) + '</span>' + '<br>';
+    console.log(newDom);
   }
 
   text.innerHTML = newDom;
