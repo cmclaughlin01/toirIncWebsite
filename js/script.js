@@ -20,25 +20,25 @@ function menuHide() {
 
 function aboutHover() {
   document.getElementById("infoHeader").innerHTML = "ABOUT";
-  document.getElementById("infoMenu").innerHTML = "Come find out what sets our company apart from the rest. From the story of how Toir began; to the mission we commit ourselves to.";
+  document.getElementById("infoMenu").innerHTML = "Come find out what sets our company apart from the rest. From the story of how Toir emerged; to the obligations we make to our clients.";
   menuInfoAn();
 }
 
 function careerHover() {
   document.getElementById("infoHeader").innerHTML = "CAREER";
-  document.getElementById("infoMenu").innerHTML = "SEEs";
+  document.getElementById("infoMenu").innerHTML = "Come see if you will make the right fit for Toir";
   menuInfoAn();
 }
 
 function contactHover() {
   document.getElementById("infoHeader").innerHTML = "CONTACT";
-  document.getElementById("infoMenu").innerHTML = "We are so excited to chat with you! Find out about all the ways you can get into contact with us.";
+  document.getElementById("infoMenu").innerHTML = "We are so excited to chat with you! Find out about all the &nbsp ways you can get into contact with us.";
   menuInfoAn();
 }
 
 function servicesHover() {
   document.getElementById("infoHeader").innerHTML = "SERVICES";
-  document.getElementById("infoMenu").innerHTML = "At Toir we want to slove all of your businesses need. Take a look at all the services we can offer your company!";
+  document.getElementById("infoMenu").innerHTML = "At Toir we want to slove all of your businesses needs. Take a look at all the services we can offer your company!";
   menuInfoAn();
 }
 
