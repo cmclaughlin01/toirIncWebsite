@@ -131,11 +131,14 @@ img {
 
 /* Form */
 
+.form li{
+    list-style-type: none;
+}
+
 .form {
     margin-left: 25vw;
     width: 50vw; 
     height: 15vw;
-    border: 5px solid #FFFF00;
     display: flex;
     justify-content: center;
 }
@@ -159,16 +162,25 @@ img {
     transition: all 0.5s;
 }
 
-.form p:hover{
+.form .textBox {
+    font-family: aktiv-grotesk, sans-serif;
+    height:1vw;
+    width: 10vw;
+    font-size: 0.8vw;
+}
+
+.form textarea{
+    resize:none;
+}
+
+.form .textBox:focus + p{
     color: #fff;
     transition: all 0.5s;
     background-color: #1f86a1;
 }
 
-.form input:hover{
-    color: #1f86a1;
-    border: 0.1vw solid #002277;
-    background-color: #efefef;
+.form p{
+    transform: translate(-2vw, -6vw);
 }
 
 .submitButton{
@@ -188,7 +200,12 @@ img {
 }
 
 .textBox{
-    border: 0.1vw solid #002277;
+    border: 0.1vw solid #1f86a1;
+}
+
+.textBox:focus{
+    color: #1f86a1;
+    background-color: #efefef;
 }
 
 /* Cursor and Fuckoff*/
