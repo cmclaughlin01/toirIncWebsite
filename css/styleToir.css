@@ -145,11 +145,24 @@ img {
 }
 
 .form p{
-
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    border: solid #1f86a1;
+    border-radius: 1vw;
+    width: fit-content;
+    color: #1f86a1;
+    display:flex;
+    position: relative;
+    justify-content:center;
+    padding: 0vw 1vw 0vw 1vw;
+    transition: all 0.5s;
 }
 
 .form p:hover{
-    color: #1f86a1;
+    color: #fff;
+    transition: all 0.5s;
+    background-color: #1f86a1;
 }
 
 .form input:hover{
@@ -265,7 +278,7 @@ img {
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #000;
 }
 
 .glow-on-hover:active:after {
