@@ -48,7 +48,7 @@ function menuInfoAn() {
   var animationDelay = 2;
 
   for (let i = 0; i < text.innerText.length; i++) {
-    newDom += '<span class="textan" >' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]) + '</span>' + '<br>';
+    newDom += '<span class="textan" >' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]) + '</span>';
     console.log(newDom);
   }
 
