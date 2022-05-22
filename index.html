@@ -152,9 +152,9 @@
       $message = "Name: ".$_REQUEST["name"]."\nEmail: ".$_REQUEST["email"]."\nNumber: ".$_REQUEST["num"]."\nComments: ".$_REQUEST["comments"];
       $headers = "From:" . $from;
       if(mail($to,$subject,$message, $headers)) {
-        echo "<script>success()</script>";
+<!--       echo "<script>success()</script>";
       } else {
-        echo "<script>failure()</script>";
+        echo "<script>failure()</script>";-->
       }
     } 
     ?>
