@@ -137,9 +137,9 @@ img {
 
 .form {
     margin-top: 5vw;
-    margin-left: 25vw;
     width: 50vw; 
     height: 15vw;
+    float: right;
     display: flex;
     justify-content: center;
 }
