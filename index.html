@@ -117,15 +117,15 @@
     <!--link to contact page-->
   </div>
 
-<img src="img/SearchBar.svg">
-
   <div class="mainText" style="height: 50%;">
     <h1 class="justifyText anime" style="padding-top: 15%;margin: 0%;color: #ffffff;mix-blend-mode:difference">THE SOUL
       OF YOUR ADWORD AND BUSINESS SOLUTIONS.</h1>
     <img src="https://focusedtechniques.com/wp-content/uploads/2022/05/1.jpg"
       style="height:100%; width:100%;padding-top:0%;">
+    <img src="img/SearchBar.svg">
     <h1 class="animeBottom titleText" style="font-size:8.5vw; padding-bottom: -0%;padding-top: 0%;">ABOUT US</h1>
   </div>
+
   <div class="mainText">
     <p style="font-size: 3vw;margin-left:10%;margin-right: 10%;">
       We are just a couple of guys being dudes, ya know... swag.We are just a couple of guys being dudes, ya know...
@@ -140,42 +140,45 @@
       a couple of guys being dudes, ya know... swag.
     </p>
   </div>
-
-  <div class="form">
-    <?php
-    echo "<div>";
-    echo "<form method='post' style='center'>\n";
-    echho "<input name='name' class='textBox' required>\n";
-    echo "<p>Name</p>";
-    echo "<input id='email' name='email' class='textBox' required>\n";
-    echo "<p>Email</p>";
-    echo "<input name='num' class='textBox' placeholder='XXX-XXX-XXXX' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'>\n";
-    echo "<p>Mobile Number</p>";
-    echo "<textarea name='comments' class='textBox' style='height:10vw; width:20vw;' required></textarea>\n";
-    echo "<p style='transform: translate(-2vw, -14.3vw)'>Comments</p>";
-    echo "<br>";
-    echo "<input id='submit' name='submit' class='submitButton' type='submit'value='Send us a message!'>\n";
-    echo "";
-    echo "</form>";
-    eco "</div>";
-    echo "";
-    if ($_REQUEST['email']!=""){
-      ini_set( 'display_errors', 1 );
-      error_reporting( E_ALL );
-      $from = "contact@toirinc.com";
-      $to = "contact@toirinc.com";
-      $subject = "Website Submission: ".$_REQUEST["name"].": ".$_REQUEST["comments"];
-      $message = "Name: ".$_REQUEST["name"]."\nEmail: ".$_REQUEST["email"]."\nNumber: ".$_REQUEST["num"]."\nComments: ".$_REQUEST["comments"];
-      $headers = "From:" . $from;
-      if(mail($to,$subject,$message, $headers)) {
-<!--       echo "<script>success()</script>";
-      } else {
-        echo "<script>failure()</script>";-->
-      }
-    } 
-    ?>
+  <div style="width: 100vw">
+    <div style="width: 50vw; float: left; justify-content: center;">
+      <img src="https://focusedtechniques.com/wp-content/uploads/2022/05/4-resized.jpg" style="width:15vw; height: 50vw; ">
+    </div>
+    <div class="form" style=''>
+      <?php
+      echo "<div>";
+      echo "<form method='post' style='center'>\n";
+      echho "<input name='name' class='textBox' required>\n";
+      echo "<p>Name</p>";
+      echo "<input id='email' name='email' class='textBox' required>\n";
+      echo "<p>Email</p>";
+      echo "<input name='num' class='textBox' placeholder='XXX-XXX-XXXX' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'>\n";
+      echo "<p>Mobile Number</p>";
+      echo "<textarea name='comments' class='textBox' style='height:10vw; width:20vw;' required></textarea>\n";
+      echo "<p style='transform: translate(-2vw, -14.3vw)'>Comments</p>";
+      echo "<br>";
+      echo "<input id='submit' name='submit' class='submitButton' type='submit'value='Send us a message!'>\n";
+      echo "";
+      echo "</form>";
+      eco "</div>";
+      echo "";
+      if ($_REQUEST['email']!=""){
+        ini_set( 'display_errors', 1 );
+        error_reporting( E_ALL );
+        $from = "contact@toirinc.com";
+        $to = "contact@toirinc.com";
+        $subject = "Website Submission: ".$_REQUEST["name"].": ".$_REQUEST["comments"];
+        $message = "Name: ".$_REQUEST["name"]."\nEmail: ".$_REQUEST["email"]."\nNumber: ".$_REQUEST["num"]."\nComments: ".$_REQUEST["comments"];
+        $headers = "From:" . $from;
+        if(mail($to,$subject,$message, $headers)) {
+  <!--       echo "<script>success()</script>";
+        } else {
+          echo "<script>failure()</script>";-->
+        }
+      } 
+      ?>
+    </div>
   </div>
-
   <!--Footer does the footer things
   <footer>
     <div>
