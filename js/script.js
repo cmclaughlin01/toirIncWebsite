@@ -64,32 +64,6 @@ window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
 
-var toggler = true;
-
-function success(){
-  window.location.href ='emailRedirect.html'
-  document.getElementById('submit').classList.toggle("success");
-  if (toggler){
-    document.getElementById('submit').value = "Success!";
-    toggler=false;
-  } else{
-    document.getElementById('submit').value = "Send us a message!";
-    toggler=true;
-  }
-}
-var toggler2 = true;
-
-function failure(){
-  document.getElementById('submit').classList.toggle("failure");
-  if (toggler2){
-    document.getElementById('submit').value = "Try Again!";
-    toggler2=false;
-  } else{
-    document.getElementById('submit').value = "Send us a message!";
-    toggler2=true;
-  }
-}
-
 function redirectWait(){
   setTimeout(homepage, 5000);
   setTimeout(secondWrite, 1000, 4);
