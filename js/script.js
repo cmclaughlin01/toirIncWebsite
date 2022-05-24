@@ -89,3 +89,19 @@ function failure(){
     toggler2=true;
   }
 }
+
+function redirectWait(){
+  setTimeout(homepage, 5000);
+  setTimeout(secondWrite, 1000, 4);
+  setTimeout(secondWrite, 2000, 3);
+  setTimeout(secondWrite, 3000, 2);
+  setTimeout(secondWrite, 4000, 1);
+}
+
+function homepage(){
+  window.location.href ='index.html';
+}
+
+function secondWrite(i){
+  document.getElementById('seconds').innerHTML = i.toString();
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html>
 
 <head>
@@ -34,6 +33,16 @@
 </head>
 
 <body class="scroll" onload="redirectWait()">
+  <?
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $from = "contact@toirinc.com";
+    $to = "contact@toirinc.com";
+    $subject = "Website Submission: ".$_REQUEST["name"].": ".$_REQUEST["comments"];
+    $message = "Name: ".$_REQUEST["name"]."\nEmail: ".$_REQUEST["email"]."\nNumber: ".$_REQUEST["num"]."\nComments: ".$_REQUEST["comments"];
+    $headers = "From:" . $from;
+    mail($to,$subject,$message, $headers)
+  ?>
     <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
         <div><a style=" padding-top: 1%; padding-right:5%; font-size: 1.25vw; color: black;" href="javascript:void(0)"
             class="closebtn" onclick="closeNav()">
