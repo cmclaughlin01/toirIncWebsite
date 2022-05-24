@@ -240,6 +240,21 @@ img {
     background-color: #efefef;
 }
 
+/* Contact Stuff */
+
+.info{
+    width:25vw; 
+    height:40vw; 
+    float: right; 
+    justify-content:space-around; 
+    display:flex; 
+    flex-direction: column;
+}
+.info p{
+    font-size: 1vw;
+    text-align: left;
+}
+
 /* Cursor and Fuckoff*/
 
 .pointer {
