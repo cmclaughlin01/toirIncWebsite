@@ -1,0 +1,19 @@
+.threeGoogleSvg{
+    width: 100vw;
+}
+.googleAds{
+    width: 33.3vw;
+    float: left;
+}
+
+.googleMarketing{
+    width: 33.3%;
+    float: left;
+
+}
+
+.googleManager{
+    width: 33.3vw;
+    float: right;
+}
+
