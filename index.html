@@ -152,15 +152,19 @@
       a couple of guys being dudes, ya know... swag.
     </p>
   </div>
+  <div style="width: 50%; float:right;">
+    <h1 class="titleText">CONTACT US</h1>
+  </div>
   <div style="width: 100vw">
     <div style="width: 50vw; float: left; justify-content: center;">
-      <img src="https://focusedtechniques.com/wp-content/uploads/2022/05/4-resized.jpg" style="width:15vw; height: 50vw; ">
+      <img src="https://focusedtechniques.com/wp-content/uploads/2022/05/1.jpg" style="width:50vw; height: 20vw; ">
     </div>
-    <div class="form" style=''>
+    <div class="form">
       <?php
       echo "<div>";
+      
       echo "<form method='post' style='center'>\n";
-      echho "<input name='name' class='textBox' required>\n";
+      echo "<input name='name' class='textBox' required>\n";
       echo "<p>Name</p>";
       echo "<input id='email' name='email' class='textBox' required>\n";
       echo "<p>Email</p>";
@@ -172,7 +176,7 @@
       echo "<input id='submit' name='submit' class='submitButton' type='submit'value='Send us a message!'>\n";
       echo "";
       echo "</form>";
-      eco "</div>";
+      echo "</div>";
       echo "";
       if ($_REQUEST['email']!=""){
         ini_set( 'display_errors', 1 );
