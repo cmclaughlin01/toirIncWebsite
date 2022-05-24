@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html>
 
 <head>
@@ -9,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/styleToir.css">
   <link rel="stylesheet" type="text/css" href="../css/mobileStyle.css">
   <link rel="stylesheet" type="text/css" href="../css/menu.css">
+  <link rel="stylesheet" type="text/css" href="../css/homePageSVG.css">
   <!--<link rel="shortcut icon" href="../Tulsium/images/TulsiumLogo-1.png">-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +35,7 @@
 </head>
 
 <body class="scroll">
-  <!--MAKES THE MENU SIDE NAV-->
+
   <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
     <div><a style=" padding-top: 1%; padding-right:5%; font-size: 1.25vw; color: black;" href="javascript:void(0)"
         class="closebtn" onclick="closeNav()">
@@ -43,8 +46,11 @@
 
       </div>
       <div class="menuChild infoDivSpacing textan" id="infoAnimation">
+
         <p style="font-size: 2vw; text-align: center; font-family: 'Roboto Condensed', sans-serif;" id="infoHeader"></p>
-        <p style="font-size: 1vw; text-align: center; font-family: 'Roboto Condensed', sans-serif;" id="infoMenu"></p>
+        <p style="font-size: 1vw; text-align: center; font-family: 'Roboto Condensed', sans-serif; white-space: normal;"
+          id="infoMenu"></p>
+
       </div>
       <div class="infoDivSpacing">
 
@@ -96,20 +102,47 @@
 
   </div>
 
-  <!--MAKES THE MENU BAR AT THE TOP-->
-  <div>
+
+  <!--makes an unordered list that sticked to the top of the screen as a menu-->
+  <div class="topBar">
     <ul class="menuNav">
       <li class="menuli sides"><a href="../contact/index.html">CONTACT
           <p>HIT US UP</p>
         </a></li>
-      <li class="menuli center"><a class="fuckoff" href="../index.html">TOIR<p>
-            HOMEPAGE</p></a></li>
+      <li class="menuli center"><a class="fuckoff" href="index.html">TOIR
+          <p>HOMEPAGE</p></a></li>
       <li class="menuli sides" style="text-align: right;"><a onclick="openNav()">MENU
           <p>CHECK IT OUT</p>
         </a></li>
     </ul>
     <!--link to contact page-->
   </div>
+
+  <div id="contact" style="width: 50%; float:right;">
+    <h1 class="titleText">CONTACT US</h1>
+  </div>
+  <div style="width: 100vw">
+    <div style="width: 50vw; float: left; justify-content: center;">
+      <img src="../img/Jim.png" style="width: 50vw; height: 20vw;">
+    </div>
+    <div class="form">
+      <div>
+        <form method="post" action="../emailRedirect.php">
+          <input name="name" class="textBox" required>
+          <p>Name</p>
+          <input id="email" name="email" class="textBox" required>
+          <p>Email</p>
+          <input name="num" class="textBox" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <p>Mobile Number</p>
+          <textarea name="comments" class="textBox" style="height:10vw; width:20vw;" required></textarea>
+          <p style="transform: translate(-2vw, -14.3vw)">Comments</p>
+          <br>
+          <input id="submit" name="submit" class="submitButton" type="submit" value="Send us a message!">
+        </form>
+      </div>
+    </div>
+  </div>
+
 
 </body>
 

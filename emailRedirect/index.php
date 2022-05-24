@@ -3,33 +3,34 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <title>Toir Inc.</title>
-    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
-    <link rel="stylesheet" type="text/css" href="css/styleToir.css">
-    <link rel="stylesheet" type="text/css" href="css/mobileStyle.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <!--<link rel="shortcut icon" href="../Tulsium/images/TulsiumLogo-1.png">-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Toir Inc.</title>
+  <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+  <link rel="stylesheet" type="text/css" href="../css/styleToir.css">
+  <link rel="stylesheet" type="text/css" href="../css/mobileStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/menu.css">
+  <link rel="stylesheet" type="text/css" href="../css/homePageSVG.css">
+  <!--<link rel="shortcut icon" href="../Tulsium/images/TulsiumLogo-1.png">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="../js/script.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-229619707-1">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-229619707-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-229619707-1');
-    </script>
+    gtag('config', 'UA-229619707-1');
+  </script>
 </head>
 
 <body class="scroll" onload="redirectWait()">
@@ -113,7 +114,7 @@
       <!--makes an unordered list that sticked to the top of the screen as a menu-->
       <div class="topBar">
         <ul class="menuNav">
-          <li class="menuli sides"><a href="contact/index.html">CONTACT
+          <li class="menuli sides"><a href="../contact/index.html">CONTACT
               <p>HIT US UP</p>
             </a></li>
           <li class="menuli center"><a class="fuckoff" href="index.html">TOIR

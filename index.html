@@ -68,7 +68,7 @@
         </div>
         <div id="menuLeftSpacer"></div>
         <div class="hoverBlock" onmouseover="menuHover(); contactHover()" onmouseleave="menuHide()">
-          <a href="contact/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CONTACT</a>
+          <a href="#contact" onclick="closeNav()" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CONTACT</a>
         </div>
         <div id="menuLeftSpacer"></div>
         <div class="hoverBlock" onmouseover="menuHover(); servicesHover()" onmouseleave="menuHide()">
@@ -164,7 +164,7 @@
     </div>
     <div class="form">
       <div>
-        <form method="post" action="emailRedirect.php">
+        <form method="post" action="emailRedirect/index.php">
           <input name="name" class="textBox" required>
           <p>Name</p>
           <input id="email" name="email" class="textBox" required>

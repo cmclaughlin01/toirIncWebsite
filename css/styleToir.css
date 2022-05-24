@@ -8,6 +8,11 @@ body {
     background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-02/220209-barack-obama-jm-0958-a70f3b.jpg');
 }
 
+.centerImage {
+    display: flex;
+    justify-content: center;
+}
+
 /* grayscale
 img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 *
@@ -22,6 +27,7 @@ img {
     scrollbar-width: none;
 }
 
+/* Text */
 
 .justifyText {
     text-align: justify;
@@ -47,7 +53,7 @@ img {
 /* Top Bar */
 
 .topBar{
-    padding-bottom: 0.01vw;
+    padding-bottom: 1vw;
 }
 
 .menuNav {
@@ -254,7 +260,7 @@ img {
     display: inline-block;
     position: relative;
     /* make sure it stays put so we can see it! */
-    animation: rotate 1s linear infinite;
+    animation: moveDown 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
     animation-iteration-count: 1;
@@ -262,7 +268,7 @@ img {
     background-blend-mode: difference;
 }
 
-@keyframes rotate {
+@keyframes moveDown {
     to {
         transform: translateY(100%);
         transition-timing-function: ease;

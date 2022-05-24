@@ -73,7 +73,7 @@ function redirectWait(){
 }
 
 function homepage(){
-  window.location.href ='index.html';
+  window.location.href ='../index.html';
 }
 
 function secondWrite(i){
