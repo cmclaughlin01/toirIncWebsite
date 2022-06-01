@@ -79,3 +79,70 @@ function homepage(){
 function secondWrite(i){
   document.getElementById('seconds').innerHTML = i.toString();
 }
+
+var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+function loop() {
+
+  elementsToShow.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
+
+  scroll(loop);
+}
+
+loop();
+
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+/*
+var scrollpos = window.scrollY; // window scroll position
+var wh = window.innerHeight-50; // as soon as element touches bottom with offset event starts
+var letterL = document.querySelector("#L"); //element
+var letterE = document.querySelector("#E"); //element
+var letterT = document.querySelector("#T"); //element
+var letterU = document.querySelector("#U"); //element
+var letterS = document.querySelector("#S"); //element
+
+const background = document.getElementById("SearchBar");
+const topFun = background.offsetTop;
+
+window.addEventListener('scroll', function(){ 
+    if(scrollpos > (topFun - wh)){
+      letterL.classList.add("L");
+      console.log("this is printing");
+    }
+    if(scrollpos > (letterE.offsetTop - wh)){
+      letterE.classList.add("E");
+    }
+    if(scrollpos > (letterT.offsetTop - wh)){
+      letterT.classList.add("T");
+    }
+    if(scrollpos > (letterU.offsetTop - wh)){
+      letterU.classList.add("U");
+    }
+    if(scrollpos > (letterS.offsetTop - wh)){
+      letterS.classList.add("S");
+    }
+});
+*/

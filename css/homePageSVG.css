@@ -9,6 +9,7 @@
 .googleMarketing{
     width: 33.3%;
     float: left;
+	transform: scale(400%);
 
 }
 
@@ -17,3 +18,280 @@
     float: right;
 }
 
+
+.logoBig {
+    display: inline-block;
+    position: relative;
+    /* make sure it stays put so we can see it! */
+    animation: scaleBig .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1.6s);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scaleBig {
+    to {
+		transform: translateY(35vw) scale(80%);
+    }
+}
+
+#line{
+	animation:
+		makeItMove 4.36s steps(35, end) forwards;
+}
+.lineEnding{
+	/*animation-delay: 4.64s;*/
+	opacity: 0;
+	animation: blink-caret 0.7s linear 4.64s infinite;
+}
+@keyframes blink-caret {
+	from, to {opacity: 0;}
+	50% {opacity: 1;}
+  }
+@keyframes makeItMove {
+	0% {transform: translate(0vw,0vw);}
+	100% {transform: translate(78vw,0vw);fill: white;}
+}
+
+@keyframes hideshow {
+	0% { opacity: 1; }
+	10% { opacity: 1; }
+	100% {opacity: 1;}
+  } 
+
+.L{
+	animation: hideshow 10s ease infinite;
+}
+.E{
+	opacity: 0;
+  	animation: hideshow 10s 0.16s ease infinite;
+	
+}
+.T{
+	opacity: 0;
+  	animation: hideshow 10s 0.32s ease infinite;
+	
+}
+.U{
+	opacity: 0;
+  	animation: hideshow 10s 0.48s ease infinite;
+	  fill: blue;
+}
+.S{
+	opacity: 0;
+  	animation: hideshow 10s 0.64s ease infinite;
+}
+.C{
+	opacity: 0;
+  	animation: hideshow 10s 0.8s ease infinite;
+}
+.O{
+	opacity: 0;
+  	animation: hideshow 10s 0.96s ease infinite;
+}
+.N_1{
+	opacity: 0;
+  	animation: hideshow 10s 1.12s ease infinite;
+}
+.N_2{
+	opacity: 0;
+  	animation: hideshow 10s 1.28s ease infinite;
+}
+.E_2{
+	opacity: 0;
+  	animation: hideshow 10s 1.44s ease infinite;
+}
+.C_2{
+	opacity: 0;
+  	animation: hideshow 10s 1.6s ease infinite;
+}
+.T_2{
+	opacity: 0;
+  	animation: hideshow 10s 1.76s ease infinite;
+}
+.Y{
+	opacity: 0;
+  	animation: hideshow 10s 1.92s ease infinite;
+}
+.O_2{
+	opacity: 0;
+  	animation: hideshow 10s 2.08s ease infinite;
+}
+.U_2{
+	opacity: 0;
+  	animation: hideshow 10s 2.24s ease infinite;
+}
+.T_3{
+	opacity: 0;
+  	animation: hideshow 10s 2.4s ease infinite;
+}
+.O_3{
+	opacity: 0;
+  	animation: hideshow 10s 2.56s ease infinite;
+}
+.N_3{
+	opacity: 0;
+  	animation: hideshow 10s 2.72s ease infinite;
+}
+.E_3{
+	opacity: 0;
+  	animation: hideshow 10s 2.88s ease infinite;
+}
+.W{
+	opacity: 0;
+  	animation: hideshow 10s 3.04s ease infinite;
+}
+.C_3{
+	opacity: 0;
+  	animation: hideshow 10s 3.2s ease infinite;
+}
+.U_3{
+	opacity: 0;
+  	animation: hideshow 10s 3.36s ease infinite;
+}
+.S_2{
+	opacity: 0;
+  	animation: hideshow 10s 3.52s ease infinite;
+}
+.T_4{
+	opacity: 0;
+  	animation: hideshow 10s 3.68s ease infinite;
+}
+.O_4{
+	opacity: 0;
+  	animation: hideshow 10s 3.84s ease infinite;
+}
+.M{
+	opacity: 0;
+  	animation: hideshow 10s 4s ease infinite;
+}
+.E_4{
+	opacity: 0;
+  	animation: hideshow 10s 4.16s ease infinite;
+}
+.R{
+	opacity: 0;
+  	animation: hideshow 10s 4.48s ease infinite;
+}
+.S_3{
+	opacity: 0;
+  	animation: hideshow 10s 4.64s ease infinite;
+}
+
+
+.lineL{
+	opacity: 0;
+	animation: blink-caret 0.1s linear;
+}
+.lineE{
+	opacity: 0;
+	animation: 
+	blink-caret 0.1s linear 0.16s ;
+	
+}
+.lineT{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 0.32s ;
+	
+}
+.lineU{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 0.48s ;
+	  fill: blue;
+}
+.lineS{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 0.64s ;
+}
+.lineC{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 0.8s ;
+}
+.lineO{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 0.96s ;
+}
+.lineN_1{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 1.12s ;
+}
+.lineN_2{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 1.28s ;
+}
+.lineE_2{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 1.44s ;
+}
+.lineC_2{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 1.6s ;
+}
+.lineT_2{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 1.76s ;
+}
+.lineY{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 1.92s ;
+}
+.lineO_2{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 2.08s ;
+}
+.lineU_2{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 2.24s ;
+}
+.lineT_3{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 2.4s ;
+}
+.lineO_3{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 2.56s ;
+}
+.lineN_3{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 2.72s ;
+}
+.lineE_3{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 2.88s ;
+}
+.lineW{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 3.04s ;
+}
+.lineC_3{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 3.2s ;
+}
+.lineU_3{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 3.36s ;
+}
+.lineS_2{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 3.52s ;
+}
+.lineT_4{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 3.68s ;
+}
+.lineO_4{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 3.84s ;
+}
+.lineM{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 4s ;
+}
+.lineE_4{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 4.16s ;
+}
+.lineR{
+	opacity: 0;
+  	animation: blink-caret 0.1s linear 4.48s ;
+}
