@@ -1,7 +1,7 @@
 function openNav() {
   document.getElementById("mySidenav").style.height = "100%";
 
-  console.log("bruhhhhhhhhhhhhhhhhh");
+  //console.log("bruhhhhhhhhhhhhhhhhh");
 }
 
 function closeNav() {
@@ -49,7 +49,7 @@ function menuInfoAn() {
 
   for (let i = 0; i < text.innerText.length; i++) {
     newDom += '<span class="textan" >' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]) + '</span>';
-    console.log(newDom);
+    //console.log(newDom);
   }
 
   text.innerHTML = newDom;

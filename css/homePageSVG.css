@@ -1,34 +1,42 @@
 .threeGoogleSvg{
     width: 100vw;
+	height: 22.5vw;
 }
 .googleAds{
-    width: 33.3vw;
+    width: 30vw;
     float: left;
+	text-align: center;
+	transform: translateY(5vw);
+	/*background-color: aqua;*/
 }
 
 .googleMarketing{
-    width: 33.3%;
+    width: 40vw;
     float: left;
-	transform: scale(400%);
+	text-align: center;
+	/*background-color: bisque;*/
 
 }
 
 .googleManager{
-    width: 33.3vw;
+    width: 30vw;
     float: right;
+	text-align: center;
+	transform: translateY(5vw);
+	/*background-color: yellowgreen;*/
 }
 
-
+/*
 .logoBig {
     display: inline-block;
     position: relative;
-    /* make sure it stays put so we can see it! */
+    /* make sure it stays put so we can see it! 
     animation: scaleBig .5s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1.6s);
     animation-iteration-count: infinite;
 }
-
+*/
 @keyframes scaleBig {
     to {
 		transform: translateY(35vw) scale(80%);
