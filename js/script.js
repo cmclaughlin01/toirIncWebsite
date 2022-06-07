@@ -59,11 +59,11 @@ function menuInfoAn() {
     text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
   }
 }
-
+/*
 window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
-
+*/
 function redirectWait(){
   setTimeout(homepage, 5000);
   setTimeout(secondWrite, 1000, 4);
@@ -79,7 +79,7 @@ function homepage(){
 function secondWrite(i){
   document.getElementById('seconds').innerHTML = i.toString();
 }
-
+/*
 var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
@@ -97,7 +97,7 @@ function loop() {
 }
 
 loop();
-
+*/
 function isElementInViewport(el) {
   // special bonus for those using jQuery
   if (typeof jQuery === "function" && el instanceof jQuery) {

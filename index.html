@@ -125,25 +125,25 @@
   </div>
   <div>
     <div class="threeGoogleSvg">
-      <div class="googleAds">
-        <img style="width: 45%;" src="img/googleAdsLogo.svg">
+      <div class="googleAds" id="googleAds">
+        <img id="adsAni" style="width: 50%; opacity: 0;" src="img/googleAdsLogo.svg">
         <div style="width:100%"></div>
-        <img style="width: 45%;" src="img/googleAdsLetters.svg">
+        <img id="adsAniLetters" style="width: 35%; transform: translateX(2.4vw);" src="img/googleAdsLetters.svg">
       </div>
       <div class="googleMarketing logoBig">
-          <img style="width: 70%;" src="img/googleMarketingLogo.svg">
-          <img style="width: 100%;" src="img/googleMarketingLetters.svg">
+          <img style="width: 55%;" src="img/googleMarketingLogo.svg">
+          <img style="width: 60%;" src="img/googleMarketingLetters.svg">
       </div>
-      <div class="googleManager">
-        <img style="width: 75.5%;" src="img/googleManagerLogo.svg">
-        <img style="width: 75.5%;" src="img/googleManagerLetters.svg">
+      <div class="googleMan" id="googleManager">
+        <img id="managerAni" style="width: 50%; opacity: 0;" src="img/googleManagerLogo.svg">
+        <img id="managerAniLetters" style="width: 65%; transform: translateX(2vw);" src="img/googleManagerLetters.svg">
       </div>
     </div>
-    <div style="height: 1vw;">
+    <div style="height: 3vw; width: 100vw;">
 
     </div>
-    <div class="googleSearchBar show-on-scroll" id="SearchBar">
-      <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1953 654.03">
+    <div class="googleSearchBar show-on-scroll" id="SearchBar" style="display:inline-block; position: relative; width: 100vw;">
+      <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 200 1953 240">
         <defs>
           <style>
             .b {
@@ -296,7 +296,7 @@
       </svg> </div>
     <script>
       var scrollpos = window.scrollY; // window scroll position
-      var wh = window.innerHeight - 50; // as soon as element touches bottom with offset event starts
+      var wh = document.body.scrollHeight; // as soon as element touches bottom with offset event starts
       var letterL = document.querySelector("#L");
       var letterE = document.querySelector("#E"); 
       var letterT = document.querySelector("#T"); 
@@ -356,12 +356,24 @@
       var lineE_4 = document.querySelector("#lineE_4");
       var lineR = document.querySelector("#lineR");
       var lineEnding = document.querySelector("#lineEnding");
+      //svg fade in
+      var manager = document.querySelector("#managerAni");
+      var ads = document.querySelector("#adsAni");
+      var managerLetters = document.querySelector("#managerAniLetters");
+      var adsLetters = document.querySelector("#adsAniLetters");
 
-      const background = document.getElementById("SearchBar");
-      const topFun = background.offsetTop;
-      console.log(topFun);
+      const SearchBar = document.getElementById("SearchBar");
+      const searchType = SearchBar.offsetTop;
+      const adsSVG = document.getElementById("googleAds");
+      const adsFadeIn = adsSVG.offsetTop;
+      const managerSVG = document.getElementById("googleManager");
+      const managerFadeIn = managerSVG.offsetTop;
+      console.log(managerFadeIn);
+      console.log(adsFadeIn);
+      console.log(searchType);
       window.addEventListener('scroll', function () {
-        if (scrollpos > (topFun - wh)) {
+        if (scrollpos > (searchType - wh)) {
+          //console.log("is running");
           letterL.classList.add("L");
           letterE.classList.add("E");
           letterT.classList.add("T");
@@ -393,7 +405,7 @@
           letterS_3.classList.add("S_3");
           //console.log(L);
         }
-        if (scrollpos > (topFun - wh)) {
+        if (scrollpos > (searchType - wh)) {
           lineL.classList.add("lineL");
           lineE.classList.add("lineE");
           lineT.classList.add("lineT");
@@ -423,6 +435,16 @@
           lineE_4.classList.add("lineE_4");
           lineR.classList.add("lineR");
           lineEnding.classList.add("lineEnding");
+        }
+        if (scrollpos > (adsFadeIn - wh)) {
+          manager.classList.add("managerFade");
+          document.getElementById("managerAni").style.opacity = 1;
+          ads.classList.add("adsFade");
+          document.getElementById("adsAni").style.opacity = 1;
+          managerLetters.classList.add("managerTextFade");
+          document.getElementById("managerAniLetters").style.opacity = 1;
+          adsLetters.classList.add("adsTextFade");
+          document.getElementById("adsAniLetters").style.opacity = 1;
         }
       });
     </script>
@@ -455,7 +477,7 @@
             <p>Name</p>
             <input id="email" name="email" class="textBox" required>
             <p>Email</p>
-            <input name="num" class="textBox" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input name="num" class="textBox" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><!--not very user friendly-->
             <p>Mobile Number</p>
             <textarea name="comments" class="textBox" style="height:10vw; width:20vw;" required></textarea>
             <p style="transform: translate(-2vw, -14.3vw)">Comments</p>
