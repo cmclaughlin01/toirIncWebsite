@@ -269,6 +269,14 @@ img {
     background-color: transparent;
 }
 
+/* Error Page */
+
+.errorText {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 /*animation stuff*/
 
 .anime {
