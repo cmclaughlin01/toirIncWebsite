@@ -286,6 +286,38 @@ img {
     justify-content: center;
 }
 
+/* Services Page */
+
+.servicesText{
+    padding-top: 5vw;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gold{
+    border: 0.2vw solid #aa0;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.silver{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bronze{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 /*animation stuff*/
 
 .anime {
