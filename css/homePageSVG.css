@@ -57,6 +57,7 @@
 		transform: translateX(0vw);
 	}
 }
+
 @keyframes slide-rightText {
 	from {
 		transform: translateX(-4vw);
@@ -86,6 +87,7 @@
 		transform: translateX(0vw);
 	}
 }
+
 @keyframes slide-leftText {
 	from {
 		transform: translateX(4.4vw);
@@ -101,17 +103,11 @@
 	}
 }
 
-/*
-.logoBig {
-    display: inline-block;
-    position: relative;
-    /* make sure it stays put so we can see it! 
-    animation: scaleBig .5s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1.6s);
-    animation-iteration-count: infinite;
-}
-*/
+
+/* .logoBig {
+    
+} */
+
 @keyframes scaleBig {
 	to {
 		transform: translateY(35vw) scale(80%);
@@ -123,20 +119,45 @@
 		makeItMove 4.36s steps(35, end) forwards;
 }
 
+/* .lineEnding {
+	animation-delay: 4.64s;
+	animation: blink 0.7s steps(2) infinite;
+} */
+
 .lineEnding {
-	/*animation-delay: 4.64s;*/
-	animation: blink-end 0.7s steps(2) infinite;
+	visibility: hidden;
+	animation: condemned_blink_effect .5s linear 4.46s infinite;
+}
+
+@keyframes condemned_blink_effect {
+	0% {
+		visibility: hidden;
+	}
+
+	50% {
+		visibility: hidden;
+	}
+
+	100% {
+		visibility: visible;
+	}
 }
 
 @keyframes blink-caret {
 
-	0%{opacity:1;}
-	100%{opacity:1;}
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
 
 }
+
 @keyframes blink-end {
-	0%{
-		opacity:0;
+	0% {
+		opacity: 0;
 	}
 }
 
