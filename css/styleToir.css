@@ -293,28 +293,131 @@ img {
     margin:auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+.servicesDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20vw;
+    text-align: center;
+    border-radius: 2vw;
+    background-color: #fff;
+    border-style: solid;
+}
+
+.servicesTop{
+    height: 10vw;
+    border-radius: 1vw 1vw 0vw 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4vw;
+    font-family: aktiv-grotesk, sans-serif;
+    color: #fff;
+    border-style: solid;
+    border-width: 0vw 0vw 0.1vw 0vw;
+    border-color: #ccc;
+    
+}
+
+.servicesMid{
+    font-weight: 400;
+    font-size: 3vw;
+    padding-top: 1vw;
+}
+
+.servicesBot{
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    align-self: center;
+    width: 16vw;
+    text-align: left;
 }
 
 .gold{
-    border: 0.2vw solid #aa0;
-    margin:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-color: rgb(211, 190, 6) #ccc;
+    height: 40vw;
+    border-width: 1vw 0.1vw;
+}
+
+.gold .servicesTop{
+    color: rgb(211, 190, 6);
+
+}
+
+.gold .planButton{
+    transition: 0.5s;
+    color: rgb(211, 190, 6);
+    border-color: rgb(211, 190, 6);
+}
+
+.gold .planButton:hover{
+    transition: 0.5s;
+    background-color: rgb(211, 190, 6);
+    color: #fff;
 }
 
 .silver{
-    margin:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-color: #aaa #ccc;
+    height: 37vw;
+    border-width: 1vw 0.1vw;
+}
+
+.silver .servicesTop{
+    color: #bbb;
+}
+
+.silver .planButton{
+    transition: 0.5s;
+    color: #bbb;
+    border-color: #bbb;
+}
+
+.silver .planButton:hover{
+    transition: 0.5s;
+    background-color: #bbb;
+    color: #fff;
 }
 
 .bronze{
-    margin:auto;
-    display: flex;
-    flex-direction: column;
+    border-color:rgb(143, 76, 0) #ccc;
+    height: 34vw;
+    border-width: 1vw 0.1vw;
+}
+
+.bronze .servicesTop{
+    color: rgb(172, 94, 6);
+}
+
+.bronze .planButton{
+    transition: 0.5s;
+    color: rgb(172, 94, 6);
+    border-color: rgb(172, 94, 6);
+}
+
+.bronze .planButton:hover{
+    transition: 0.5s;
+    background-color: rgb(172, 94, 6);
+    color: #fff;
+}
+
+.planButton{
+    display: inline-flex;
+    height: 4vw;
+    width: 16vw;
+    border: 0.1vw solid;
+    margin: auto;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 0.05vw;
+    align-items: center;
     justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 
