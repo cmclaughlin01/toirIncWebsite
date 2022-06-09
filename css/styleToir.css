@@ -272,10 +272,51 @@ img {
 /* Error Page */
 
 .errorText {
+    width: 100vw;
+    margin: auto;
+    padding-top: 5vw;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    justify-content: center;
 }
+.errorText div{
+    padding-bottom: 1vw;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Services Page */
+
+.servicesText{
+    padding-top: 5vw;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gold{
+    border: 0.2vw solid #aa0;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.silver{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bronze{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 /*animation stuff*/
 
