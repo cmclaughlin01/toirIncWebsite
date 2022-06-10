@@ -118,36 +118,37 @@
     <!--link to contact page-->
   </div>
 
-  <div style="margin-top: 5vw;">
-    <h1 class="titleText" style="text-align:center;">Contact Us</h1>
-    <h2> Curious about something? ASk us a question!</h2>
+  <div class="contactTitle">
+    <h1> Contact Us</h1>
+    <h2> Curious about something? Ask us a question!</h2>
   </div>
-  <div style="width: 100vw;">
-    <div style="width: 50vw; float: left; justify-content: right;">
-      <img src="../img/Jim.png" style="width: 50vw; height: 20vw;">
-    </div>
-    <div class="mainText info">
-      <p>Some epic shit baybee</p>
-      <p>Some epicer shit baybee</p>
-    </div>  
-    <div class="form" style="width: 25vw; justify-content:right;">
-      <div>
-        <form method="post" action="../emailRedirect/index.php">
-          <input name="name" class="textBox" required>
-          <p>Name</p>
-          <input id="email" name="email" class="textBox" required>
-          <p>Email</p>
-          <input name="num" class="textBox" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-          <p>Mobile Number</p>
-          <textarea name="comments" class="textBox" style="height:10vw; width:20vw;" required></textarea>
-          <p style="transform: translate(-2vw, -14.3vw)">Comments</p>
-          <br>
-          <input id="submit" name="submit" class="submitButton" type="submit" value="Send us a message!">
-        </form>
-      </div>
+  <div style="width: 25vw;">
+    <div class="card">
+        <div>
+          <form method="post" action="../emailRedirect/index.php">
+            <div class="input">
+              <input name="name" class="input_field" required>
+              <label class="input_label">Full name</label>
+            </div>
+            <div class="input">
+              <input id="email" name="email" class="input_field" required>
+              <label class="input_label">Email</label>
+            </div>
+            <div class="input">
+              <input name="num" class="input_field" required   >
+              <label class="input_label">Moblie Number</label>
+            </div>
+            <div class="input">
+              <textarea name="comments" class="input_field" style="height:10vw; width:25vw;" required></textarea>
+              <p class="inputText">Comments</p>
+            </div>
+            <br>
+            <input id="submit" name="submit" class="submitButton" type="submit" value="Send us a message!">
+          </form>
+        </div>
     </div>
   </div>
-  
+
 
 </body>
 
