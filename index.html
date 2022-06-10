@@ -123,14 +123,14 @@
 
   <div class="mainText" style="height: 50%;">
     <h1 class="justifyText anim"
-      style="padding-top: 15%;margin: 0%;color: #ffffff;mix-blend-mode:difference;z-index: 2;">THE SOUL
+      style="padding-top: 15%; margin: 0%; color: #ffffff; mix-blend-mode:difference; z-index: 2;">THE SOUL
       OF YOUR ADWORD AND BUSINESS SOLUTIONS.</h1>
   </div>
   <div>
     <div class="threeGoogleSvg">
       <div class="googleAds" id="googleAds">
-        <img id="adsAni" style="width: 50%; opacity: 0;" src="img/googleAdsLogo.svg">
-        <div style="width:100%"></div>
+        <img class="adsAni" style="width: 50%;" src="img/googleAdsLogo.svg">
+        <div style="width:100%;"></div>
         <img id="adsAniLetters" style="width: 35%; transform: translateX(2.4vw);" src="img/googleAdsLetters.svg">
       </div>
       <div class="googleMarketing logoBig">
@@ -138,7 +138,7 @@
           <img style="width: 60%;" src="img/googleMarketingLetters.svg">
       </div>
       <div class="googleMan" id="googleManager">
-        <img id="managerAni" style="width: 50%; opacity: 0;" src="img/googleManagerLogo.svg">
+        <img class="managerAni" style="width: 50%;" src="img/googleManagerLogo.svg">
         <img id="managerAniLetters" style="width: 65%; transform: translateX(2vw);" src="img/googleManagerLetters.svg">
       </div>
     </div>
@@ -172,17 +172,25 @@
             }
 
             .g {
-              fill: #757575;
+              fill: #fff;
             }
 
             .c {
               fill: none;
-              stroke: #757575;
+              stroke: #fff;
             }
 
             .h {
               fill: #ea4335;
             }
+
+            .lineEnding{
+              stroke-miterlimit: 10;
+              stroke-width: 6px;
+              fill:none;
+              stroke: #757575;
+            }
+
           </style>
         </defs>
         <path id="backGround-Color" class="b"
@@ -286,7 +294,7 @@
         <line id="lineE_4" class="c" x1="1441" y1="264" x2="1441" y2="389" />
         <line id="lineR" class="c" x1="1471" y1="264" x2="1471" y2="389" />
 
-        <line id="lineEnding" class="c" style="stroke: #757575" x1="1505" y1="264" x2="1505" y2="389" />
+        <line id="lineEnding" class="" x1="1505" y1="264" x2="1505" y2="389" />
         <g>
           <path id="blue_GoogleMic" class="d"
             d="M1746.58,339.42c-7.32,0-13.25-5.93-13.25-13.25v-30.93c0-7.32,5.93-13.25,13.25-13.25s13.25,5.93,13.25,13.25v30.93c0,7.32-5.93,13.25-13.25,13.25Z" />
@@ -296,161 +304,8 @@
           <path id="red_GoogleMic" class="e"
             d="M1730.9,341.92c-3.97-3.99-6.45-9.5-6.45-15.58h-8.73c0,8.49,3.45,16.18,9.01,21.75l6.18-6.18Z" />
         </g>
-      </svg> </div>
-    <script>
-      var scrollpos = window.scrollY; // window scroll position
-      var wh = document.body.scrollHeight; // as soon as element touches bottom with offset event starts
-      var letterL = document.querySelector("#L");
-      var letterE = document.querySelector("#E"); 
-      var letterT = document.querySelector("#T"); 
-      var letterU = document.querySelector("#U"); 
-      var letterS = document.querySelector("#S");
-      var letterC = document.querySelector("#C");
-      var letterO = document.querySelector("#O");
-      var letterN_1 = document.querySelector("#N_1");
-      var letterN_2 = document.querySelector("#N_2");
-      var letterE_2 = document.querySelector("#E_2");
-      var letterC_2 = document.querySelector("#C_2");
-      var letterT_2 = document.querySelector("#T_2");
-      var letterY = document.querySelector("#Y");
-      var letterO_2 = document.querySelector("#O_2");
-      var letterU_2 = document.querySelector("#U_2");
-      var letterT_3 = document.querySelector("#T_3");
-      var letterO_3 = document.querySelector("#O_3");
-      var letterN_3 = document.querySelector("#N_3");
-      var letterE_3 = document.querySelector("#E_3");
-      var letterW = document.querySelector("#W");
-      var letterC_3 = document.querySelector("#C_3");
-      var letterU_3 = document.querySelector("#U_3");
-      var letterS_2 = document.querySelector("#S_2");
-      var letterT_4 = document.querySelector("#T_4");
-      var letterO_4 = document.querySelector("#O_4");
-      var letterM = document.querySelector("#M");
-      var letterE_4 = document.querySelector("#E_4");
-      var letterR = document.querySelector("#R");
-      var letterS_3 = document.querySelector("#S_3");
-      //the line svgzzz
-      var lineL = document.querySelector("#lineL");
-      var lineE = document.querySelector("#lineE"); 
-      var lineT = document.querySelector("#lineT"); 
-      var lineU = document.querySelector("#lineU"); 
-      var lineS = document.querySelector("#lineS");
-      var lineC = document.querySelector("#lineC");
-      var lineO = document.querySelector("#lineO");
-      var lineN_1 = document.querySelector("#lineN_1");
-      var lineN_2 = document.querySelector("#lineN_2");
-      var lineE_2 = document.querySelector("#lineE_2");
-      var lineC_2 = document.querySelector("#lineC_2");
-      var lineT_2 = document.querySelector("#lineT_2");
-      var lineY = document.querySelector("#lineY");
-      var lineO_2 = document.querySelector("#lineO_2");
-      var lineU_2 = document.querySelector("#lineU_2");
-      var lineT_3 = document.querySelector("#lineT_3");
-      var lineO_3 = document.querySelector("#lineO_3");
-      var lineN_3 = document.querySelector("#lineN_3");
-      var lineE_3 = document.querySelector("#lineE_3");
-      var lineW = document.querySelector("#lineW");
-      var lineC_3 = document.querySelector("#lineC_3");
-      var lineU_3 = document.querySelector("#lineU_3");
-      var lineS_2 = document.querySelector("#lineS_2");
-      var lineT_4 = document.querySelector("#lineT_4");
-      var lineO_4 = document.querySelector("#lineO_4");
-      var lineM = document.querySelector("#lineM");
-      var lineE_4 = document.querySelector("#lineE_4");
-      var lineR = document.querySelector("#lineR");
-      var lineEnding = document.querySelector("#lineEnding");
-      //svg fade in
-      var manager = document.querySelector("#managerAni");
-      var ads = document.querySelector("#adsAni");
-      var managerLetters = document.querySelector("#managerAniLetters");
-      var adsLetters = document.querySelector("#adsAniLetters");
-
-      const SearchBar = document.getElementById("SearchBar");
-      const searchType = SearchBar.offsetTop;
-      const adsSVG = document.getElementById("googleAds");
-      const adsFadeIn = adsSVG.offsetTop;
-      const managerSVG = document.getElementById("googleManager");
-      const managerFadeIn = managerSVG.offsetTop;
-      console.log(managerFadeIn);
-      console.log(adsFadeIn);
-      console.log(searchType);
-      window.addEventListener('scroll', function () {
-        if (scrollpos > (searchType - wh)) {
-          //console.log("is running");
-          letterL.classList.add("L");
-          letterE.classList.add("E");
-          letterT.classList.add("T");
-          letterU.classList.add("U");
-          letterS.classList.add("S");
-          letterC.classList.add("C");
-          letterO.classList.add("O");
-          letterN_1.classList.add("N_1");
-          letterN_2.classList.add("N_2");
-          letterE_2.classList.add("E_2");
-          letterC_2.classList.add("C_2");
-          letterT_2.classList.add("T_2");
-          letterY.classList.add("Y");
-          letterO_2.classList.add("O_2");
-          letterU_2.classList.add("U_2");
-          letterT_3.classList.add("T_3");
-          letterO_3.classList.add("O_3");
-          letterN_3.classList.add("N_3");
-          letterE_3.classList.add("E_3");
-          letterW.classList.add("W");
-          letterC_3.classList.add("C_3");
-          letterU_3.classList.add("U_3");
-          letterS_2.classList.add("S_2");
-          letterT_4.classList.add("T_4");
-          letterO_4.classList.add("O_4");
-          letterM.classList.add("M");
-          letterE_4.classList.add("E_4");
-          letterR.classList.add("R");
-          letterS_3.classList.add("S_3");
-          //console.log(L);
-        }
-        if (scrollpos > (searchType - wh)) {
-          lineL.classList.add("lineL");
-          lineE.classList.add("lineE");
-          lineT.classList.add("lineT");
-          lineU.classList.add("lineU");
-          lineS.classList.add("lineS");
-          lineC.classList.add("lineC");
-          lineO.classList.add("lineO");
-          lineN_1.classList.add("lineN_1");
-          lineN_2.classList.add("lineN_2");
-          lineE_2.classList.add("lineE_2");
-          lineC_2.classList.add("lineC_2");
-          lineT_2.classList.add("lineT_2");
-          lineY.classList.add("lineY");
-          lineO_2.classList.add("lineO_2");
-          lineU_2.classList.add("lineU_2");
-          lineT_3.classList.add("lineT_3");
-          lineO_3.classList.add("lineO_3");
-          lineN_3.classList.add("lineN_3");
-          lineE_3.classList.add("lineE_3");
-          lineW.classList.add("lineW");
-          lineC_3.classList.add("lineC_3");
-          lineU_3.classList.add("lineU_3");
-          lineS_2.classList.add("lineS_2");
-          lineT_4.classList.add("lineT_4");
-          lineO_4.classList.add("lineO_4");
-          lineM.classList.add("lineM");
-          lineE_4.classList.add("lineE_4");
-          lineR.classList.add("lineR");
-          lineEnding.classList.add("lineEnding");
-        }
-        if (scrollpos > (adsFadeIn - wh)) {
-          manager.classList.add("managerFade");
-          document.getElementById("managerAni").style.opacity = 1;
-          ads.classList.add("adsFade");
-          document.getElementById("adsAni").style.opacity = 1;
-          managerLetters.classList.add("managerTextFade");
-          document.getElementById("managerAniLetters").style.opacity = 1;
-          adsLetters.classList.add("adsTextFade");
-          document.getElementById("adsAniLetters").style.opacity = 1;
-        }
-      });
-    </script>
+      </svg>
+    </div>
     <div class="mainText">
       <p style="font-size: 3vw;margin-left:10%;margin-right: 10%;">
         We are just a couple of guys being dudes, ya know... swag.We are just a couple of guys being dudes, ya know...
@@ -469,6 +324,8 @@
     <!-- Animations GSAP -->
     <script>
       test();
+      type();
+      logos();
     </script>
     <!--Footer does the footer things
   <footer>
