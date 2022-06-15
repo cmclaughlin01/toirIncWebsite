@@ -523,11 +523,12 @@ img {
 	width: 100%;
     /* height: 25vw; */
     max-width: max-content;
-	/* background-color: yellow; */
-	/* border-radius: 10px; */
+	background-color: #f2f2f2;
+	border-radius: 10px;
 	/*box-shadow: 0 10px 20px 0 rgba(#999, .25);*/
 	padding: .75rem;
     float: left;
+    
 }
 
 .card_heading small{
@@ -540,7 +541,9 @@ img {
 .card_form {
 	padding: 2rem 1rem 0;
 }
-
+.card .submitButton{
+    text-align: center;
+}
 .input {
 	display: flex;
 	flex-direction: column-reverse;
@@ -596,3 +599,5 @@ img {
 textarea{
     resize: none;
 }
+
+

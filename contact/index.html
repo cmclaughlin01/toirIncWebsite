@@ -34,7 +34,7 @@
   </script>
 </head>
 
-<body class="scroll">
+<body class="scroll" style="background-image: url(../img/San\ Farancisco\ skyline\ GS_SVG.svg); background-repeat: no-repeat; background-size: cover; background-position: 0% -10%; ">
 
   <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
     <div><a style=" padding-top: 1%; padding-right:5%; font-size: 1.25vw; color: black;" href="javascript:void(0)"
@@ -122,7 +122,7 @@
     <h1> Contact Us</h1>
     <h2> Curious about something? Ask us a question!</h2>
   </div>
-  <div style="width: 25vw;">
+  <div style="width: 100vw; justify-content: center; transform: translateX(37.5vw);" >
     <div class="card">
         <div>
           <form method="post" action="../emailRedirect/index.php">
@@ -138,18 +138,18 @@
               <input name="num" class="input_field" required   >
               <label class="input_label">Moblie Number</label>
             </div>
-            <div class="input">
+            <div class="input" >
               <textarea name="comments" class="input_field" style="height:10vw; width:25vw;" required></textarea>
               <p class="inputText">Comments</p>
             </div>
             <br>
-            <input id="submit" name="submit" class="submitButton" type="submit" value="Send us a message!">
+            <span style="text-align: center;">
+              <input id="submit" name="submit" class="submitButton" type="submit" value="Send us a message!">
+            </span>
           </form>
         </div>
     </div>
   </div>
-
-
 </body>
 
 </html>
