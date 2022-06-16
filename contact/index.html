@@ -34,9 +34,9 @@
     gtag('config', 'UA-229619707-1');
   </script>
 </head>
+<!-- style="background-image: url(../img/sfSkylineBlack.svg); background-repeat: no-repeat; background-size: cover; height: 99vh; overflow-y: hidden;" -->
 
-<body class="scroll" style="background-image: url(../img/San\ Farancisco\ skyline\ GS_SVG.svg); background-repeat: no-repeat; background-size: cover; height: 99vh; overflow-y: hidden;">
-
+<body class="scroll" style="overflow: hidden; height:99vh">
   <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
     <div><a style=" padding-top: 1%; padding-right:5%; font-size: 1.25vw; color: black;" href="javascript:void(0)"
         class="closebtn" onclick="closeNav()">
@@ -124,61 +124,66 @@
     <h2> Curious about something? Ask us a question!</h2>
   </div>
   <!-- <div style="width: 100vw; justify-content: center; transform: translateX(37.5vw);" > -->
-    <div class="card">
-        <div>
-          <form method="post" action="../emailRedirect/index.php">
-            <div style="float: left; width: 16.66vw; padding-left: 1vw; padding-top: 1vw;">
-              <div class="input">
-                <input name="name" class="input_field" required>
-                <label class="input_label">Full Name</label>
-              </div>
-              <div class="input">
-                <input id="email" name="email" class="input_field" required>
-                <label class="input_label">Email</label>
-              </div>
-              <div class="input">
-                <input name="num" class="input_field" required   >
-                <label class="input_label">Moblie Number</label>
-              </div>
-            </div>
-            <div style="float: left; width: 16.66vw; padding-left: 0.75rem; margin-left: 1vw; padding-top: 0.95rem;">
-              <div class="input" >
-                <textarea name="comments" class="input_field" style="height: 25vh;" required></textarea>
-                <label class="inputText input_label">Comments</label>
-              </div>
-              <br>
-              <span style="text-align: center;">
-                <input id="submit" name="submit" class="submitButton" type="submit" value="Send us a message!">
-              </span>
-            </div>
-            <div style="float:right; width: 16.66vw; padding-left: 1rem;" class="card-SideText">
-              <div style="height: 4vw;">
-
-              </div>
-              <div>
-                <p style="font-size: 1.5vw;">CONTACT</p>
-                <p>contact@toirinc.com</p>
-                <br>
-              </div>
-              <div>
-                <p style="font-size: 1.5vw;">BASED IN</p>
-                <p>San Jose,</p>
-                <p>California</p>
-              </div>
-              <div style="height: 5vw;">
-
-              </div>
-              <div>
-                <span style="margin-top: 2vw;">
-                  <a href="#" class="fa fa-facebook" style="font-size: 3vw;"></a>
-                  <a href="#" class="fa fa-google" style="font-size: 3vw;"></a>
-                  <a href="#" class="fa fa-linkedin" style="font-size: 3vw;"></a>
-                </span>
-              </div>
-            </div>
-          </form>
+  <div class="card">
+    <div>
+      <form method="post" action="../emailRedirect/index.php">
+        <div style="float: left; width: 33%; padding-left: 1vw; padding-top: 1vw;">
+          <div class="input">
+            <input name="name" class="input_field" required>
+            <label class="input_label">Full Name</label>
+          </div>
+          <div class="input">
+            <input id="email" name="email" class="input_field" required>
+            <label class="input_label">Email</label>
+          </div>
+          <div class="input">
+            <input name="num" class="input_field" required>
+            <label class="input_label">Moblie Number</label>
+          </div>
         </div>
+        <div style="float: left; width: 33%; padding-left: 0.75rem; margin-left: 1vw; padding-top: 0.95rem;">
+          <div class="input">
+            <textarea name="comments" class="input_field" style="height: 25vh;" required></textarea>
+            <label class="inputText input_label">Comments</label>
+          </div>
+          <br>
+          <span style="text-align: right; float: right;">
+            <input id="submit" name="submit" class="submitButton" type="submit" value="Send us a message!">
+          </span>
+        </div>
+        <div style="float:right; padding-left: 1rem;" class="card-SideText">
+          <div style="height: 4vw;">
+
+          </div>
+          <div>
+            <p style="font-size: 1.5vw;">CONTACT</p>
+            <p><i>contact@toirinc.com</i></p>
+            <br>
+          </div>
+          <div>
+            <p style="font-size: 1.5vw;">BASED IN</p>
+            <p><i>San Jose,</i></p>
+            <p><i>California</i></p>
+          </div>
+          <div style="height: 5vw;">
+
+          </div>
+          <div>
+            <span style="margin-top: 2vw; margin-right: 0.75rem; padding-right: 1vw;">
+              <a href="#" class="fa fa-facebook" style="font-size: 2vw;"></a>
+              <a href="#" class="fa fa-google" style="font-size: 2vw;"></a>
+              <a href="#" class="fa fa-linkedin" style="font-size: 2vw;"></a>
+            </span>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
+  <div style="width: 100vw;">
+    <img style="width: 100vw;" src="../img/sfSkylineBlack.svg">
+    <img style="width: 100vw;" src="../img/sfSkylineDarkGrey.svg">
+    <img style="width: 100vw;" src="../img/sfSkylineGray.svg">
+  </div>
   <!-- </div> -->
 </body>
 
