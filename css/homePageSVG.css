@@ -28,6 +28,7 @@
 }
 
 .lineEnding {
+	stroke:#757575;
 	visibility: hidden;
 	animation: condemned_blink_effect .8s linear infinite;
 }

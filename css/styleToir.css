@@ -517,6 +517,8 @@ img {
     100% { background-position: 0 0; }
 }
 
+/* Form Stuff */
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -600,4 +602,16 @@ textarea{
     resize: none;
 }
 
+/* SVG stuff */
 
+.searchBarPopdown {
+    width: 62.4vw;
+    transform: translateY(-3.9vw);
+}
+
+.googleSearchBar {
+    display:inline-block; 
+    position: relative; 
+    width: 70vw; 
+    transform: translateX(14.6vw);
+}
