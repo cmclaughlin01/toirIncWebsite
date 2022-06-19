@@ -16,6 +16,7 @@ function type(){
     var popdownTl = gsap.timeline();
     popdownTl.from('.popDown', { scaleY:0, opacity:0})
              .from('.searchBarLine', {opacity: 0})
+             .from('.popDown2', { scaleY:0, opacity:0})
     
     tl.add(textTl)
       .add(popdownTl);
@@ -29,7 +30,7 @@ function type(){
     ScrollTrigger.create({
         animation:popdownTl,
         trigger: "#SearchBar",
-        start: "top 10%",
+        start: "top 15%",
         end: "+=200",
         scrub: 1,
         snap: {
@@ -78,4 +79,8 @@ function logos(){
             trigger: '.marketingAni',
             start: 'bottom bottom'
         }, opacity:0, duration:1.5});
+}
+
+function contact(){
+    gsap.from('.contactBackground', {duration:1, ease: "power2", y:1000, stagger:-0.5})
 }

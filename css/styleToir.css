@@ -2,6 +2,8 @@ html,
 body {
     background-color: #e2e2e2;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .image {
@@ -62,6 +64,12 @@ img {
 .contactTitle h2{
     font-size: 2vw;
     margin: 0;
+}
+
+.contactBackground{
+    width: 100vw; 
+    position: fixed; 
+    padding-top: 10%;
 }
 
 /* Top Bar */
@@ -524,16 +532,18 @@ img {
 
 .card {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
     margin: auto;
     margin-top: 2vw;
 	width: 45%;
-    /* height: 25vw; */
+    height: 20rem;
 	background-color: #f2f2f2;
 	border-radius: 10px;
 	/*box-shadow: 0 10px 20px 0 rgba(#999, .25);*/
 	padding: .75rem;
     /* float: left; */
+    position: sticky;
+    z-index: 1;
 }
 
 .card_heading small{
@@ -553,12 +563,7 @@ img {
 	position: relative;
 	padding-top: 1.5rem;
 }
-.input + .input{
-    margin-top: 1.5rem;
-}
-.inputText{
-    color: black;
-}
+
 .input_label {
 	color: black;
 	position: absolute;
@@ -574,6 +579,7 @@ img {
 	font: inherit;
 	font-size: 1.125rem;
 	padding: .25rem 0;
+    box-sizing: border-box;
 }
 
 .input_field:focus{
@@ -601,6 +607,18 @@ img {
 
 textarea{
     resize: none;
+    height: 100%;
+}
+
+.formInput {
+    display: flex; 
+    justify-content: space-between;
+    flex-flow: column wrap; 
+    height: 15rem;
+}
+
+.formInput div {
+    margin: 0.5vw;
 }
 
 /* SVG stuff */
