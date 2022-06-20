@@ -8,15 +8,23 @@ function type(){
     var tl = gsap.timeline();
     
     var textTl = gsap.timeline({onComplete: () => {document.getElementById('lineEnding').classList.toggle('lineEnding')}});
-    textTl.to('.cls-6', {duration:0, stagger:0.15, fill: "#757575"})
-          .to('.cls-2', {duration:0, stagger:0.15, stroke: "#757575"}, "<")
+    textTl.to('.cls-6', {duration:0, stagger:0.15, fill: "#000000"})
+          .to('.cls-2', {duration:0, stagger:0.15, stroke: "#000000"}, "<")
           .to('.cls-2', {delay:0.15, duration:0, stagger:0.15, stroke: "none"}, "<")
-          .to('#lineEnding', {duration:0, stroke: "#757575"});
+          .to('#lineEnding', {duration:0, stroke: "#000000"});
 
     var popdownTl = gsap.timeline();
     popdownTl.from('.popDown', { scaleY:0, opacity:0})
-             .from('.searchBarLine', {opacity: 0})
+             .from('.popDownText', {opacity:0},"<90%")
+             .from('.searchBarLine', {opacity: 0},"<")
              .from('.popDown2', { scaleY:0, opacity:0})
+             .from('.popDownText2', {opacity:0},"<90%")
+             .from('.popDown3', { scaleY:0, opacity:0})
+             .from('.popDownText3', {opacity:0},"<90%")
+             .from('.popDown4', { scaleY:0, opacity:0})
+             .from('.popDownText4', {opacity:0},"<90%")
+             
+             
     
     tl.add(textTl)
       .add(popdownTl);
@@ -31,10 +39,10 @@ function type(){
         animation:popdownTl,
         trigger: "#SearchBar",
         start: "top 15%",
-        end: "+=200",
+        end: "+=1000",
         scrub: 1,
         snap: {
-            snapTo:1,
+            snapTo:0.25,
             duration:0.5,
             delay:0
         },
@@ -52,8 +60,19 @@ function logos(){
             // markers: true,
         },
         scale: 3,
-        transformOrigin: "bottom"
-    })
+        transformOrigin: "bottom",
+    });
+    gsap.to('.marketingAni', {
+        scrollTrigger: {
+            trigger: '.marketingAni',
+            start: 'top 10%',
+            end: 'bottom 70%',
+            scrub: 0.5,
+            // markers: true,
+        },
+        x:-500,
+        ease:"power1.inOut"
+    });
     gsap.from('.adsAni', {
         scrollTrigger: {
             trigger: '.adsAni',
@@ -79,6 +98,18 @@ function logos(){
             trigger: '.marketingAni',
             start: 'bottom bottom'
         }, opacity:0, duration:1.5});
+    // var tl = gsap.timeline();
+    // tl.to('.marketingText', {opacity:0},"<")
+    //   .to('.managerAni', {opacity:0},"<")
+    //   .to('.managerText', {opacity:0},"<")
+    //   .to('.adsAni', {opacity:0},"<")
+    //   .to('.adsText', {opacity:0},"<")
+
+    // ScrollTrigger.create({
+    //     animation: tl,
+    //     trigger: '.managerBlurb'
+    // });
+    
 }
 
 function contact(){
