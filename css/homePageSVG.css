@@ -33,6 +33,12 @@
 	animation: condemned_blink_effect .8s linear infinite;
 }
 
+.marketingSvgDiv{
+	display: flex;
+	justify-content: center;
+	height: 0vh;
+}
+
 @keyframes condemned_blink_effect {
 	0% {
 		visibility: hidden;
