@@ -84,3 +84,83 @@ function logos(){
 function contact(){
     gsap.from('.contactBackground', {duration:1, ease: "power2", y:1000, stagger:-0.5})
 }
+
+function adsPhone(){
+    gsap.from('.phoneImg', {
+        scrollTrigger: {
+            trigger: '#graphAni',
+            start: 'top 40%',
+            end: 'bottom 100%',
+            scrub: 0.5,
+            //markers: true,
+        },
+        ease: "power1",
+        y:300,
+        scale:1.5,
+        transformOrigin: "bottom"
+    })
+}
+
+function phoneText(){
+    gsap.to('.phoneText1', {
+        scrollTrigger: {
+            trigger: '.phoneText1',
+            start: 'top 40%',
+            end: 'bottom 50%',
+            scrub: 0.5,
+            markers: true,
+        },
+        color: "#333",  
+    })
+    gsap.to('.phoneText2', {
+        scrollTrigger: {
+            trigger: '.phoneText2',
+            start: 'top 50%',
+            end: 'bottom 80%',
+            scrub: 0.5,
+            markers: true,
+        },
+        color: "#333",  
+    })
+    gsap.to('.phoneText3', {
+        scrollTrigger: {
+            trigger: '.phoneText3',
+            start: 'top 70%',
+            end: 'bottom 99%',
+            scrub: 0.5,
+            //markers: true,
+        },
+        color: "#333",  
+    })
+    gsap.to('.phoneText1', {
+        scrollTrigger: {
+            trigger: '.phoneText1',
+            start: 'top 30%',
+            end: 'bottom 60%',
+            scrub: 0.5,
+            //markers: true,
+        },
+        color: "white",  
+    })
+    gsap.to('.phoneText2', {
+        scrollTrigger: {
+            trigger: '.phoneText2',
+            start: 'top 30%',
+            end: 'bottom 60%',
+            scrub: 0.5,
+            //markers: true,
+        },
+        color: "white",  
+    })
+    gsap.to('.phoneText3', {
+        scrollTrigger: {
+            trigger: '.phoneText3',
+            start: 'top 30%',
+            end: 'bottom 60%',
+            scrub: 0.5,
+            //markers: true,
+        },
+        color: "white",  
+    })
+
+}
