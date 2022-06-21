@@ -27,16 +27,16 @@
 	/*background-color: yellowgreen;*/
 }
 
-.lineEnding {
-	stroke:#757575;
-	visibility: hidden;
-	animation: condemned_blink_effect .8s linear infinite;
-}
-
 .marketingSvgDiv{
 	display: flex;
 	justify-content: center;
 	height: 0vh;
+}
+
+.lineEnding {
+	stroke:#757575;
+	visibility: hidden;
+	animation: condemned_blink_effect .8s linear infinite;
 }
 
 @keyframes condemned_blink_effect {

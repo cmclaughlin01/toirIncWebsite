@@ -43,16 +43,38 @@ function type(){
 }
 
 function logos(){
-    gsap.from('.marketingAni', {
-        scrollTrigger: {
-            trigger: '.marketingAni',
-            start: 'top 10%',
-            end: 'bottom 70%',
-            scrub: 0.5,
-            // markers: true,
-        },
-        scale: 3,
-        transformOrigin: "bottom"
+    var tl = gsap.timeline();
+
+    var marketingTl = gsap.timeline();
+
+    marketingTl.from('.marketingAni', {scale: 3, transformOrigin: "bottom",})
+               .to('.marketingAni', {ease:"power1.inOut", xPercent:-100, x:0 }, "<");
+    
+    ScrollTrigger.create({
+        animation:marketingTl,
+        trigger:'.marketingAni',
+        start: "top 10%",
+        end: "bottom 80%",
+        scrub: 0.5,
+        markers: true
+    })
+
+    ScrollTrigger.create({
+        animation: gsap.from('.firstText',{opacity: 0,x: 100,},"<"),
+        trigger: '.firstText',
+        start: 'center 50%',
+        end: '+=200',
+        pin: '.firstText',
+        scrub: true
+        
+    })
+    ScrollTrigger.create({
+        trigger: '.firstText',
+        start: 'center 55%',
+        end: '+=250',
+        pin: '.marketingAni',
+        scrub: true
+        
     })
     gsap.from('.adsAni', {
         scrollTrigger: {
