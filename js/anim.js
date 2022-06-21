@@ -140,11 +140,11 @@ function phoneText(){
     ScrollTrigger.create({
         animation:phonetl,
         trigger: '#graphSect',
-        start: 'top 8.5%',
+        start: 'top 8%',
         end: 'bottom top',
         scrub: true,
         pin: true,
-        markers: true
+        //markers: true
     });
 }
 
@@ -162,4 +162,44 @@ function adsPhone(){
         scale:1.5,
         transformOrigin: "bottom"
     })
+
+    // gsap.to('.image2',{
+    //     scrollTrigger: {
+    //         trigger: '.image2',
+    //         start: 'top 50%',
+    //         end: 'bottom 70%',
+    //         scrub: true,
+    //         markers: true,
+    //     },
+    //     rotateY: 0,
+    //     transformOrigin: '50% 50%'
+    // })
+
+    // gsap.to('.image3',{
+    //     scrollTrigger: {
+    //         trigger: '.image3',
+    //         start: 'top 50%',
+    //         end: 'bottom 70%',
+    //         scrub: true,
+    //         markers: true,
+    //     },
+    //     rotateY: 90,
+    //     transformOrigin: '50% 50%'
+    // })    
+}
+
+function phoneSideImg(){
+    var phonetl = gsap.timeline();
+
+    phonetl.to('.image3', {rotateY: 90, transformOrigin: '50% 50%'})
+      .to('.image2', {rotateY: 0, transformOrigin: '50% 50%'},"-=50%")
+
+    ScrollTrigger.create({
+        animation: phonetl,
+        trigger: '.image2',
+        start: 'top top',
+        end: 'bottom 10%',
+        scrub: true,
+        markers: true
+    });
 }
