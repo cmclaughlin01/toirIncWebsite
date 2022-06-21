@@ -63,7 +63,7 @@ function logos(){
         start: "top 10%",
         end: "bottom 80%",
         scrub: 0.5,
-        markers: true
+        // markers: true
     })
 
     ScrollTrigger.create({
@@ -125,4 +125,41 @@ function logos(){
 
 function contact(){
     gsap.from('.contactBackground', {duration:1, ease: "power2", y:1000, stagger:-0.5})
+}
+
+function phoneText(){
+    var phonetl = gsap.timeline();
+
+    phonetl.to('.phoneText1', {color:'#333'})
+      .to('.phoneText1', {color:'#fff'})
+      .to('.phoneText2', {color:'#333'},'<')
+      .to('.phoneText2', {color:'#fff'})
+      .to('.phoneText3', {color:'#333'},'<')
+      .to('.phoneText3', {color:'#fff'});
+
+    ScrollTrigger.create({
+        animation:phonetl,
+        trigger: '#graphSect',
+        start: 'top 8.5%',
+        end: 'bottom top',
+        scrub: true,
+        pin: true,
+        markers: true
+    });
+}
+
+function adsPhone(){
+    gsap.from('.phoneImg', {
+        scrollTrigger: {
+            trigger: '#graphAni',
+            start: 'top 40%',
+            end: 'bottom 100%',
+            scrub: 0.5,
+            //markers: true,
+        },
+        ease: "power1",
+        y:300,
+        scale:1.5,
+        transformOrigin: "bottom"
+    })
 }
