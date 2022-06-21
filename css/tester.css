@@ -54,6 +54,7 @@
     width: 20%;
     border-radius: 5%;
     transform: rotateY(.25turn);
+    box-shadow: .5vw .5vw .25vw #333;
   }
   .image3 {
     position: absolute;
@@ -62,6 +63,7 @@
     width: 40%;
     border-radius: 5%;
     transform: translateZ(100px);
+    box-shadow: .5vw .5vw .25vw #333;
   }
 
 

@@ -161,31 +161,7 @@ function adsPhone(){
         y:300,
         scale:1.5,
         transformOrigin: "bottom"
-    })
-
-    // gsap.to('.image2',{
-    //     scrollTrigger: {
-    //         trigger: '.image2',
-    //         start: 'top 50%',
-    //         end: 'bottom 70%',
-    //         scrub: true,
-    //         markers: true,
-    //     },
-    //     rotateY: 0,
-    //     transformOrigin: '50% 50%'
-    // })
-
-    // gsap.to('.image3',{
-    //     scrollTrigger: {
-    //         trigger: '.image3',
-    //         start: 'top 50%',
-    //         end: 'bottom 70%',
-    //         scrub: true,
-    //         markers: true,
-    //     },
-    //     rotateY: 90,
-    //     transformOrigin: '50% 50%'
-    // })    
+    })  
 }
 
 function phoneSideImg(){
@@ -199,7 +175,22 @@ function phoneSideImg(){
         trigger: '.image2',
         start: 'top top',
         end: 'bottom 10%',
-        scrub: true,
-        markers: true
+        scrub: 2,
+        //markers: true
     });
+}
+
+function odometerRotate(){
+    gsap.from('.arrow', {
+        scrollTrigger: {
+            trigger: '#qualitySect',
+            start: 'top 8%',
+            end: 'bottom top',
+            scrub: 0.5,
+            pin: true,
+            markers: true,
+        },
+        rotation: 100,
+        transformOrigin: "bottom top"
+    })  
 }
