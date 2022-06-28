@@ -29,27 +29,12 @@ img {
     scrollbar-width: none;
 }
 
-/* Text */
-
-.justifyText {
-    text-align: justify;
-    font-size: 8.5vw;
-}
-
-.mainText p {
-    font-size: 3vw;
-    margin-left:10%;
-    margin-right: 10%;
-    font-family: aktiv-grotesk, sans-serif;
-    text-align: center;
-}
-
 .titleText {
     text-align: left;
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 700;
     font-size: 3vw;
-    color: #1f86a1;
+    color: #005152;
 }
 
 .contactTitle{
@@ -89,11 +74,11 @@ img {
     top: 0;
     right: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
     /*background: rgba(255,255,255,0.1);*/
     height: 8vh;
     font-size: 1vw; 
-    background-color: #f2f2f2;
+    background-color: transparent;
     display: flex;
     justify-content: center;
 }
@@ -108,7 +93,7 @@ img {
 
 .menuli a {
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: 0.5s;
     transition-property: all;
@@ -127,7 +112,7 @@ img {
 }
 
 .sides a:hover{
-    color: #1f86a1;
+    color: #005152;
     transition: 0.5s;
     transition-property: all;
     transition-duration: 0.5s;
@@ -150,7 +135,7 @@ img {
 }
 
 .center a:hover {
-    color: #1f86a1;
+    color: #005152;
     transition: 0.5s;
     transition-property: all;
     transition-duration: 0.5s;
@@ -213,7 +198,7 @@ img {
 .form .textBox:focus + p{
     color: #fff;
     transition: all 0.5s;
-    background-color: #1f86a1;
+    background-color: #005152;
 }
 
 /* .form p{
@@ -252,11 +237,11 @@ img {
 }
 
 .textBox{
-    border: 0.1vw solid #1f86a1;
+    border: 0.1vw solid #005152;
 }
 
 .textBox:focus{
-    color: #1f86a1;
+    color: #005152;
     background-color: #efefef;
 }
 
@@ -644,10 +629,9 @@ textarea{
 }
 
 .googleSearchBar {
-    display:inline-block; 
-    position: relative; 
-    width: 70vw; 
-    transform: translateX(14.6vw);
+    width: 60%; 
+    margin: auto;
+    transform: translateY(3vw);
 }
 .fa {
     text-align: center;
@@ -673,41 +657,3 @@ textarea{
     width: 20%;
 } */
 
-#graphSect, #qualitySect {
-    width: 100vw;
-    height: 95vh;
-}
-
-#graphText, #qualityText{
-    width: 50%;
-    float: left;
-    height: 100%;
-}
-
-#graphAni, #qualityAni{
-    width: 50%;
-    float: right;
-    height: 100%;
-}
-
-#graphText, #qualityAni{
-    background-color: transparent;
-}
-
-#graphAni, #qualityText{
-    background-color: #666;
-}
-
-/* #graphAni img{
-    width: 35%;
-    margin-left: 32.5%;
-    margin-top: 10%;
-} */
-
-.phoneText{
-    color: white;
-    font-size: 2.5vw;
-    text-align: justify;
-    white-space:normal;
-    padding: 2vw;
-}

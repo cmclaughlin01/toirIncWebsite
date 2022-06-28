@@ -1,3 +1,16 @@
+function loadingScreen(){
+  document.getElementById("onStart").style.height = "100%";
+  console.log("is loading");
+}
+function onStartUp(){
+  console.log("it get run ");
+  document.getElementById("onStart").style.height = "0%";
+}
+function loading(){
+  console.log("am working ");
+  setTimeout(onStartUp, 5000);
+}
+
 function openNav() {
   document.getElementById("mySidenav").style.height = "100%";
 

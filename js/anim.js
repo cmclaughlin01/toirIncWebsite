@@ -1,9 +1,83 @@
 
 function test(){
-    gsap.from('.justifyText', {opacity:0, duration:1, y:50});
-    // gsap.from('g', {duration:0, stagger:0.2, attr: { fill: "#fff"},});
+    gsap.to('.mainText', {
+        scrollTrigger: {
+            trigger: '.pursuitHero',
+            start: 'top 30%',
+            end: 'bottom 35%',
+            scrub: 2,
+            //markers: true,
+        },
+        opacity: 0
+    })
+    gsap.to('.daIMAC',{
+        scrollTrigger:{
+            trigger: '.daIMAC',
+            start: 'top 28%',
+            end: 'top 25%',
+            endTrigger: '#SearchBar',
+            scrub: true,
+            pin: '.daIMAC',
+            markers: true
+        }
+    })  
 };
+function test2(){
+    gsap.to('.sideKickText', {
+        scrollTrigger: {
+            trigger: '.pursuitHero',
+            start: 'top 40%',
+            end: 'bottom 45%',
+            scrub: 2,
+            //markers: true,
+        },
+        opacity: 0
+    })  
+};
+function daMac(){
+    var t1 = gsap.timeline();
+    var t2 = gsap.timeline();
 
+    t1.to('.heroIMAC', {scale: 0.6,y:0,yPercent: '-30'}, 'start')
+      .to('#screen',{scale: 0.6,y:0,yPercent: '-30'}, 'start')
+      .to('.adsAni', {scale: 0.8}, 'start')
+      .to('.adsText', {scale: 0.8}, 'start')
+      .to('.marketingAni', {scale: 0.8}, 'start')
+      .to('.marketingText', {scale: 0.8}, 'start')
+      .to('.managerAni', {scale: 0.8}, 'start')
+      .to('.managerText', {scale: 0.8}, 'start')
+      .to('.googleSearchBar', {scale: 0.8}, 'start')
+      
+    t2.to('.daIMAC', {x:0,xPercent: '-20', duration: 2,})
+    .to('.content-one-text',{opacity: 1,}, '<70%')
+
+
+    ScrollTrigger.create({
+        animation: t1,
+        trigger: ".heroIMAC",
+        start: "top 80%",
+        end: "top 25%",
+        scrub: 1,
+        //pin: '.heroIMAC',
+        //markers: true
+    });
+
+    ScrollTrigger.create({
+        animation: t2,
+        trigger: "#SearchBar",
+        start: "top 60%",
+        end: "top 25%",
+        //endTrigger: '',
+        scrub: 1,
+        //pin: '#daIMAC',
+        markers: true
+    });
+
+}
+
+function arrowz(){
+    gsap.from('.material-symbols-outlined', {scale: 1.3,repeat: -1,duration:1,yoyo:true,})
+}
 function type(){
     var tl = gsap.timeline();
     
@@ -13,102 +87,104 @@ function type(){
           .to('.cls-2', {delay:0.15, duration:0, stagger:0.15, stroke: "none"}, "<")
           .to('#lineEnding', {duration:0, stroke: "#000000"});
 
-    var popdownTl = gsap.timeline();
-    popdownTl.from('.popDown', { scaleY:0, opacity:0})
-             .from('.popDownText', {opacity:0},"<90%")
-             .from('.searchBarLine', {opacity: 0},"<")
-             .from('.popDown2', { scaleY:0, opacity:0})
-             .from('.popDownText2', {opacity:0},"<90%")
-             .from('.popDown3', { scaleY:0, opacity:0})
-             .from('.popDownText3', {opacity:0},"<90%")
-             .from('.popDown4', { scaleY:0, opacity:0})
-             .from('.popDownText4', {opacity:0},"<90%")
+    // var popdownTl = gsap.timeline();
+    // popdownTl.from('.popDown', { scaleY:0, opacity:0})
+    //          .from('.popDownText', {opacity:0},"<90%")
+    //          .from('.searchBarLine', {opacity: 0},"<")
+    //          .from('.popDown2', { scaleY:0, opacity:0})
+    //          .from('.popDownText2', {opacity:0},"<90%")
+    //          .from('.popDown3', { scaleY:0, opacity:0})
+    //          .from('.popDownText3', {opacity:0},"<90%")
+    //          .from('.popDown4', { scaleY:0, opacity:0})
+    //          .from('.popDownText4', {opacity:0},"<90%")
              
              
-    tl.add(textTl)
-      .add(popdownTl);
+    tl.add(textTl);
+      //.add(popdownTl);
 
 
     ScrollTrigger.create({
         animation: tl,
-        trigger: "#SearchBar"
+        trigger: "#SearchBar",
+        start: "top 60%",
+        //markers: true
     });
 
-    ScrollTrigger.create({
-        animation:popdownTl,
-        trigger: "#SearchBar",
-        start: "top 15%",
-        end: "+=1000",
-        scrub: 1,
-        snap: {
-            snapTo:0.25,
-            duration:0.5,
-            delay:0
-        },
-        pin: true,
-    });
+    // ScrollTrigger.create({
+    //     animation:popdownTl,
+    //     trigger: "#SearchBar",
+    //     start: "top 15%",
+    //     end: "+=1000",
+    //     scrub: 1,
+    //     snap: {
+    //         snapTo:0.25,
+    //         duration:0.5,
+    //         delay:0
+    //     },
+    //     pin: true,
+    // });
 }
 
-function logos(){
-    var tl = gsap.timeline();
+// function logos(){
+//     var tl = gsap.timeline();
 
-    var marketingTl = gsap.timeline();
+//     var marketingTl = gsap.timeline();
 
-    marketingTl.from('.marketingAni', {scale: 3, transformOrigin: "bottom",})
-               .to('.marketingAni', {ease:"power1.inOut", x:-500, }, "<");
+//     marketingTl.from('.marketingAni', {scale: 3, transformOrigin: "bottom",})
+//                .to('.marketingAni', {ease:"power1.inOut", x:-500, }, "<");
     
-    ScrollTrigger.create({
-        animation:marketingTl,
-        trigger:'.marketingAni',
-        start: "top 10%",
-        end: "bottom 80%",
-        scrub: 0.5,
-        // markers: true
-    })
+//     ScrollTrigger.create({
+//         animation:marketingTl,
+//         trigger:'.marketingAni',
+//         start: "top 10%",
+//         end: "bottom 80%",
+//         scrub: 0.5,
+//         // markers: true
+//     })
 
-    ScrollTrigger.create({
-        animation: gsap.from('.firstText',{opacity: 0,x: 100,},"<"),
-        trigger: '.firstText',
-        start: 'center 50%',
-        end: '+=200',
-        pin: '.firstText',
-        scrub: true
+//     ScrollTrigger.create({
+//         animation: gsap.from('.firstText',{opacity: 0,x: 100,},"<"),
+//         trigger: '.firstText',
+//         start: 'center 50%',
+//         end: '+=200',
+//         pin: '.firstText',
+//         scrub: true
         
-    })
-    ScrollTrigger.create({
-        trigger: '.firstText',
-        start: 'center 55%',
-        end: '+=250',
-        pin: '.marketingAni',
-        scrub: true
+//     })
+//     ScrollTrigger.create({
+//         trigger: '.firstText',
+//         start: 'center 55%',
+//         end: '+=250',
+//         pin: '.marketingAni',
+//         scrub: true
         
-    })
+//     })
 
-    gsap.from('.adsAni', {
-        scrollTrigger: {
-            trigger: '.adsAni',
-            start: 'bottom bottom'
-         },opacity:0, duration:1.5, x:100});
-    gsap.from('.managerAni', {
-        scrollTrigger: {
-            trigger: '.managerAni',
-            start: 'bottom bottom'
-         }, opacity:0, duration:1.5, x:-100});
-    gsap.from('.adsText', {
-        scrollTrigger: {
-            trigger: '.adsAni',
-            start: 'bottom bottom'
-        },opacity:0, duration:1.5, x:100});
-    gsap.from('.managerText', {
-        scrollTrigger: {   
-            trigger: '.managerAni',
-            start: 'bottom bottom'
-        }, opacity:0, duration:1.5, x:-100});
-    gsap.from('.marketingText', {
-        scrollTrigger: {   
-            trigger: '.marketingAni',
-            start: 'bottom bottom'
-        }, opacity:0, duration:1.5});
+//     gsap.from('.adsAni', {
+//         scrollTrigger: {
+//             trigger: '.adsAni',
+//             start: 'bottom bottom'
+//          },opacity:0, duration:1.5, x:100});
+//     gsap.from('.managerAni', {
+//         scrollTrigger: {
+//             trigger: '.managerAni',
+//             start: 'bottom bottom'
+//          }, opacity:0, duration:1.5, x:-100});
+//     gsap.from('.adsText', {
+//         scrollTrigger: {
+//             trigger: '.adsAni',
+//             start: 'bottom bottom'
+//         },opacity:0, duration:1.5, x:100});
+//     gsap.from('.managerText', {
+//         scrollTrigger: {   
+//             trigger: '.managerAni',
+//             start: 'bottom bottom'
+//         }, opacity:0, duration:1.5, x:-100});
+//     gsap.from('.marketingText', {
+//         scrollTrigger: {   
+//             trigger: '.marketingAni',
+//             start: 'bottom bottom'
+//         }, opacity:0, duration:1.5});
     // var tl = gsap.timeline();
     // tl.to('.marketingText', {opacity:0},"<")
     //   .to('.managerAni', {opacity:0},"<")
@@ -121,40 +197,40 @@ function logos(){
     //     trigger: '.managerBlurb'
     // });
     
-}
+//}
 
 function contact(){
     gsap.from('.contactBackground', {duration:1, ease: "power2", y:1000, stagger:-0.5})
 }
 
-function phoneText(){
-    var phonetl = gsap.timeline();
+// function phoneText(){
+//     var phonetl = gsap.timeline();
 
-    phonetl.to('.phoneText1', {color:'#333'})
-      .to('.phoneText1', {color:'#fff'})
-      .to('.phoneText2', {color:'#333'},'<')
-      .to('.phoneText2', {color:'#fff'})
-      .to('.phoneText3', {color:'#333'},'<')
-      .to('.phoneText3', {color:'#fff'});
+//     phonetl.to('.phoneText1', {color:'#333'})
+//       .to('.phoneText1', {color:'#fff'})
+//       .to('.phoneText2', {color:'#333'},'<')
+//       .to('.phoneText2', {color:'#fff'})
+//       .to('.phoneText3', {color:'#333'},'<')
+//       .to('.phoneText3', {color:'#fff'});
 
-    ScrollTrigger.create({
-        animation:phonetl,
-        trigger: '#graphSect',
-        start: 'top 8%',
-        end: 'bottom top',
-        scrub: true,
-        pin: true,
-        //markers: true
-    });
-}
+//     ScrollTrigger.create({
+//         animation:phonetl,
+//         trigger: '#graphSect',
+//         start: 'top 8%',
+//         end: 'bottom top',
+//         scrub: true,
+//         pin: true,
+//         //markers: true
+//     });
+// }
 
 function adsPhone(){
     gsap.from('.phoneImg', {
         scrollTrigger: {
             trigger: '#graphAni',
-            start: 'top 40%',
-            end: 'bottom 100%',
-            scrub: 0.5,
+            start: 'top 50%',
+            end: 'bottom 95%',
+            scrub: 2,
             //markers: true,
         },
         ease: "power1",
@@ -164,21 +240,21 @@ function adsPhone(){
     })  
 }
 
-function phoneSideImg(){
-    var phonetl = gsap.timeline();
+// function phoneSideImg(){
+//     var phonetl = gsap.timeline();
 
-    phonetl.to('.image3', {rotateY: 90, transformOrigin: '50% 50%'})
-      .to('.image2', {rotateY: 0, transformOrigin: '50% 50%'},"-=50%")
+//     phonetl.to('.image3', {rotateY: 90, transformOrigin: '50% 50%'})
+//       .to('.image2', {rotateY: 0, transformOrigin: '50% 50%'},"-=50%")
 
-    ScrollTrigger.create({
-        animation: phonetl,
-        trigger: '.image2',
-        start: 'top top',
-        end: 'bottom 10%',
-        scrub: 2,
-        //markers: true
-    });
-}
+//     ScrollTrigger.create({
+//         animation: phonetl,
+//         trigger: '.image2',
+//         start: 'top top',
+//         end: 'bottom 10%',
+//         scrub: 2,
+//         //markers: true
+//     });
+// }
 
 function odometerRotate(){
     gsap.from('.arrow', {
@@ -187,10 +263,24 @@ function odometerRotate(){
             start: 'top 8%',
             end: 'bottom top',
             scrub: 0.5,
-            pin: true,
-            markers: true,
+            //pin: true,
+            //markers: true,
         },
         rotation: 100,
         transformOrigin: "bottom top"
     })  
 }
+
+function textUpdate(){
+    gsap.to('#heroChange',{
+        text: "TOIR INC",
+    })
+}
+
+function textUpdate2(){
+    gsap.to('#heroChange',{
+        text: "PURSUIT",
+    })
+}
+
+
