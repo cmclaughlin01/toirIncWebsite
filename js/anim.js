@@ -257,18 +257,26 @@ function adsPhone(){
 // }
 
 function odometerRotate(){
-    gsap.from('.arrow', {
-        scrollTrigger: {
-            trigger: '#qualitySect',
-            start: 'top 8%',
-            end: 'bottom top',
-            scrub: 0.5,
-            //pin: true,
-            //markers: true,
-        },
+    var arrowtl = gsap.timeline();
+    arrowtl.from('.arrow', {
+        rotation: -100,
+        transformOrigin: "50% 68%",
+        ease: "power1.in"
+    }).to('.arrow', {
         rotation: 100,
-        transformOrigin: "bottom top"
-    })  
+        transformOrigin: "50% 68%",
+        ease: "power1.out"
+    }) 
+
+    ScrollTrigger.create({
+        animation:arrowtl,
+        trigger:'#qualitySect',
+        start:'top 50%',
+        // end: '+=300',
+        // pin: true,
+        // scrub:0.5,
+        markers: true,
+    })
 }
 
 function textUpdate(){
@@ -278,8 +286,10 @@ function textUpdate(){
 }
 
 function textUpdate2(){
+    const wordList = ["PURSUIT", "SIGHTS", "SEARCHES"];
+    
     gsap.to('#heroChange',{
-        text: "PURSUIT",
+        text: wordList[Math.floor(Math.random()*3)],
     })
 }
 
