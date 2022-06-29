@@ -168,16 +168,23 @@ function daStartCount(){
   var startCount = startTime * 103552;
   var str = String(startCount);
   counter.innerHTML = startCount;
-  //console.log("dis bish runnin");
+  // console.log("dis bish runnin");
   //console.log(typeof Number(counter.innerHTML));
+
+  // Money spent counter
+  // var startTime2 = (current.getTime()-100000000) * 21.598272138228941684665226781857;
+  // console.log(startTime2);
+
   return startCount;
 }
 
 function searchesToday(){
   var counter = document.getElementById("counter");
   var currentNum = Number(counter.innerHTML);
+  let current = new Date();
   //console.log(currentNum);
   counter.innerHTML = Math.ceil(currentNum + 1035.52);
+  document.getElementById("counter2").innerHTML = String(Math.floor((current.getTime()-1641157762000) * 21.598272138228941684665226781857).toLocaleString("en-US"));
   setTimeout(searchesToday, 10);
 }
 
