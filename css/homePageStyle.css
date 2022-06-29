@@ -376,3 +376,7 @@
     color: white;
     text-decoration: none;
 }
+
+#counter_169 p{
+    color: white !important;
+}

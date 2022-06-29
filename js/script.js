@@ -159,3 +159,25 @@ window.addEventListener('scroll', function(){
     }
 });
 */
+
+
+function daStartCount(){
+  let current = new Date();
+  var startTime = current.getHours() * 3600 + current.getMinutes() * 60 + current.getSeconds();
+  var counter = document.getElementById("counter");
+  var startCount = startTime * 103552;
+  var str = String(startCount);
+  counter.innerHTML = startCount;
+  //console.log("dis bish runnin");
+  //console.log(typeof Number(counter.innerHTML));
+  return startCount;
+}
+
+function searchesToday(){
+  var counter = document.getElementById("counter");
+  var currentNum = Number(counter.innerHTML);
+  //console.log(currentNum);
+  counter.innerHTML = Math.ceil(currentNum + 1035.52);
+  setTimeout(searchesToday, 10);
+}
+
