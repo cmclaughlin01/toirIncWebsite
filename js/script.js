@@ -184,7 +184,6 @@ function searchesToday(){
   let current = new Date();
   //console.log(currentNum);
   counter.innerHTML = Math.ceil(currentNum + 1035.52);
-  document.getElementById("counter2").innerHTML = String(Math.floor((current.getTime()-1641157762000) * 21.598272138228941684665226781857).toLocaleString("en-US"));
+  document.getElementById("counter2").innerHTML = String(Math.floor((current.getTime()-1640995199800) * 21.372399797057333).toLocaleString("en-US"));
   setTimeout(searchesToday, 10);
 }
-
