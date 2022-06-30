@@ -78,9 +78,13 @@ img {
     /*background: rgba(255,255,255,0.1);*/
     height: 8vh;
     font-size: 1vw; 
-    background-color: transparent;
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
+}
+
+.menuNavToggle {
+    background-color: transparent;
 }
 
 .menuli {
@@ -93,7 +97,7 @@ img {
 
 .menuli a {
     display: block;
-    color: white;
+    color: #000;
     text-decoration: none;
     transition: 0.5s;
     transition-property: all;
@@ -101,6 +105,10 @@ img {
     transition-delay: 0s;
     transition-timing-function: ease;
     transform: translateY(0%);
+}
+
+.menuliToggle a {
+    color: #fff;
 }
 
 /* Contact and Menu */
@@ -141,7 +149,7 @@ img {
     transition-duration: 0.5s;
     transition-delay: 0s;
     transition-timing-function: ease;
-    transform: translateY(-6.5vw);
+    transform: translateY(-6.3vw);
 
 }
 
