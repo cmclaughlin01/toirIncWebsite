@@ -388,6 +388,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
 }
 
 .dataRight, .dataLeft{
@@ -430,8 +431,9 @@
     width: 25%;
     position: absolute;
     z-index: 1;
-    right: 0;
-    /* top: 0; */
+    right: -2%;
+    /* transform: translateY(20.8vh); */
+    bottom: 0;
 }
 
 
@@ -439,4 +441,21 @@
     width: 25%;
     text-decoration-line: none;
     float: right;
+}
+
+.content-Three{
+    width: 100vw;
+    position: relative;
+}
+
+.content-Three-HeadText h1{
+    position:absolute;
+    font-size: 5vw;
+    margin: 0;
+}
+
+.cthreeCards span{
+    width: 50vw;
+    height: 95vh;
+    position: absolute;
 }
