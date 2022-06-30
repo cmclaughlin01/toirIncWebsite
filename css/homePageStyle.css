@@ -1,3 +1,7 @@
+* {
+    font-family: 'Archivo', sans-serif;
+}
+
 #onStart {
     list-style-type: none;
     margin: 0;
@@ -290,7 +294,7 @@
 #da_video{
     border-radius: 25px;
 }
-.content-One, .content-Two{
+.content-One{
     width: 100%;
     height: 100vh;
     /* background-color: #005152; */
@@ -301,7 +305,7 @@
 }
 .content-one-text{
     width: 40%;
-    height: 100%;
+    height: 85%;
     float: right;
     transform: translateY(15vh);
     margin: 10vh 4vw 0 9vw;
@@ -324,7 +328,7 @@
     font-size: 15vw;
     color: #f4f4f4;
     white-space: nowrap;
-    top: -20%;
+    top: -25%;
     left: 25%;
     margin: 0;
     
@@ -377,6 +381,62 @@
     text-decoration: none;
 }
 
-#counter_169 p{
-    color: white !important;
+.content-Two{
+    width: 100vw;
+    height: 50vh;
+    background-color: #005152;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.dataRight, .dataLeft{
+    position:relative;
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+.dataLeft{
+    float: left;
+    /* background-color: #f2f2f2; */
+}
+.dataLeft :nth-child(1){
+    font-size: 3vw;
+}
+.dataLeft :nth-child(2){
+    margin: 1vw;
+    font-size: 1vw;
+}
+
+.dataRight{
+    float: right;
+    /* background-color: #f2f2f2; */
+}
+.dataRight p{
+    margin: 1vw;
+    font-size: 1vw;
+}
+.dataRight :nth-child(1){
+    font-size: 3vw;
+}
+
+.content-Two img{
+    width: 25%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    /* top: 0; */
+}
+
+
+.homeButton img{
+    width: 25%;
+    text-decoration-line: none;
+    float: right;
 }
