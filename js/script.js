@@ -161,29 +161,28 @@ window.addEventListener('scroll', function(){
 */
 
 
-function daStartCount(){
-  let current = new Date();
-  var startTime = current.getHours() * 3600 + current.getMinutes() * 60 + current.getSeconds();
-  var counter = document.getElementById("counter");
-  var startCount = startTime * 103552;
-  var str = String(startCount);
-  counter.innerHTML = startCount;
-  // console.log("dis bish runnin");
-  //console.log(typeof Number(counter.innerHTML));
+// function daStartCount(){
+//   let current = new Date();
+//   var startTime = current.getHours() * 3600 + current.getMinutes() * 60 + current.getSeconds();
+//   var counter = document.getElementById("counter");
+//   var startCount = startTime * 103552;
+//   var str = String(startCount);
+//   counter.innerHTML = startCount;
+//   // console.log("dis bish runnin");
+//   //console.log(typeof Number(counter.innerHTML));
 
-  // Money spent counter
-  // var startTime2 = (current.getTime()-100000000) * 21.598272138228941684665226781857;
-  // console.log(startTime2);
+//   // Money spent counter
+//   // var startTime2 = (current.getTime()-100000000) * 21.598272138228941684665226781857;
+//   // console.log(startTime2);
 
-  return startCount;
-}
+//   return startCount;
+// }
 
 function searchesToday(){
   var counter = document.getElementById("counter");
-  var currentNum = Number(counter.innerHTML);
   let current = new Date();
   //console.log(currentNum);
-  counter.innerHTML = Math.ceil(currentNum + 1035.52);
+  counter.innerHTML = String(Math.floor(((current.getHours() * 3600 + current.getMinutes() * 60 + current.getSeconds()) * 1000 + current.getMilliseconds()) * 103.552).toLocaleString("en-US"));
   document.getElementById("counter2").innerHTML = String(Math.floor((current.getTime()-1640995199800) * 21.372399797057333).toLocaleString("en-US"));
   setTimeout(searchesToday, 10);
 }
