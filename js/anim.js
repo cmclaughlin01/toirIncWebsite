@@ -18,7 +18,7 @@ function test(){
             endTrigger: '#SearchBar',
             scrub: true,
             pin: '.daIMAC',
-            markers: true
+            //markers: true
         }
     })  
 };
@@ -70,7 +70,7 @@ function daMac(){
         //endTrigger: '',
         scrub: 1,
         //pin: '#daIMAC',
-        markers: true
+        //markers: true
     });
 
 }
@@ -275,7 +275,7 @@ function odometerRotate(){
         // end: '+=300',
         // pin: true,
         // scrub:0.5,
-        markers: true,
+        //markers: true,
     })
 }
 
