@@ -128,6 +128,7 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
 /*
 var scrollpos = window.scrollY; // window scroll position
 var wh = window.innerHeight-50; // as soon as element touches bottom with offset event starts

@@ -18,10 +18,10 @@
   <!-- FONT BOYS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- SCRIPT LINKS -->
@@ -176,7 +176,7 @@
     <span id="changePursuit">IN THE <a class="pursuitHero" id="heroChange" onmouseover="textUpdate()"
         onmouseleave="textUpdate2();">PURSUIT</a></span>
     <span>OF YOUR NEXT</span>
-    <span class="sideKickText">No matter where it takes us, even if it takes us into a field of flowers.
+    <span class="sideKickText"> No matter where it takes us, even if it takes us into a field of flowers.
       Our mission at Toir inc. is to always connect you with your next client </span>
     <span><a class="customerHero">CUSTOMER</a></span>
     <div class="mainPageArrow">
@@ -480,19 +480,41 @@
     </div>
     <div class="cthreeCards">
       <div class="serviceOne">
-
+        <h1>Search</h1>
+        <h2>Live at the top of everyone's search results</h2>
+        <div class="imgOne">
+          <img src="img/TEMPPHOTO.png">
+        </div>
       </div>
       <div class="serviceTwo">
-
+        <h1>Shopping</h1>
+        <h2>Link products to customers throughout their shopping experience.</h2>
+        <div class="imgTwo" onclick="imgTwoFlip()">
+          <div ><img class="daimg" src="img/TEMPPHOTO.png"></div>
+          <div class="cardBackTwo">Back</div>
+        </div>
       </div>
       <div class="serviceThree">
-
+        <h1>Display</h1>
+        <h2>Be discoverable on a variety of websites</h2>
+        <div class="imgThree">
+          <img src="img/TEMPPHOTO.png">
+        </div>
       </div>
       <div class="serviceFour">
-
+        <h1>App</h1>
+        <h2>Stay connected to your customers in all their favorite apps</h2>
+        <div class="imgFour">
+          <img src="img/TEMPPHOTO.png">
+        </div>
       </div>
     </div>
   </div>
+  <script>
+    function imgTwoFlip() {
+      document.getElementsByClassName('daimg').classList.toggle('is-flipped');
+    }
+  </script>
   <!-- <div id="graphSect">
     <div class="AdWordsCard">
       <div id="graphText">

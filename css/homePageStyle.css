@@ -207,6 +207,7 @@
     margin: 0;
     position:relative;
     z-index: 3;
+    font-weight: 500;
 }
 .mainText-sub{
     color: white;
@@ -216,6 +217,7 @@
     z-index: 2;
     margin: auto;
 }
+
 
 .mainText span:nth-child(1) {
     position: absolute;
@@ -231,11 +233,13 @@
 .mainText span:nth-child(3) {
     position: absolute;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1vw;
     width: 25%;
-    top: 58%;
+    top: 61%;
     left: 65%;
     letter-spacing: normal;
+    font-weight: 300;
+    tab-size: 4;
 }
 .mainText span:nth-child(4) {
     position: absolute;
@@ -482,7 +486,16 @@
 .cthreeCards{
     position: relative;
 }
-
+.serviceTwo h1,.serviceFour h1,.serviceOne h1, .serviceThree h1{
+    margin: 0;
+    font-size: 3vw;
+    padding: 2vw 0% 0% 2vw;
+}
+.serviceTwo h2,.serviceFour h2,.serviceOne h2, .serviceThree h2{
+    font-size: 1vw;
+    padding: 0.5vw 0% 3vw 2vw;
+    margin: 0;
+}
 .serviceOne, .serviceThree{
     background-color: #e6e6e6;
     width: 49.7vw;
@@ -494,6 +507,7 @@
     border-style: dashed;
     box-sizing: border-box;
     border-width: 0.1vw;
+    transition: 0.5s;
 }
 .serviceTwo,.serviceFour{
     background-color: #e6e6e6;
@@ -508,5 +522,55 @@
     border-style: dashed;
     box-sizing: border-box;
     border-width: 0.1vw;
+    transition: 0.5s;
+}
+
+.serviceTwo:hover,.serviceFour:hover,
+.serviceOne:hover, .serviceThree:hover{
+    background-color: #333;
+    color: white;
+    border-style: solid;
+}
+.serviceTwo:hover img,.serviceFour:hover img,
+.serviceOne:hover img, .serviceThree:hover img{
+    transform: scale(1.1);
+}
+
+.imgOne img, .imgTwo img, 
+.imgThree img, .imgFour img{
+    object-fit: cover;
+    transition: 3s;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.imgOne, .imgTwo, 
+.imgThree, .imgFour{
+    margin-top: 3vw;
+    margin: auto;
+    width: 99%;
+    height: 78%;
+    border-radius: 25px;
+    background-color: #005152;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+}
+
+.cardBackTwo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #005152;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.daimg{
+    transform: rotateY(0deg);
+}
+.daimg.is-flipped{
+    transform: rotateY(90deg);
 }
 

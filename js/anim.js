@@ -21,12 +21,22 @@ function test(){
             //markers: true
         }
     })  
+    gsap.to('.miniText', {
+        scrollTrigger: {
+            trigger: '.miniText',
+            start: 'top 8%',
+            end: 'bottom 15%',
+            scrub: true,
+            //markers: true,
+        },
+        opacity: 0
+    })  
 };
 function test2(){
     gsap.to('.sideKickText', {
         scrollTrigger: {
             trigger: '.pursuitHero',
-            start: 'top 40%',
+            start: 'top 38%',
             end: 'bottom 45%',
             scrub: 2,
             //markers: true,
