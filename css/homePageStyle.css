@@ -496,7 +496,8 @@
     padding: 0.5vw 0% 3vw 2vw;
     margin: 0;
 }
-.serviceOne, .serviceThree{
+
+.serviceOne, .serviceThree, .serviceOneFlipped, .serviceThreeFlipped{
     background-color: #e6e6e6;
     width: 49.7vw;
     height: 95vh;
@@ -507,9 +508,10 @@
     border-style: dashed;
     box-sizing: border-box;
     border-width: 0.1vw;
-    transition: 0.5s;
+    
 }
-.serviceTwo,.serviceFour{
+
+.serviceTwo,.serviceFour, .serviceTwoFlipped, .serviceFourFlipped{
     background-color: #e6e6e6;
     width: 49.7vw;
     height: 95vh;
@@ -574,3 +576,14 @@
     transform: rotateY(90deg);
 }
 
+.contentOne, .contentTwo, .contentThree, .contentFour {
+    height: 100%;
+    width: 100%;
+}
+
+.contentOneFlipped, .contentTwoFlipped, .contentThreeFlipped, .contentFourFlipped {
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    opacity: 0;
+}

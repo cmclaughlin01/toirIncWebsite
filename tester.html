@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html>
 
 <head>
@@ -124,29 +125,42 @@
 
   <!--makes an unordered list that sticked to the top of the screen as a menu-->
   <div class="topBar">
-    <ul class="menuNav">
-      <li class="menuli sides"><a href="contact/index.html">CONTACT
+    <ul class="menuNav" id="menuNav">
+      <li class="menuli sides" id="menuItem"><a href="contact/index.html">CONTACT
           <p>HIT US UP</p>
         </a></li>
-      <li class="menuli center"><a class="fuckoff" href="index.html">TOIR
+      <li class="menuli center" id="menuItem2"><a class="fuckoff" href="index.html">TOIR
           <p>HOMEPAGE</p></a></li>
-      <li class="menuli sides" style="text-align: right;"><a onclick="openNav()">MENU
+      <li class="menuli sides" style="text-align: right;" id="menuItem3"><a onclick="openNav()">MENU
           <p>CHECK IT OUT</p>
         </a></li>
     </ul>
     <script>
+      document.getElementById('menuNav').classList.add('menuNavToggle');
+      document.getElementById('menuItem').classList.add('menuliToggle');
+      document.getElementById('menuItem2').classList.add('menuliToggle');
+      document.getElementById('menuItem3').classList.add('menuliToggle');
       $(window).scroll(function () {
-        if ($(window).scrollTop() >= 50) {
-          $('.menuNav').css('background-color', '#f2f2f2');
-          $('.menuli a').css('color', '#000000');
-          $('.center a:hover').css('color', '#005152');
-          $('.sides a:hover').css('color', '#005152');
+        if ($(window).scrollTop() <= 50) {
+          // $('.menuNav').css('background-color', '#f2f2f2');
+          document.getElementById('menuNav').classList.add('menuNavToggle');
+          document.getElementById('menuItem').classList.add('menuliToggle');
+          document.getElementById('menuItem2').classList.add('menuliToggle');
+          document.getElementById('menuItem3').classList.add('menuliToggle');
+          // $('.menuli a').addClass('hoverColor');
+          // $('.center a:hover').css('color', '#005152');
+          // $('.sides a:hover').css('color', '#005152');
 
         } else {
-          $('.menuNav').css('background-color', 'transparent');
-          $('.menuli a').css('color', '#ffffff');
-          $('.center a:hover').css('color', '#005152');
-          $('.sides a:hover').css('color', '#005152 !important');
+          // $('.menuNav').css('background-color', 'transparen
+          document.getElementById('menuNav').classList.remove('menuNavToggle');
+          document.getElementById('menuItem').classList.remove('menuliToggle');
+          document.getElementById('menuItem2').classList.remove('menuliToggle');
+          document.getElementById('menuItem3').classList.remove('menuliToggle');
+          // $('.menuli a').css('color', '#ffffff');
+          // $('.menuli a').addClass('hoverColor');
+          // $('.center a:hover').css('color', '#005152');
+          // $('.sides a:hover').css('color', '#005152');
         }
       });
     </script>
@@ -435,27 +449,71 @@
           egestas diam in arcu cursus euismod. Ut diam quam nulla porttitor massa id.
         </p>
       </span>
-      <button>this will probably go somewhere</button>
+      <br>
+      <span class="homeButton">
+        <a href=""><img src="img/HomeIcon.svg"></a>
+      </span>
     </div>
   </div>
   <div class="content-Two">
-    <div class="dataRight">
-      <span style="margin-left: 6vw;" id="counter2"></span><br>
-      <iframe title='Spending on advertising' 
-      src='https://www.theworldcounts.com/embeds/counters/169?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14' 
-      style='border: none;' height='100' width='300'>
-      </iframe>
-    </div>
+    <img src="img/undraw_chilling_re_4iq9.svg">
     <div class="dataLeft">
-      <div class="counter">
-        
-        <br>
-        <span id="counter"></span>
+      <span id="counter2"></span>
 
+      <span>Spending on advertising this year</span>
+    </div>
+    <div class="dataRight">
+      <div class="counter">
+        <span id="counter"></span>
+        <p>Google searches today</p>
       </div>
     </div>
   </div>
-  <div id="graphSect">
+  <div class="content-Three">
+    <div class="content-Three-HeadText">
+      <span>
+        <h1>OUR</h1>
+      </span>
+      <span>
+        <h2>SERVICES</h2>
+      </span>
+    </div>
+    <div class="cthreeCards">
+      <div class="serviceOne" id="serviceOne" onclick="flip(1)">
+        <div class="contentOne">
+          <img style="width: 100%; height: 100%;"src="img/Jim.png">
+        </div>
+        <div class="contentOneFlipped">
+          <p style="color:#34a853"> U R PP</p>
+        </div>
+      </div>
+      <div class="serviceTwo" id="serviceTwo" onclick="flip(2)">
+        <div class="contentTwo">
+          <img src="img/Jim.png">
+        </div>
+        <div class="contentTwoFlipped">
+          <p style="color:#34a853"> U R PP</p>
+        </div>
+      </div>
+      <div class="serviceThree" id="serviceThree" onclick="flip(3)">
+        <div class="contentThree">
+          <img src="img/Jim.png">
+        </div>
+        <div class="contentThreeFlipped">
+          <p style="color:#34a853"> U R PP</p>
+        </div>
+      </div>
+      <div class="serviceFour" id="serviceFour" onclick="flip(4)">
+        <div class="contentFour">
+          <img src="img/Jim.png">
+        </div>
+        <div class="contentFourFlipped">
+          <p style="color:#34a853"> U R PP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="graphSect">
     <div class="AdWordsCard">
       <div id="graphText">
         <div>
@@ -523,7 +581,6 @@
           </span>
           <br>
           <button class="serviceButton">Veiw Services</button>
-          <img src="img/HomeIcon.svg" style="height: 5vh;">
           <span class="phoneText3">
             Facilisi morbi tempus iaculis urna id. Sit amet nisl purus in mollis nunc sed id.
             Neque egestas congue quisque egestas diam in arcu cursus euismod. Ut diam quam nulla porttitor massa id.
@@ -539,21 +596,27 @@
             .cell3 {
               fill: #4285F4;
             }
+
             .arrow {
               fill: #757575;
             }
+
             .cell2 {
               fill: #FBBC05;
             }
+
             .cell4 {
               fill: #EA4335;
             }
+
             .cell1 {
               fill: #34A853;
             }
+
             .line1 {
               fill: #757575;
             }
+
             .line2 {
               fill: #757575;
             }
@@ -569,7 +632,7 @@
               d="m591.98 348.02c-2.1523-5.7422-6.457-10.762-12.914-12.914-5.7422-2.1523-12.914-1.4336-17.938 1.4336l-54.539 32.289c-8.6094 5.0234-12.914 15.07-10.047 24.398 6.457 21.527 6.457 45.207 0 67.449-2.8711 9.3281 1.4336 19.375 10.047 24.398l53.816 31.57c5.7422 2.8711 12.199 3.5859 17.938 1.4336 5.7422-2.1523 10.762-7.1758 12.914-12.914 18.66-50.945 18.66-106.2 0.72266-157.14z" />
             <path class="cell1"
               d="m245.41 368.82-54.535-31.57c-5.7422-2.8711-12.199-3.5859-17.938-1.4336-5.7422 2.1523-10.762 7.1758-12.914 12.914-18.656 50.227-18.656 106.2 0 156.43 2.1523 5.7422 7.1758 10.762 12.914 12.914 5.7422 2.1523 12.914 1.4336 17.938-1.4336l54.535-30.855c8.6094-5.0234 12.914-15.07 10.047-24.398-6.457-22.242-6.457-45.207 0-67.449 2.1523-10.762-2.1523-20.805-10.047-25.113z" />
-            <path class="line1"/
+            <path class="line1"
               d="m324.34 497.27c-4.3047 0-7.1758 2.8711-7.1758 7.1758 0 4.3047 2.8711 7.1758 7.1758 7.1758h104.04c4.3047 0 7.1758-2.8711 7.1758-7.1758 0-4.3047-2.8711-7.1758-7.1758-7.1758z" />
             <path class="line2"
               d="m452.06 537.45h-152.12c-4.3047 0-7.1758 2.8711-7.1758 7.1758s2.8711 7.1758 7.1758 7.1758h152.12c4.3047 0 7.1758-2.8711 7.1758-7.1758s-3.5898-7.1758-7.1758-7.1758z" />
@@ -577,16 +640,10 @@
         </svg>
       </div>
     </div>
-  </div>
-
-  <div class="mainText" style="height: 15vh">
-    <p style="font-size: 3vw;margin-left:10%;margin-right: 10%;">
-      We are just a couple of guys being dudes, ya know... swag.
-    </p>
-  </div>
+  </div> -->
   <!-- Animations GSAP -->
   <script>
-    daStartCount();
+    // daStartCount();
     searchesToday();
     loading();
     test();
