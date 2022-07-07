@@ -524,7 +524,7 @@
     border-style: dashed;
     box-sizing: border-box;
     border-width: 0.1vw;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .serviceTwo:hover,.serviceFour:hover,

@@ -346,7 +346,7 @@ function flip(num){
         });
         cardToggle[num-1] = false;
     } else {
-        console.log("im runnin");
+        // console.log("im runnin");
         var tlFlipped = gsap.timeline();
         
         tlFlipped.to('.service'+cardNum, {
