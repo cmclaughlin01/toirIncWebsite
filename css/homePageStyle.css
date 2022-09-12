@@ -577,12 +577,12 @@
 }
 
 .contentOne, .contentTwo, .contentThree, .contentFour {
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
 .contentOneFlipped, .contentTwoFlipped, .contentThreeFlipped, .contentFourFlipped {
-    height: 100%;
+    height: 80%;
     width: 100%;
     transform: translateY(-100%);
     opacity: 0;

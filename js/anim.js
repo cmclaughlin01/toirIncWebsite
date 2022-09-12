@@ -323,23 +323,68 @@ function flip(num){
 
     // document.getElementById('service'+cardNum).classList.toggle('service'+cardNum);
     // document.getElementById('service'+cardNum).classList.toggle('service'+cardNum+'Flipped');
+    // if (cardToggle[num-1]){
+    //     var tl = gsap.timeline();
+    
+    //     tl.to('.service'+cardNum, {
+    //         scaleX:0,
+    //         duration:0.3,
+    //         ease:"power1.out",
+    //     }).to('.content'+cardNum+"Flipped",{
+    //         opacity:1,
+    //         duration:0,
+    //     }).to('.service'+cardNum,{
+    //         backgroundColor:'#000',
+    //         duration:0,
+    //     }).to('.content'+cardNum,{
+    //         opacity:0,
+    //         duration:0,
+    //     }).to('.service'+cardNum,{
+    //         scaleX:1,
+    //         duration:0.3,
+    //         ease:"power1.in",
+    //     });
+    //     cardToggle[num-1] = false;
+    // } else {
+    //     // console.log("im runnin");
+    //     var tlFlipped = gsap.timeline();
+        
+    //     tlFlipped.to('.service'+cardNum, {
+    //         scaleX:0,
+    //         duration:0.3,
+    //         ease:"power1.out",
+    //     }).to('.content'+cardNum,{
+    //         opacity:1,
+    //         duration:0,
+    //     }).to('.service'+cardNum,{
+    //         backgroundColor:'#e6e6e6',
+    //         duration:0,
+    //     }).to('.content'+cardNum+"Flipped",{
+    //         duration:0,
+    //         opacity:0,
+    //     }).to('.service'+cardNum,{
+    //         scaleX:1,
+    //         duration:0.3,
+    //         ease:"power1.in",
+    //     });
+    //     cardToggle[num-1] = true;
+    // }
     if (cardToggle[num-1]){
         var tl = gsap.timeline();
     
-        tl.to('.service'+cardNum, {
+        tl.to('.content'+cardNum, {
             scaleX:0,
             duration:0.3,
             ease:"power1.out",
         }).to('.content'+cardNum+"Flipped",{
+            scaleX:0,
             opacity:1,
             duration:0,
-        }).to('.service'+cardNum,{
-            backgroundColor:'#000',
-            duration:0,
+            
         }).to('.content'+cardNum,{
             opacity:0,
             duration:0,
-        }).to('.service'+cardNum,{
+        }).to('.content'+cardNum+"Flipped",{
             scaleX:1,
             duration:0.3,
             ease:"power1.in",
@@ -349,20 +394,17 @@ function flip(num){
         // console.log("im runnin");
         var tlFlipped = gsap.timeline();
         
-        tlFlipped.to('.service'+cardNum, {
+        tlFlipped.to('.content'+cardNum+"Flipped", {
             scaleX:0,
             duration:0.3,
             ease:"power1.out",
         }).to('.content'+cardNum,{
             opacity:1,
             duration:0,
-        }).to('.service'+cardNum,{
-            backgroundColor:'#e6e6e6',
-            duration:0,
         }).to('.content'+cardNum+"Flipped",{
             duration:0,
             opacity:0,
-        }).to('.service'+cardNum,{
+        }).to('.content'+cardNum,{
             scaleX:1,
             duration:0.3,
             ease:"power1.in",
