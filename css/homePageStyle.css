@@ -508,6 +508,8 @@
     border-style: dashed;
     box-sizing: border-box;
     border-width: 0.1vw;
+    overflow: hidden;
+
     
 }
 
@@ -525,6 +527,7 @@
     box-sizing: border-box;
     border-width: 0.1vw;
     /* transition: 0.5s; */
+    overflow: hidden;
 }
 
 .serviceTwo:hover,.serviceFour:hover,
@@ -533,10 +536,16 @@
     color: white;
     border-style: solid;
 }
-.serviceTwo:hover img,.serviceFour:hover img,
+
+/* .serviceTwo:hover img,.serviceFour:hover img,
 .serviceOne:hover img, .serviceThree:hover img{
     transform: scale(1.1);
+} */
+.serviceTwo:hover section,.serviceFour:hover section,
+.serviceOne:hover section, .serviceThree:hover section{
+    transform: scale(1.1);
 }
+
 
 .imgOne img, .imgTwo img, 
 .imgThree img, .imgFour img{
@@ -548,7 +557,6 @@
 
 .imgOne, .imgTwo, 
 .imgThree, .imgFour{
-    margin-top: 3vw;
     margin: auto;
     width: 99%;
     height: 77%;
@@ -579,6 +587,7 @@
 .contentOne, .contentTwo, .contentThree, .contentFour {
     height: 80%;
     width: 100%;
+    overflow: hidden;
 }
 
 .contentOneFlipped, .contentTwoFlipped, .contentThreeFlipped, .contentFourFlipped {
@@ -586,4 +595,25 @@
     width: 100%;
     transform: translateY(-100%);
     opacity: 0;
+}
+
+.contentOne img,.contentTwo img,.contentThree img,.contentFour img{
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    /* background-color: yellow; */
+    object-fit: contain;
+    transition: 3s;
+}
+
+.imgContainerOne, .imgContainerTwo, .imgContainerThree, .imgContainerFour{
+    margin-left: 0.5%;
+    width: 99%;
+    height: 77%;
+    border-radius: 25px;
+    background-color: #005152;
+    object-fit: contain;
+    transition: 3s;
 }
