@@ -541,16 +541,17 @@
 .serviceOne:hover img, .serviceThree:hover img{
     transform: scale(1.1);
 } */
-.serviceTwo:hover section,.serviceFour:hover section,
+/* .serviceTwo:hover section,.serviceFour:hover section,
 .serviceOne:hover section, .serviceThree:hover section{
     transform: scale(1.1);
-}
+    transition: 3s;
+} */
 
 
 .imgOne img, .imgTwo img, 
 .imgThree img, .imgFour img{
     object-fit: cover;
-    transition: 3s;
+    /* transition: 3s; */
     position: absolute;
     backface-visibility: hidden;
 }
@@ -579,22 +580,37 @@
 
 .daimg{
     transform: rotateY(0deg);
+    transition: 0ms;
 }
 .daimg.is-flipped{
     transform: rotateY(90deg);
+    transition: 0ms;
 }
 
 .contentOne, .contentTwo, .contentThree, .contentFour {
     height: 80%;
     width: 100%;
+    background-color: yellow;
     overflow: hidden;
 }
 
 .contentOneFlipped, .contentTwoFlipped, .contentThreeFlipped, .contentFourFlipped {
-    height: 80%;
-    width: 100%;
+    height: 77%;
+    width: 99%;
+    background-color: yellow;
+    margin-top: -2.5%;
+    margin-left: 0.5%;
+    border-radius: 25px;
     transform: translateY(-100%);
     opacity: 0;
+    cursor: pointer;
+}
+
+.contentOneFlipped p, .contentTwoFlipped p, .contentThreeFlipped p, .contentFourFlipped p{
+    padding-left: 2vw;
+}
+.contentOneFlipped p:nth-child(1), .contentTwoFlipped p:nth-child(1), .contentThreeFlipped p:nth-child(1), .contentFourFlipped p:nth-child(1){
+    padding-top: 2vw;
 }
 
 .contentOne img,.contentTwo img,.contentThree img,.contentFour img{
@@ -605,15 +621,16 @@
     border-radius: 25px;
     /* background-color: yellow; */
     object-fit: contain;
-    transition: 3s;
+    cursor: pointer;
 }
 
 .imgContainerOne, .imgContainerTwo, .imgContainerThree, .imgContainerFour{
     margin-left: 0.5%;
+    margin-top: 2%;
     width: 99%;
     height: 77%;
     border-radius: 25px;
     background-color: #005152;
     object-fit: contain;
-    transition: 3s;
+    /* transition: 3s; */
 }

@@ -412,3 +412,60 @@ function flip(num){
         cardToggle[num-1] = true;
     }
 }
+
+
+function onlineAdZoom(){
+    gsap.to('#onlineAd',{
+        scale: 1.1,
+        duration: 3,
+    })
+}
+
+function onlineAdZoomReverse(){
+    gsap.to('#onlineAd',{
+        scale: 1,
+        duration: 3,
+    })
+}
+
+function photoZoom(){
+    gsap.to('#photo',{
+        scale: 1.1,
+        duration: 3,
+    })
+}
+
+function photoZoomReverse(){
+    gsap.to('#photo',{
+        scale: 1,
+        duration: 3,
+    })
+}
+
+function designZoom(){
+    gsap.to('#design',{
+        scale: 1.1,
+        duration: 3,
+    })
+}
+
+function designZoomReverse(){
+    gsap.to('#design',{
+        scale: 1,
+        duration: 3,
+    })
+}
+
+function appZoom(){
+    gsap.to('#app',{
+        scale: 1.1,
+        duration: 3,
+    })
+}
+
+function appZoomReverse(){
+    gsap.to('#app',{
+        scale: 1,
+        duration: 3,
+    })
+}
