@@ -424,7 +424,7 @@ function onlineAdZoom(){
 function onlineAdZoomReverse(){
     gsap.to('#onlineAd',{
         scale: 1,
-        duration: 3,
+        duration: 1.5,
     })
 }
 
@@ -467,5 +467,65 @@ function appZoomReverse(){
     gsap.to('#app',{
         scale: 1,
         duration: 3,
+    })
+}
+
+function learnMoreA(){
+    gsap.to('#learnMoreBoxA',{
+        opacity: 1,
+        y: "-60",
+        duration: 2,
+    })
+}
+function learnMoreAReverse(){
+    gsap.to('#learnMoreBoxA',{
+        opacity: 0,
+        y: "+60",
+        duration: 1,
+    })
+}
+
+function learnMoreB(){
+    gsap.to('#learnMoreBoxB',{
+        opacity: 1,
+        y: "-60",
+        duration: 2,
+    })
+}
+function learnMoreBReverse(){
+    gsap.to('#learnMoreBoxB',{
+        opacity: 0,
+        y: "+60",
+        duration: 1,
+    })
+}
+
+function learnMoreC(){
+    gsap.to('#learnMoreBoxC',{
+        opacity: 1,
+        y: "-60",
+        duration: 2,
+    })
+}
+function learnMoreCReverse(){
+    gsap.to('#learnMoreBoxC',{
+        opacity: 0,
+        y: "+60",
+        duration: 1,
+    })
+}
+
+function learnMoreD(){
+    gsap.to('#learnMoreBoxD',{
+        opacity: 1,
+        y: "-60",
+        duration: 2,
+    })
+}
+function learnMoreDReverse(){
+    gsap.to('#learnMoreBoxD',{
+        opacity: 0,
+        y: "+60",
+        duration: 1,
     })
 }

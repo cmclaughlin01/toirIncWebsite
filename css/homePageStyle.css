@@ -633,4 +633,34 @@
     background-color: #005152;
     object-fit: contain;
     /* transition: 3s; */
+    position: relative;
+}
+
+.learnMoreBox{
+    position: absolute;
+    width: 55%;
+    height: 15%;
+    background-color: #333;
+    top: 90%;
+    left: 25%;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.learnMoreBox svg{
+    width: 15%;
+    float: right;
+    fill: white;
+    scale: 0.7;
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+}
+
+.learnMoreBox p{
+    position: absolute;
+    margin: auto;
+    bottom: 35%;
+    left: 5%;
+    color: white;
 }
