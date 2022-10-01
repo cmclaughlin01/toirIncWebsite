@@ -388,7 +388,7 @@
 .content-Two{
     width: 100vw;
     height: 50vh;
-    background-color: #005152;
+    /* background-color: #005152; */
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -406,6 +406,7 @@
     text-align: center;
     color: white;
     z-index: 2;
+    color: #333;
 }
 .dataLeft{
     float: left;
@@ -448,10 +449,14 @@
 }
 
 .content-Three{
+    margin-top: 5vh;
     width: 100vw;
-    margin-top: 10vw;
+    height: 230vh;
+    padding-top: 10vh;
     position: relative;
     box-sizing: border-box;
+    background-color: #005152;
+    border-radius: 20px;
 }
 
 .content-Three-HeadText{
@@ -461,6 +466,7 @@
     /* background-color: blue; */
     margin: 0;
     float: left;
+    color: #181818;
 }
 .content-Three-HeadText h1, .content-Three-HeadText h2{
     position:absolute;
@@ -509,8 +515,6 @@
     box-sizing: border-box;
     border-width: 0.1vw;
     overflow: hidden;
-
-    
 }
 
 .serviceTwo,.serviceFour, .serviceTwoFlipped, .serviceFourFlipped{
@@ -535,6 +539,9 @@
     background-color: #333;
     color: white;
     border-style: solid;
+    border-color: #333;
+    box-sizing: border-box;
+
 }
 
 /* .serviceTwo:hover img,.serviceFour:hover img,
@@ -556,10 +563,10 @@
     backface-visibility: hidden;
 }
 
-.imgOne, .imgTwo, 
+/* .imgOne, .imgTwo, 
 .imgThree, .imgFour{
     margin: auto;
-    width: 99%;
+    width: 100%;
     height: 77%;
     border-radius: 25px;
     background-color: #005152;
@@ -567,7 +574,7 @@
     position: relative;
     transform-style: preserve-3d;
     transform-origin: center center;
-}
+} */
 
 .cardBackTwo{
     width: 100%;
@@ -590,20 +597,22 @@
 .contentOne, .contentTwo, .contentThree, .contentFour {
     height: 80%;
     width: 100%;
-    background-color: yellow;
+    background-color: #d9d9d9;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .contentOneFlipped, .contentTwoFlipped, .contentThreeFlipped, .contentFourFlipped {
     height: 77%;
     width: 99%;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-top: -2.5%;
     margin-left: 0.5%;
     border-radius: 25px;
     transform: translateY(-100%);
     opacity: 0;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .contentOneFlipped p, .contentTwoFlipped p, .contentThreeFlipped p, .contentFourFlipped p{
@@ -614,13 +623,10 @@
 }
 
 .contentOne img,.contentTwo img,.contentThree img,.contentFour img{
-    margin-top: 2.5%;
-    margin-left: 2.5%;
-    width: 95%;
-    height: 95%;
-    border-radius: 25px;
-    /* background-color: yellow; */
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit:cover;
     cursor: pointer;
 }
 
@@ -630,7 +636,7 @@
     width: 99%;
     height: 77%;
     border-radius: 25px;
-    background-color: #005152;
+    /* background-color: #005152; */
     object-fit: contain;
     /* transition: 3s; */
     position: relative;
@@ -642,7 +648,7 @@
     height: 15%;
     background-color: #333;
     top: 90%;
-    left: 25%;
+    left: 22.5%;
     border-radius: 15px;
     opacity: 0;
 }
@@ -663,4 +669,16 @@
     bottom: 35%;
     left: 5%;
     color: white;
+}
+
+#content-four{
+    height: 86vh;
+    width: 100vw;
+    /* border-radius: 25px 25px 0 0; */
+    /* background-color: white; */
+    margin-top: -7vw;
+}
+
+.contentFourMainText{
+    font-size: 6vw;
 }
