@@ -1,0 +1,122 @@
+#graphSect, #qualitySect {
+    width: 100vw;
+    height: 55vh;
+    margin-bottom: 3vw;
+}
+
+#graphText, #qualityText{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#graphAni, #qualityAni{
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+#graphAni{
+    overflow: hidden;
+}
+
+.image1{
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 10%;
+}
+
+.phoneText{
+    color: black;
+    font-size: 1.5vw;
+    text-align: justify;
+    white-space:normal;
+    padding: 2vw;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image2 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 20%;
+    border-radius: 25px;
+    transform: rotateY(.25turn);
+    /* box-shadow: .5vw .5vw .25vw #333; */
+  }
+  .image3 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 40%;
+    border-radius: 15px;
+    transform: translateZ(100px);
+    /* box-shadow: .5vw .5vw .25vw #333; */
+  }
+/* homepage certs cards */
+.AdWordsCard{
+    width: 60%;
+    height: 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 50%,
+        #333 50%,
+        #333 100%
+    );
+}
+.quiltyScoreCard{
+    width: 60%;
+    height: 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+    background: linear-gradient(
+        to right,
+        #333 0%,
+        #333 50%,
+        white 50%,
+        white 100%
+    );
+}
+.shoppingCard{
+    width: 60%;
+    height: 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 50%,
+        #333 50%,
+        #333 100%
+    );
+}
+
+.phoneText span{
+    font-size: 1vw;
+}
+
+.serviceButton{
+    height: 50px;
+    padding: 16px 32px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: .688rem;
+    line-height: 18px;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    float:right;
+    margin-top: 1vw;
+}

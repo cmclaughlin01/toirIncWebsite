@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>Toir Inc.</title>
+        //comment line out if legacy is in use               <link rel="stylesheet" type="text/css" href="css/style.css">//comment line out if legacy is in use               
+        <link rel="stylesheet" type="text/css" href="css/homePageSVG.css">
+        <link rel="stylesheet" type="text/css" href="css/styleToir.css">
+        <link rel="stylesheet" type="text/css" href="css/mobileStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        //comment line out if legacy is in use               <link rel="shortcut icon" href="../Tulsium/images/TulsiumLogo-1.png">//comment line out if legacy is in use               
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <script src="js/script.js"></script>
+      
+        //comment line out if legacy is in use                Global site tag (gtag.js) - Google Analytics //comment line out if legacy is in use               
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-229619707-1">
+        </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+      
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+      
+          gtag('config', 'UA-229619707-1');
+        </script>
+      </head>
+      
+
+<body class="scroll">
+    <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
+        <div><a style=" padding-top: 1%; padding-right:5%; font-size: 1.25vw; color: black;" href="javascript:void(0)"
+            class="closebtn" onclick="closeNav()">
+            //comment line out if legacy is in use               &times;//comment line out if legacy is in use               close</a></div>
+    
+        <div class="sideMenuCenter">
+          <div class="infoDivSpacing">
+    
+          </div>
+          <div class="menuChild infoDivSpacing textan" id="infoAnimation">
+    
+            <p style="font-size: 2vw; text-align: center; font-family: 'Roboto Condensed', sans-serif;" id="infoHeader"></p>
+            <p style="font-size: 1vw; text-align: center; font-family: 'Roboto Condensed', sans-serif; white-space: normal;"
+              id="infoMenu"></p>
+    
+          </div>
+          <div class="infoDivSpacing">
+    
+          </div>
+    
+        </div>
+        <div class="sideMenuLeft" style="text-align: right;">
+          <div id="menuLeftTrans" class="vertical-center">
+            <div class="hoverBlock" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
+              <a href="about/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">ABOUT</a>
+            </div>
+            <div id="menuLeftSpacer"></div>
+            <div class="hoverBlock" onmouseover="menuHover(); careerHover()" onmouseleave="menuHide()">
+              <a href="career/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CAREER</a>
+            </div>
+            <div id="menuLeftSpacer"></div>
+            <div class="hoverBlock" onmouseover="menuHover(); contactHover()" onmouseleave="menuHide()">
+              <a href="contact/index.html" onclick="closeNav()" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CONTACT</a>
+            </div>
+            <div id="menuLeftSpacer"></div>
+            <div class="hoverBlock" onmouseover="menuHover(); servicesHover()" onmouseleave="menuHide()">
+              <a href="services/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">SERVICES</a>
+            </div>
+          </div>
+        </div>
+        <div class="sideMenuRight">
+          <div style="margin-top: 10vw; padding-left: 2vw;">
+            <a href="mailto:contact@toirinc.com" data-track-action="email submission" data-track-category="contact">
+              //comment line out if legacy is in use               creates the email svg with the dot class the makes a cricle that the svg is held in//comment line out if legacy is in use               
+              <p style="margin: 0;">
+                <span style="font-size: 1vw;">CONTACT@TOIRINC.COM</span>
+              </p>
+            </a>
+            <div id="menuLeftSpacer"></div>
+            <a href="mailto:career@toirinc.com" data-track-action="email submission" data-track-category="contact">
+              //comment line out if legacy is in use               creates the email svg with the dot class the makes a cricle that the svg is held in//comment line out if legacy is in use               
+              <p style="margin: 0;">
+                <span style="font-size: 1vw;">CAREER@TOIRINC.COM</span>
+              </p>
+            </a>
+            <div id="menuLeftSpacer"></div>
+            <a href="tel:+18446051745" data-track-action="phone call" data-track-category="contact">
+              <p style="margin: 0;">
+                <span style="font-size: 1vw;">844-605-1745</span>
+              </p>
+            </a>
+          </div>
+        </div>
+    
+      </div>
+    
+    
+      //comment line out if legacy is in use               makes an unordered list that sticked to the top of the screen as a menu//comment line out if legacy is in use               
+      <div class="topBar"style="padding-bottom: 3vw;">
+        <ul class="menuNav">
+          <li class="menuli sides"><a href="contact/index.html">CONTACT
+              <p>HIT US UP</p>
+            </a></li>
+          <li class="menuli center"><a class="fuckoff" href="index.html">TOIR
+              <p>HOMEPAGE</p></a></li>
+          <li class="menuli sides" style="text-align: right;"><a onclick="openNav()">MENU
+              <p>CHECK IT OUT</p>
+            </a></li>
+        </ul>
+        //comment line out if legacy is in use               link to contact page//comment line out if legacy is in use               
+      </div>
+        <div class="mainText errorText">
+            <div>
+                <h1> Oh no! Looks like this page doesn't exist...</h1>
+            </div>
+            <div>
+                <img style="width:40vw" src="img/404.svg">
+            </div>
+            <div>
+                <button class="submitButton" style="transform: translateY(0vw); width: 30vw; height: 5vw; font-size: 1vw;" href="index.html">Return to the homepage</button>
+            </div>
+        </div>
+</body>
+
+</html> -->

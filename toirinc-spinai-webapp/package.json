@@ -1,0 +1,37 @@
+{
+  "name": "toirinc-spinai-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.2",
+    "@octokit/rest": "^19.0.13",
+    "dotenv": "^16.4.7",
+    "gsap": "^3.12.7",
+    "hono": "^4.0.9",
+    "next": "15.2.3",
+    "openai": "^4.79.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "spinai": "^2.0.15",
+    "tsx": "^4.7.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.17.27",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

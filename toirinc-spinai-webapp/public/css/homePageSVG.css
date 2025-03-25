@@ -1,0 +1,62 @@
+.threeGoogleSvg{
+	margin-top: 8vw;
+}
+.googleAds {
+	width: 30%;
+	float: right;
+	text-align: left;
+	/* background-color: aqua; */
+	margin-top: 5vw;
+}
+
+.googleMarketing {
+	
+	width: 40%;
+	float: right;
+	text-align: center;
+	/* background-color: bisque; */
+}
+
+.googleMan {
+	margin-top: 4vw;
+	width: 30%;
+	float: right;
+	text-align: right;
+	/* background-color: yellowgreen; */
+}
+
+.marketingSvgDiv{
+	display: flex;
+	justify-content: center;
+	height: 0vh;
+}
+
+.lineEnding {
+	stroke:#757575;
+	visibility: hidden;
+	animation: condemned_blink_effect .8s linear infinite;
+}
+
+@keyframes condemned_blink_effect {
+	0% {
+		visibility: hidden;
+	}
+
+	50% {
+		visibility: hidden;
+	}
+
+	100% {
+		visibility: visible;
+	}
+}
+
+#screen{
+	position: absolute;
+	background-color: transparent;
+	border-top-left-radius: 38px;
+	border-top-right-radius: 38px;
+	z-index: 3;
+	left: 10%;
+	width: 80%;	
+}

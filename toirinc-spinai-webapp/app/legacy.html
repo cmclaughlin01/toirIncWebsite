@@ -1,0 +1,840 @@
+<!-- <!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Toir Inc.</title>
+  //comment line out if legacy is in use               <link rel="stylesheet" type="text/css" href="css/style.css">//comment line out if legacy is in use               
+  <link rel="stylesheet" type="text/css" href="css/homePageSVG.css">
+  <link rel="stylesheet" type="text/css" href="css/styleToir.css">
+  <link rel="stylesheet" type="text/css" href="css/mobileStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" type="text/css" href="css/homePageStyle.css">
+
+  //comment line out if legacy is in use               <link rel="shortcut icon" href="../Tulsium/images/TulsiumLogo-1.png">//comment line out if legacy is in use               
+  //comment line out if legacy is in use                FONT BOYS //comment line out if legacy is in use               
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  //comment line out if legacy is in use                SCRIPT LINKS //comment line out if legacy is in use               
+  <script src="js/script.js"></script>
+  <script src="js/anim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  //comment line out if legacy is in use                Global site tag (gtag.js) - Google Analytics //comment line out if legacy is in use               
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-229619707-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-229619707-1');
+  </script>
+</head>
+
+<body class="scroll">
+  //comment line out if legacy is in use                <div id="onStart" >
+    <div class="loadText typewriter">
+      <span class="loadHero">Toir</span>
+      <span class="loadside">a new way to market</span>
+    </div>
+  </div> //comment line out if legacy is in use               
+  <div id="da_video">
+    <video class="heroVideo" src="../ToirIncWebsite/img/pexels-олексій-коваль-8885708.mp4" muted loop autoplay></video>
+  </div>
+  <div id="mySidenav" class="sidenav" style="margin-top: 0%;">
+    <div><a style=" padding-top: 1%; padding-right:5%; font-size: 1.25vw; color: black;" href="javascript:void(0)"
+        class="closebtn" onclick="closeNav()">
+        //comment line out if legacy is in use               &times;//comment line out if legacy is in use               close</a></div>
+
+    <div class="sideMenuCenter">
+      <div class="infoDivSpacing">
+
+      </div>
+      <div class="menuChild infoDivSpacing textan" id="infoAnimation">
+
+        <p style="font-size: 2vw; text-align: center; font-family: 'Roboto Condensed', sans-serif;" id="infoHeader"></p>
+        <p style="font-size: 1vw; text-align: center; font-family: 'Roboto Condensed', sans-serif; white-space: normal;"
+          id="infoMenu"></p>
+
+      </div>
+      <div class="infoDivSpacing">
+
+      </div>
+
+    </div>
+    <div class="sideMenuLeft" style="text-align: right;">
+      <div id="menuLeftTrans" class="vertical-center">
+        <div class="hoverBlock" onmouseover="menuHover(); aboutHover()" onmouseleave="menuHide()">
+          <a href="about/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">ABOUT</a>
+        </div>
+        <div id="menuLeftSpacer"></div>
+        <div class="hoverBlock" onmouseover="menuHover(); careerHover()" onmouseleave="menuHide()">
+          <a href="career/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CAREER</a>
+        </div>
+        <div id="menuLeftSpacer"></div>
+        <div class="hoverBlock" onmouseover="menuHover(); contactHover()" onmouseleave="menuHide()">
+          <a href="contact/index.html" onclick="closeNav()"
+            style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">CONTACT</a>
+        </div>
+        <div id="menuLeftSpacer"></div>
+        <div class="hoverBlock" onmouseover="menuHover(); servicesHover()" onmouseleave="menuHide()">
+          <a href="services/index.html" style="-webkit-text-stroke: 2px rgba(0,0,0,.25);">SERVICES</a>
+        </div>
+      </div>
+    </div>
+    <div class="sideMenuRight">
+      <div style="margin-top: 10vw; padding-left: 2vw;">
+        <a href="mailto:contact@toirinc.com" data-track-action="email submission" data-track-category="contact">
+          //comment line out if legacy is in use               creates the email svg with the dot class the makes a cricle that the svg is held in//comment line out if legacy is in use               
+          <p style="margin: 0;">
+            <span style="font-size: 1vw;">CONTACT@TOIRINC.COM</span>
+          </p>
+        </a>
+        <div id="menuLeftSpacer"></div>
+        <a href="mailto:career@toirinc.com" data-track-action="email submission" data-track-category="contact">
+          //comment line out if legacy is in use               creates the email svg with the dot class the makes a cricle that the svg is held in//comment line out if legacy is in use               
+          <p style="margin: 0;">
+            <span style="font-size: 1vw;">CAREER@TOIRINC.COM</span>
+          </p>
+        </a>
+        <div id="menuLeftSpacer"></div>
+        <a href="tel:+18446051745" data-track-action="phone call" data-track-category="contact">
+          <p style="margin: 0;">
+            <span style="font-size: 1vw;">+1 (844)605-1745</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+  //comment line out if legacy is in use               makes an unordered list that sticked to the top of the screen as a menu//comment line out if legacy is in use               
+  <div class="topBar">
+    <ul class="menuNav" id="menuNav">
+      <li class="menuli sides" id="menuItem"><a href="contact/index.html">CONTACT
+          <p>HIT US UP</p>
+        </a></li>
+      <li class="menuli center" id="menuItem2"><a class="fuckoff" href="index.html">TOIR
+          <p>HOMEPAGE</p></a></li>
+      <li class="menuli sides" style="text-align: right;" id="menuItem3"><a onclick="openNav()">MENU
+          <p>CHECK IT OUT</p>
+        </a></li>
+    </ul>
+    <script>
+      document.getElementById('menuNav').classList.add('menuNavToggle');
+      document.getElementById('menuItem').classList.add('menuliToggle');
+      document.getElementById('menuItem2').classList.add('menuliToggle');
+      document.getElementById('menuItem3').classList.add('menuliToggle');
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 50) {
+          // $('.menuNav').css('background-color', '#f2f2f2');
+          document.getElementById('menuNav').classList.add('menuNavToggle');
+          document.getElementById('menuItem').classList.add('menuliToggle');
+          document.getElementById('menuItem2').classList.add('menuliToggle');
+          document.getElementById('menuItem3').classList.add('menuliToggle');
+          // $('.menuli a').addClass('hoverColor');
+          // $('.center a:hover').css('color', '#005152');
+          // $('.sides a:hover').css('color', '#005152');
+
+        } else {
+          // $('.menuNav').css('background-color', 'transparen
+          document.getElementById('menuNav').classList.remove('menuNavToggle');
+          document.getElementById('menuItem').classList.remove('menuliToggle');
+          document.getElementById('menuItem2').classList.remove('menuliToggle');
+          document.getElementById('menuItem3').classList.remove('menuliToggle');
+          // $('.menuli a').css('color', '#ffffff');
+          // $('.menuli a').addClass('hoverColor');
+          // $('.center a:hover').css('color', '#005152');
+          // $('.sides a:hover').css('color', '#005152');
+        }
+      });
+    </script>
+    //comment line out if legacy is in use               link to contact page//comment line out if legacy is in use               
+  </div>
+  <div class="miniText">
+    <li><a href="">Linkedin</a></li>
+    <li><a href="">Facebook</a></li>
+    <li><a href="">contact@toirinc.com</a></li>
+    <li><a href="">844-605-1745</a></li>
+  </div>
+  <div class="mainText">
+    <span id="changePursuit">IN THE <a class="pursuitHero" id="heroChange" onmouseover="textUpdate()"
+        onmouseleave="textUpdate2();">PURSUIT</a></span>
+    <span>OF YOUR NEXT</span>
+    <span class="sideKickText"> No matter where it takes us, even if it takes us into a field of flowers.
+      Our mission at Toir inc. is to always connect you with your next client </span>
+    <span><a class="customerHero">CUSTOMER</a></span>
+    <div class="mainPageArrow">
+      <a>
+        <span class="material-symbols-outlined">
+          keyboard_double_arrow_down
+        </span>
+      </a>
+    </div>
+  </div>
+  //comment line out if legacy is in use                <div class="mainText-sub">
+    <span>EVEN IF IT TAKES US HERE</span>
+  </div> //comment line out if legacy is in use               
+  //comment line out if legacy is in use                <div class="content-One">
+    <div>
+
+    </div>
+  </div>
+  <div class="content-Two">
+    <div>
+      
+    </div>
+  </div> //comment line out if legacy is in use               
+  <section class="daIMAC">
+
+
+    //comment line out if legacy is in use                <div class="marketingSvgDiv"> 
+    <div>
+      <img class="marketingAni" style="width: 20vw;" src="img/googleMarketingLogo.svg">
+    </div>
+  </div>
+  <div class="firstBlock">
+    <div class="marketingSvg">
+
+      <img class="marketingText" style="width: 60%;" src="img/googleMarketingLetters.svg">
+    </div>
+    <div class="firstText">
+      <p>Every day Google receives over 5 billion searches. We at Toir connect those searches to your business.
+        Our team of professionals creates Ad campaigns that fit your business' needs. From small mom-and-pop shops to
+        multi-million dollar enterprises, everyone can benefit from our services. As a small business we understand how
+        hard it can be to get new customers, so let us help you grow.</p>
+    </div>
+  </div> //comment line out if legacy is in use               
+
+
+
+    <div id="screen">
+      <div class="threeGoogleSvg">
+        <div class="googleAds" id="googleAds">
+          <img class="adsAni" style="width: 50%;" src="img/googleAdsLogo.svg">
+          <div style="width:100%;"></div>
+          <img class="adsText" id="adsAniLetters" style="width: 35%; transform: translateX(2.4vw);"
+            src="img/googleAdsLetters.svg">
+        </div>
+        <div class="googleMarketing logoBig">
+          <img class="marketingAni" style="width: 50%;" src="img/googleMarketingLogo.svg">
+          <img class="marketingText" style="width: 60%;" src="img/googleMarketingLetters.svg">
+        </div>
+        <div class="googleMan" style="float: left;" id="googleManager">
+          <img class="managerAni" style="width: 50%;" src="img/googleManagerLogo.svg">
+          <img class="managerText" style="width: 65%; transform: translateX(2vw);" src="img/googleManagerLetters.svg">
+        </div>
+      </div>
+
+      <div class="googleSearchBar show-on-scroll" id="SearchBar">
+        <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1743.04 782.6">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+                stroke: #dedede;
+              }
+
+              .cls-1,
+              .cls-2 {
+                stroke-miterlimit: 10;
+                stroke-width: 6px;
+              }
+
+              .cls-3 {
+                fill: #4285f4;
+              }
+
+              .cls-4 {
+                fill: #fbbc05;
+              }
+
+              .cls-5 {
+                fill: #34a853;
+              }
+
+              .cls-6 {
+                fill: #fff;
+              }
+
+              .cls-2 {
+                fill: none;
+                stroke: none;
+              }
+
+              .cls-7 {
+                fill: #ea4335;
+              }
+
+              .cls-8 {
+                fill: none;
+                stroke: #9e9a9a;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+
+              .cls-9 {
+                fill: #9e9a9a;
+              }
+
+              .lineStarting {
+                fill: none;
+                stroke: #757575;
+                stroke-miterlimit: 10;
+                stroke-width: 6px;
+              }
+            </style>
+          </defs>
+          <g>
+            //comment line out if legacy is in use                BACKGROUND //comment line out if legacy is in use               
+            <path class="cls-1"
+              d="M100.04,3S3.04,9,3.04,111s97,106.9,97,106.9H1640.04s100-.9,100-107.9S1640.04,3,1640.04,3H100.04Z" />
+            //comment line out if legacy is in use                Search Bar Text //comment line out if legacy is in use               
+            <path class="cls-6" d="M210.65,84.26h6.7v46.27h22.17v5.62h-28.87v-51.9h0Z" />
+            <path class="cls-6"
+              d="M249.46,118.76c.15,9.16,6.01,12.94,12.78,12.94,4.85,0,7.78-.85,10.32-1.92l1.15,4.85c-2.39,1.08-6.47,2.31-12.4,2.31-11.47,0-18.33-7.55-18.33-18.79s6.62-20.1,17.48-20.1c12.17,0,15.4,10.7,15.4,17.55,0,1.39-.15,2.46-.23,3.16h-26.17Zm19.86-4.85c.08-4.31-1.77-11.01-9.39-11.01-6.85,0-9.86,6.31-10.39,11.01h19.78Z" />
+            <path class="cls-6"
+              d="M292.43,88.19v10.7h9.7v5.16h-9.7v20.1c0,4.62,1.31,7.24,5.08,7.24,1.77,0,3.08-.23,3.93-.46l.31,5.08c-1.31,.54-3.39,.92-6.01,.92-3.16,0-5.7-1-7.31-2.85-1.92-2-2.62-5.31-2.62-9.7v-20.33h-5.77v-5.16h5.77v-8.93l6.62-1.77h0Z" />
+            <path class="cls-6"
+              d="M357.26,125.99c0,3.85,.08,7.24,.31,10.16h-6.01l-.39-6.08h-.15c-1.77,3-5.7,6.93-12.32,6.93-5.85,0-12.86-3.23-12.86-16.32v-21.79h6.78v20.64c0,7.08,2.16,11.86,8.32,11.86,4.54,0,7.7-3.16,8.93-6.16,.38-1,.62-2.23,.62-3.46v-22.87h6.78v27.1h0Z" />
+            <path class="cls-6"
+              d="M367.58,129.23c2,1.31,5.54,2.69,8.93,2.69,4.93,0,7.24-2.46,7.24-5.54s-1.92-5-6.93-6.85c-6.7-2.39-9.86-6.08-9.86-10.55,0-6.01,4.85-10.93,12.86-10.93,3.77,0,7.08,1.08,9.16,2.31l-1.69,4.93c-1.46-.92-4.16-2.16-7.62-2.16-4,0-6.24,2.31-6.24,5.08,0,3.08,2.23,4.47,7.08,6.31,6.47,2.46,9.78,5.7,9.78,11.24,0,6.54-5.08,11.16-13.94,11.16-4.08,0-7.85-1-10.47-2.54l1.69-5.16h.01Z" />
+            <path class="cls-6"
+              d="M441.88,134.77c-1.77,.92-5.7,2.16-10.7,2.16-11.24,0-18.56-7.62-18.56-19.02s7.85-19.79,20.02-19.79c4,0,7.55,1,9.39,1.93l-1.54,5.24c-1.62-.92-4.16-1.77-7.85-1.77-8.55,0-13.17,6.31-13.17,14.09,0,8.62,5.54,13.94,12.94,13.94,3.85,0,6.39-1,8.32-1.85l1.15,5.08h0Z" />
+            <path class="cls-6"
+              d="M483.08,117.22c0,13.78-9.55,19.79-18.56,19.79-10.09,0-17.86-7.39-17.86-19.17,0-12.47,8.16-19.79,18.48-19.79s17.94,7.78,17.94,19.17Zm-29.57,.38c0,8.16,4.7,14.32,11.32,14.32s11.32-6.08,11.32-14.48c0-6.31-3.16-14.32-11.16-14.32s-11.47,7.39-11.47,14.48h-.01Z" />
+            <path class="cls-6"
+              d="M491.62,108.98c0-3.85-.08-7.01-.31-10.09h6.01l.38,6.16h.15c1.85-3.54,6.16-7.01,12.32-7.01,5.16,0,13.17,3.08,13.17,15.86v22.25h-6.78v-21.48c0-6.01-2.23-11.01-8.62-11.01-4.47,0-7.93,3.16-9.09,6.93-.31,.85-.46,2-.46,3.16v22.41h-6.78v-27.18h.01Z" />
+            <path class="cls-6"
+              d="M534.36,108.98c0-3.85-.08-7.01-.31-10.09h6.01l.39,6.16h.15c1.85-3.54,6.16-7.01,12.32-7.01,5.16,0,13.17,3.08,13.17,15.86v22.25h-6.78v-21.48c0-6.01-2.23-11.01-8.62-11.01-4.47,0-7.93,3.16-9.09,6.93-.31,.85-.46,2-.46,3.16v22.41h-6.78v-27.18h0Z" />
+            <path class="cls-6"
+              d="M580.87,118.76c.15,9.16,6.01,12.94,12.78,12.94,4.85,0,7.78-.85,10.32-1.92l1.15,4.85c-2.39,1.08-6.47,2.31-12.4,2.31-11.47,0-18.33-7.55-18.33-18.79s6.62-20.1,17.48-20.1c12.17,0,15.4,10.7,15.4,17.55,0,1.39-.15,2.46-.23,3.16h-26.17Zm19.86-4.85c.08-4.31-1.77-11.01-9.39-11.01-6.85,0-9.86,6.31-10.39,11.01h19.78Z" />
+            <path class="cls-6"
+              d="M642.23,134.77c-1.77,.92-5.7,2.16-10.7,2.16-11.24,0-18.56-7.62-18.56-19.02s7.85-19.79,20.02-19.79c4,0,7.55,1,9.39,1.93l-1.54,5.24c-1.62-.92-4.16-1.77-7.85-1.77-8.55,0-13.17,6.31-13.17,14.09,0,8.62,5.54,13.94,12.94,13.94,3.85,0,6.39-1,8.32-1.85l1.15,5.08h0Z" />
+            <path class="cls-6"
+              d="M659.33,88.19v10.7h9.7v5.16h-9.7v20.1c0,4.62,1.31,7.24,5.08,7.24,1.77,0,3.08-.23,3.93-.46l.31,5.08c-1.31,.54-3.39,.92-6.01,.92-3.16,0-5.7-1-7.31-2.85-1.92-2-2.62-5.31-2.62-9.7v-20.33h-5.77v-5.16h5.77v-8.93l6.62-1.77h0Z" />
+            <path class="cls-6"
+              d="M695.44,98.89l8.16,22.02c.85,2.46,1.77,5.39,2.39,7.62h.15c.69-2.23,1.46-5.08,2.39-7.78l7.39-21.87h7.16l-10.16,26.56c-4.85,12.78-8.16,19.33-12.78,23.33-3.31,2.93-6.62,4.08-8.32,4.39l-1.69-5.7c1.69-.54,3.93-1.62,5.93-3.31,1.85-1.46,4.16-4.08,5.7-7.55,.31-.69,.54-1.23,.54-1.62s-.15-.92-.46-1.77l-13.78-34.34h7.39v.02Z" />
+            <path class="cls-6"
+              d="M762.2,117.22c0,13.78-9.55,19.79-18.56,19.79-10.09,0-17.86-7.39-17.86-19.17,0-12.47,8.16-19.79,18.48-19.79s17.94,7.78,17.94,19.17Zm-29.57,.38c0,8.16,4.7,14.32,11.32,14.32s11.32-6.08,11.32-14.48c0-6.31-3.16-14.32-11.16-14.32s-11.47,7.39-11.47,14.48h-.01Z" />
+            <path class="cls-6"
+              d="M801.93,125.99c0,3.85,.08,7.24,.31,10.16h-6.01l-.39-6.08h-.15c-1.77,3-5.7,6.93-12.32,6.93-5.85,0-12.86-3.23-12.86-16.32v-21.79h6.78v20.64c0,7.08,2.16,11.86,8.32,11.86,4.54,0,7.7-3.16,8.93-6.16,.38-1,.62-2.23,.62-3.46v-22.87h6.78v27.1h-.01Z" />
+            <path class="cls-6"
+              d="M837.66,88.19v10.7h9.7v5.16h-9.7v20.1c0,4.62,1.31,7.24,5.08,7.24,1.77,0,3.08-.23,3.93-.46l.31,5.08c-1.31,.54-3.39,.92-6.01,.92-3.16,0-5.7-1-7.31-2.85-1.92-2-2.62-5.31-2.62-9.7v-20.33h-5.77v-5.16h5.77v-8.93l6.62-1.77h0Z" />
+            <path class="cls-6"
+              d="M888.24,117.22c0,13.78-9.55,19.79-18.56,19.79-10.09,0-17.86-7.39-17.86-19.17,0-12.47,8.16-19.79,18.48-19.79s17.94,7.78,17.94,19.17Zm-29.57,.38c0,8.16,4.7,14.32,11.32,14.32s11.32-6.08,11.32-14.48c0-6.31-3.16-14.32-11.16-14.32s-11.47,7.39-11.47,14.48h-.01Z" />
+            <path class="cls-6"
+              d="M913.11,108.98c0-3.85-.08-7.01-.31-10.09h6.01l.38,6.16h.15c1.85-3.54,6.16-7.01,12.32-7.01,5.16,0,13.17,3.08,13.17,15.86v22.25h-6.78v-21.48c0-6.01-2.23-11.01-8.62-11.01-4.47,0-7.93,3.16-9.09,6.93-.31,.85-.46,2-.46,3.16v22.41h-6.78v-27.18h0Z" />
+            <path class="cls-6"
+              d="M959.62,118.76c.15,9.16,6.01,12.94,12.78,12.94,4.85,0,7.78-.85,10.32-1.92l1.16,4.85c-2.39,1.08-6.47,2.31-12.4,2.31-11.47,0-18.33-7.55-18.33-18.79s6.62-20.1,17.48-20.1c12.17,0,15.4,10.7,15.4,17.55,0,1.39-.15,2.46-.23,3.16h-26.18Zm19.87-4.85c.08-4.31-1.77-11.01-9.39-11.01-6.85,0-9.86,6.31-10.39,11.01h19.78Z" />
+            <path class="cls-6"
+              d="M997.12,98.89l4.93,18.94c1.08,4.16,2.08,8.01,2.77,11.86h.23c.85-3.77,2.08-7.78,3.31-11.78l6.08-19.02h5.7l5.78,18.63c1.39,4.47,2.46,8.39,3.31,12.17h.23c.62-3.77,1.62-7.7,2.85-12.09l5.31-18.71h6.7l-12.01,37.27h-6.16l-5.7-17.79c-1.31-4.16-2.39-7.85-3.31-12.24h-.15c-.92,4.47-2.08,8.32-3.39,12.32l-6.01,17.71h-6.16l-11.24-37.27h6.93Z" />
+            <path class="cls-6"
+              d="M1093.98,134.77c-1.77,.92-5.7,2.16-10.7,2.16-11.24,0-18.56-7.62-18.56-19.02s7.85-19.79,20.02-19.79c4,0,7.55,1,9.39,1.93l-1.54,5.24c-1.62-.92-4.16-1.77-7.85-1.77-8.55,0-13.17,6.31-13.17,14.09,0,8.62,5.54,13.94,12.94,13.94,3.85,0,6.39-1,8.32-1.85l1.16,5.08h0Z" />
+            <path class="cls-6"
+              d="M1133.1,125.99c0,3.85,.08,7.24,.31,10.16h-6.01l-.38-6.08h-.15c-1.77,3-5.7,6.93-12.32,6.93-5.85,0-12.86-3.23-12.86-16.32v-21.79h6.78v20.64c0,7.08,2.16,11.86,8.32,11.86,4.54,0,7.7-3.16,8.93-6.16,.39-1,.62-2.23,.62-3.46v-22.87h6.78v27.1h-.02Z" />
+            <path class="cls-6"
+              d="M1143.42,129.23c2,1.31,5.54,2.69,8.93,2.69,4.93,0,7.24-2.46,7.24-5.54s-1.92-5-6.93-6.85c-6.7-2.39-9.86-6.08-9.86-10.55,0-6.01,4.85-10.93,12.86-10.93,3.77,0,7.08,1.08,9.16,2.31l-1.69,4.93c-1.46-.92-4.16-2.16-7.62-2.16-4,0-6.24,2.31-6.24,5.08,0,3.08,2.23,4.47,7.08,6.31,6.47,2.46,9.78,5.7,9.78,11.24,0,6.54-5.08,11.16-13.94,11.16-4.08,0-7.85-1-10.47-2.54l1.69-5.16h0Z" />
+            <path class="cls-6"
+              d="M1183,88.19v10.7h9.7v5.16h-9.7v20.1c0,4.62,1.31,7.24,5.08,7.24,1.77,0,3.08-.23,3.93-.46l.31,5.08c-1.31,.54-3.39,.92-6.01,.92-3.16,0-5.7-1-7.31-2.85-1.92-2-2.62-5.31-2.62-9.7v-20.33h-5.77v-5.16h5.77v-8.93l6.62-1.77h0Z" />
+            <path class="cls-6"
+              d="M1233.58,117.22c0,13.78-9.55,19.79-18.56,19.79-10.09,0-17.86-7.39-17.86-19.17,0-12.47,8.16-19.79,18.48-19.79s17.94,7.78,17.94,19.17h0Zm-29.57,.38c0,8.16,4.7,14.32,11.32,14.32s11.32-6.08,11.32-14.48c0-6.31-3.16-14.32-11.16-14.32s-11.47,7.39-11.47,14.48h0Z" />
+            <path class="cls-6"
+              d="M1242.13,108.98c0-3.85-.08-7.01-.31-10.09h5.93l.31,6.01h.23c2.08-3.54,5.54-6.85,11.7-6.85,5.08,0,8.93,3.08,10.55,7.47h.15c1.15-2.08,2.62-3.7,4.16-4.85,2.23-1.69,4.7-2.62,8.24-2.62,4.93,0,12.24,3.23,12.24,16.17v21.94h-6.62v-21.1c0-7.16-2.62-11.47-8.08-11.47-3.85,0-6.85,2.85-8.01,6.16-.31,.92-.54,2.16-.54,3.39v23.02h-6.62v-22.33c0-5.93-2.62-10.24-7.78-10.24-4.23,0-7.31,3.39-8.39,6.78-.38,1-.54,2.16-.54,3.31v22.48h-6.62v-27.18h0Z" />
+            <path class="cls-6"
+              d="M1310.12,118.76c.15,9.16,6.01,12.94,12.78,12.94,4.85,0,7.78-.85,10.32-1.92l1.16,4.85c-2.39,1.08-6.47,2.31-12.4,2.31-11.47,0-18.33-7.55-18.33-18.79s6.62-20.1,17.48-20.1c12.17,0,15.4,10.7,15.4,17.55,0,1.39-.15,2.46-.23,3.16h-26.18Zm19.87-4.85c.08-4.31-1.77-11.01-9.39-11.01-6.85,0-9.86,6.31-10.39,11.01h19.78Z" />
+            <path class="cls-6"
+              d="M1344.93,110.52c0-4.39-.08-8.16-.31-11.63h5.93l.23,7.31h.31c1.69-5,5.77-8.16,10.32-8.16,.77,0,1.31,.08,1.92,.23v6.39c-.69-.15-1.39-.23-2.31-.23-4.77,0-8.16,3.62-9.09,8.7-.15,.92-.31,2-.31,3.16v19.86h-6.7v-25.64h.01Z" />
+            <path class="cls-6"
+              d="M1369.18,129.23c2,1.31,5.54,2.69,8.93,2.69,4.93,0,7.24-2.46,7.24-5.54s-1.92-5-6.93-6.85c-6.7-2.39-9.86-6.08-9.86-10.55,0-6.01,4.85-10.93,12.86-10.93,3.77,0,7.08,1.08,9.16,2.31l-1.69,4.93c-1.46-.92-4.16-2.16-7.62-2.16-4,0-6.24,2.31-6.24,5.08,0,3.08,2.23,4.47,7.08,6.31,6.47,2.46,9.78,5.7,9.78,11.24,0,6.54-5.08,11.16-13.94,11.16-4.08,0-7.85-1-10.47-2.54l1.69-5.16h0Z" />
+          </g>
+          <g>
+            //comment line out if legacy is in use                GOOGLE LOGO //comment line out if legacy is in use               
+            <path class="cls-3"
+              d="M162.38,113.83c0-2.9-.26-5.66-.7-8.34h-41.51v16.57h23.77c-1.07,5.44-4.19,10.03-8.82,13.15v11.02h14.18c8.3-7.68,13.08-18.99,13.08-32.4Z" />
+            <path class="cls-5"
+              d="M120.17,156.92c11.9,0,21.86-3.97,29.13-10.69l-14.18-11.02c-3.97,2.64-9,4.26-14.95,4.26-11.5,0-21.23-7.75-24.72-18.22h-14.62v11.35c7.24,14.4,22.11,24.32,39.34,24.32h0Z" />
+            <path class="cls-4"
+              d="M95.45,121.25c-.92-2.64-1.4-5.47-1.4-8.41s.51-5.77,1.4-8.41v-11.35h-14.62c-3.01,5.95-4.74,12.64-4.74,19.76s1.73,13.81,4.74,19.76l14.62-11.35Z" />
+            <path class="cls-7"
+              d="M120.17,86.21c6.5,0,12.31,2.24,16.9,6.61l12.56-12.56c-7.6-7.13-17.56-11.5-29.46-11.5-17.23,0-32.1,9.92-39.34,24.32l14.62,11.35c3.49-10.47,13.22-18.22,24.72-18.22Z" />
+          </g>
+          //comment line out if legacy is in use                LINES //comment line out if legacy is in use               
+          <line class="cls-2" x1="240.04" y1="48" x2="240.04" y2="173" /> //comment line out if legacy is in use                L //comment line out if legacy is in use               
+          <line class="cls-2" x1="279.2" y1="48" x2="279.2" y2="173" /> //comment line out if legacy is in use                e //comment line out if legacy is in use               
+          <line class="cls-2" x1="305.04" y1="48" x2="305.04" y2="173" /> //comment line out if legacy is in use                t //comment line out if legacy is in use               
+          <line class="cls-2" x1="360.04" y1="48" x2="360.04" y2="173" /> //comment line out if legacy is in use                u //comment line out if legacy is in use               
+          <line class="cls-2" x1="393.04" y1="48" x2="393.04" y2="173" /> //comment line out if legacy is in use                s //comment line out if legacy is in use               
+          <line class="cls-2" x1="445.04" y1="48" x2="445.04" y2="173" /> //comment line out if legacy is in use                c //comment line out if legacy is in use               
+          <line class="cls-2" x1="485.04" y1="48" x2="485.04" y2="173" /> //comment line out if legacy is in use                o //comment line out if legacy is in use               
+          <line class="cls-2" x1="525.04" y1="48" x2="525.04" y2="173" /> //comment line out if legacy is in use                n //comment line out if legacy is in use               
+          <line class="cls-2" x1="568.04" y1="48" x2="568.04" y2="173" /> //comment line out if legacy is in use                n //comment line out if legacy is in use               
+          <line class="cls-2" x1="610.04" y1="48" x2="610.04" y2="173" /> //comment line out if legacy is in use                e //comment line out if legacy is in use               
+          <line class="cls-2" x1="645.04" y1="48" x2="645.04" y2="173" /> //comment line out if legacy is in use                c //comment line out if legacy is in use               
+          <line class="cls-2" x1="670.04" y1="48" x2="670.04" y2="173" /> //comment line out if legacy is in use                t //comment line out if legacy is in use               
+          <line class="cls-2" x1="725.04" y1="48" x2="725.04" y2="173" /> //comment line out if legacy is in use                y //comment line out if legacy is in use               
+          <line class="cls-2" x1="763.04" y1="48" x2="763.04" y2="173" /> //comment line out if legacy is in use                o //comment line out if legacy is in use               
+          <line class="cls-2" x1="805.04" y1="48" x2="805.04" y2="173" /> //comment line out if legacy is in use                u //comment line out if legacy is in use               
+          <line class="cls-2" x1="850.04" y1="48" x2="850.04" y2="173" /> //comment line out if legacy is in use                t //comment line out if legacy is in use               
+          <line class="cls-2" x1="890.04" y1="48" x2="890.04" y2="173" /> //comment line out if legacy is in use                o //comment line out if legacy is in use               
+          <line class="cls-2" x1="947.04" y1="48" x2="947.04" y2="173" /> //comment line out if legacy is in use                n //comment line out if legacy is in use               
+          <line class="cls-2" x1="987.04" y1="48" x2="987.04" y2="173" /> //comment line out if legacy is in use                e //comment line out if legacy is in use               
+          <line class="cls-2" x1="1047" y1="48" x2="1047" y2="173" /> //comment line out if legacy is in use                w //comment line out if legacy is in use               
+          <line class="cls-2" x1="1097" y1="48" x2="1097" y2="173" /> //comment line out if legacy is in use                c //comment line out if legacy is in use               
+          <line class="cls-2" x1="1135" y1="48" x2="1135" y2="173" /> //comment line out if legacy is in use                u //comment line out if legacy is in use               
+          <line class="cls-2" x1="1167" y1="48" x2="1167" y2="173" /> //comment line out if legacy is in use                s //comment line out if legacy is in use               
+          <line class="cls-2" x1="1195" y1="48" x2="1195" y2="173" /> //comment line out if legacy is in use                t //comment line out if legacy is in use               
+          <line class="cls-2" x1="1235" y1="48" x2="1235" y2="173" /> //comment line out if legacy is in use                o //comment line out if legacy is in use               
+          <line class="cls-2" x1="1298" y1="48" x2="1298" y2="173" /> //comment line out if legacy is in use                m //comment line out if legacy is in use               
+          <line class="cls-2" x1="1337" y1="48" x2="1337" y2="173" /> //comment line out if legacy is in use                e //comment line out if legacy is in use               
+          <line class="cls-2" x1="1365" y1="48" x2="1365" y2="173" /> //comment line out if legacy is in use                r //comment line out if legacy is in use               
+          <line class="cls-2" id="lineEnding" x1="1395" y1="48" x2="1395" y2="173" />//comment line out if legacy is in use                s //comment line out if legacy is in use               
+          <g>
+            //comment line out if legacy is in use                MICROPHONE //comment line out if legacy is in use               
+            <path class="cls-3"
+              d="M1641.62,123.42c-7.32,0-13.25-5.93-13.25-13.25v-30.93c0-7.32,5.93-13.25,13.25-13.25s13.25,5.93,13.25,13.25v30.93c0,7.32-5.93,13.25-13.25,13.25Z" />
+            <rect class="cls-5" x="1637.22" y="138.48" width="8.84" height="16.2" />
+            <path class="cls-7"
+              d="M1663.75,110.34c-.02,12.19-9.94,22.11-22.13,22.11-6.11,0-11.67-2.5-15.68-6.53l-6.18,6.18c5.59,5.59,13.31,9.07,21.86,9.07,17.03,0,30.84-13.81,30.86-30.84h-8.73v.02h0Z" />
+            <path class="cls-4"
+              d="M1625.94,125.92c-3.97-3.99-6.45-9.5-6.45-15.58h-8.73c0,8.49,3.45,16.18,9.01,21.75l6.18-6.18h-.01Z" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <img class="heroIMAC" src="img/IMac_Pro2.svg">
+  </section>
+  //comment line out if legacy is in use                <div class="one">
+        <h1> Content</h1>
+        <p> TOIR</p>
+      </div> //comment line out if legacy is in use               
+  <div class="content-One">
+    <div class="content-one-spacer">
+
+    </div>
+    <div class="content-one-text">
+      <h3>TOIR</h3>
+      <h1>OUR APPROACH</h1>
+      <span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+          Arcu dictum varius duis at consectetur lorem donec.
+        </p>
+        <p>
+          Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+          nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+          ullamcorper.
+          Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+          nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+          ullamcorper.
+        </p>
+        <p id="pinEnd">
+          Facilisi morbi tempus iaculis urna id. Sit amet nisl purus in mollis nunc sed id. Neque egestas congue quisque
+          egestas diam in arcu cursus euismod. Ut diam quam nulla porttitor massa id.
+        </p>
+      </span>
+      <br>
+      <span class="homeButton">
+        <a href=""><img src="img/HomeIcon.svg"></a>
+      </span>
+    </div>
+  </div>
+  <div class="content-Three">
+    <div class="someSpace"></div>
+    <div class="content-Three-HeadText">
+      <span>
+        <h1>OUR</h1>
+      </span>
+      <span>
+        <h2>SERVICES</h2>
+      </span>
+    </div>
+    <div class="cthreeCards">
+      <div class="serviceOne" id="serviceOne" onclick="flip(1)" onmouseenter="onlineAdZoom(); learnMoreA()" onmouseleave="onlineAdZoomReverse();learnMoreAReverse()">
+        <div style="height: 20%;">
+          <h1>Google Marketing</h1>
+          <h2>Live at the top of everyone's search results</h2>
+        </div>
+        <section id="onlineAd" class="contentOne imgContainerOne">
+          <img src="img/Frame 7.png">
+          <div id="learnMoreBoxA" class="learnMoreBox">
+            <div style="width: 85%; float: left;"><p>Learn More</p></div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path d="m28.05 35.9-2.15-2.1 8.4-8.4H8v-3h26.3l-8.45-8.45 2.15-2.1L40.05 23.9Z"/></svg>
+            </div>
+          </div>
+        </section>
+        <div class="contentOneFlipped">
+          <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Arcu dictum varius duis at consectetur lorem donec.
+          </p>
+          <p>
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+          </p>
+        </div>
+      </div>
+      <div class="serviceTwo" id="serviceTwo" onclick="flip(2)" onmouseenter="photoZoom(); learnMoreB()" onmouseleave="photoZoomReverse();learnMoreBReverse()">
+        <div style="height: 20%;">
+          <h1>Photography</h1>
+          <h2>Show off your products the right way</h2>
+        </div>
+        <section id="photo"class="contentTwo imgContainerTwo">
+          <img src="img/Frame 8.png" >
+          <div id="learnMoreBoxB" class="learnMoreBox">
+            <div style="width: 85%; float: left;"><p>Learn More</p></div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path d="m28.05 35.9-2.15-2.1 8.4-8.4H8v-3h26.3l-8.45-8.45 2.15-2.1L40.05 23.9Z"/></svg>
+            </div>
+          </div>
+        </section>
+        <div class="contentTwoFlipped">
+          <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Arcu dictum varius duis at consectetur lorem donec.
+          </p>
+          <p>
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+          </p>
+        </div>
+      </div>
+      <div class="serviceThree" id="serviceThree" onclick="flip(3)" onmouseenter="designZoom(); learnMoreC()" onmouseleave="designZoomReverse();learnMoreCReverse()">
+        <div style="height: 20%;">
+          <h1>Display Design</h1>
+          <h2>Be discoverable on a variety of websites</h2>
+        </div>
+        <section id="design" class="contentThree imgContainerThree">
+          <img src="img/Frame 6.png">
+          <div id="learnMoreBoxC" class="learnMoreBox">
+            <div style="width: 85%; float: left;"><p>Learn More</p></div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path d="m28.05 35.9-2.15-2.1 8.4-8.4H8v-3h26.3l-8.45-8.45 2.15-2.1L40.05 23.9Z"/></svg>
+            </div>
+          </div>
+        </section>
+        <div class="contentThreeFlipped">
+          <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Arcu dictum varius duis at consectetur lorem donec.
+          </p>
+          <p>
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+          </p>
+        </div>
+      </div>
+      <div class="serviceFour" id="serviceFour" onclick="flip(4)" onmouseenter="appZoom(); learnMoreD()" onmouseleave="appZoomReverse();learnMoreDReverse()">
+        <div style="height: 20%;">
+          <h1>App</h1>
+          <h2>Stay connected to your customers in all their favorite apps</h2>
+        </div>
+        <section id="app" class="contentFour imgContainerFour">
+          <img src="img/Frame 5.png">
+          <div id="learnMoreBoxD" class="learnMoreBox">
+            <div style="width: 85%; float: left;"><p>Learn More</p></div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path d="m28.05 35.9-2.15-2.1 8.4-8.4H8v-3h26.3l-8.45-8.45 2.15-2.1L40.05 23.9Z"/></svg>
+            </div>
+          </div>
+        </section>
+        <div class="contentFourFlipped">
+          <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Arcu dictum varius duis at consectetur lorem donec.
+          </p>
+          <p>
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit amet
+            nisl purus in mollis. Placerat vestibulum lectus mauris ultrices eros in.Mi ipsum faucibus vitae aliquet nec
+            ullamcorper.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    
+    function imgTwoFlip() {
+      document.getElementsByClassName('daimg').classList.toggle('is-flipped');
+    }
+    function adZoom(){
+      document.getElementById('onlineAd').addEventListener("mouseenter", () => listener());
+      // Marketing.addEventListener("mouseleave", () => onlineAdZoom().reverse());
+
+    }
+  </script>
+  <div class="content-Two">
+    //comment line out if legacy is in use                <img src="img/undraw_chilling_re_4iq9.svg"> //comment line out if legacy is in use               
+    <div class="dataLeft">
+      <span id="counter2"></span>
+
+      <span>Spending on advertising this year</span>
+    </div>
+    <div class="dataRight">
+      <div class="counter">
+        <span id="counter"></span>
+        <p>Google searches today</p>
+      </div>
+    </div>
+  </div>
+  <div id="content-four">
+    <div class="moreSpace"></div>
+    <div class="contentFourMainText">
+      <span>HOW</span>
+      <span>TOIR</span>
+      <span>IS</span>
+      <span>REDEFINING</span>
+      <span>MARKETING</span>
+    </div>
+    <div>1. We are so over having to call to find out the price. Why not know exactly what you're getting into before wasting your time.</div>
+    <div>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua.Arcu dictum varius duis at consectetur lorem donec.</div>
+    <div>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua.Arcu dictum varius duis at consectetur lorem donec.</div>
+  </div>
+  //comment line out if legacy is in use                <div id="graphSect">
+    <div class="AdWordsCard">
+      <div id="graphText">
+        <div>
+
+        </div>
+        <div class="phoneText">
+          <h1>Google</h1>
+          <span class="phoneText1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Arcu dictum varius duis at consectetur lorem donec.
+          </span>
+          <span class="phoneText2">
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit
+            amet
+            nisl purus in mollis.
+            Placerat vestibulum lectus mauris ultrices eros in.
+            Mi ipsum faucibus vitae aliquet nec ullamcorper.
+          </span>
+          <br>
+          <button class="serviceButton">Veiw Services</button>
+          <span class="phoneText3">
+            Facilisi morbi tempus iaculis urna id. Sit amet nisl purus in mollis nunc sed id.
+            Neque egestas congue quisque egestas diam in arcu cursus euismod. Ut diam quam nulla porttitor massa id.
+          </span>
+        </div>
+        <div>
+
+        </div>
+      </div>
+      <div id="graphAni">
+        <div>
+
+        </div>
+        <div class=" parent">
+          <img class="phoneImg image1" src="img/IPhone_X_vector.svg">
+          <img class="phoneImg image2" src="../../testerDesign/Screenshot 2022-06-20 203834.png">
+          <img class="phoneImg image3" src="../../testerDesign/Screenshot 2022-06-20 221949.png">
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="qualitySect">
+    <div class="quiltyScoreCard">
+      <div id="qualityAni">
+        <div>
+
+        </div>
+        <div class="phoneText">
+          <h1>Google</h1>
+          <span class="phoneText1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Arcu dictum varius duis at consectetur lorem donec.
+          </span>
+          <span class="phoneText2">
+            Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Risus feugiat in ante metus. Sit
+            amet
+            nisl purus in mollis.
+            Placerat vestibulum lectus mauris ultrices eros in.
+            Mi ipsum faucibus vitae aliquet nec ullamcorper.
+          </span>
+          <br>
+          <button class="serviceButton">Veiw Services</button>
+          <span class="phoneText3">
+            Facilisi morbi tempus iaculis urna id. Sit amet nisl purus in mollis nunc sed id.
+            Neque egestas congue quisque egestas diam in arcu cursus euismod. Ut diam quam nulla porttitor massa id.
+          </span>
+        </div>
+        <div>
+
+        </div>
+      </div>
+      <div id="qualityText">
+        <svg version="1.1" viewBox="0 0 752 752" xmlns="http://www.w3.org/2000/svg">
+          <style type="text/css">
+            .cell3 {
+              fill: #4285F4;
+            }
+
+            .arrow {
+              fill: #757575;
+            }
+
+            .cell2 {
+              fill: #FBBC05;
+            }
+
+            .cell4 {
+              fill: #EA4335;
+            }
+
+            .cell1 {
+              fill: #34A853;
+            }
+
+            .line1 {
+              fill: #757575;
+            }
+
+            .line2 {
+              fill: #757575;
+            }
+          </style>
+          <g>
+            <path class="cell3"
+              d="m556.11 295.64c1.4336-6.457-0.71875-12.914-5.0234-17.223-34.441-40.898-82.52-68.883-134.9-78.211-6.457-1.4336-12.199 0.71875-17.223 5.0234-5.0234 4.3047-7.8945 10.047-7.8945 16.504v62.426c0 10.047 6.457 17.938 15.785 20.809 22.242 5.7422 42.336 17.223 58.121 33.727 4.3047 4.3047 9.3281 6.457 15.07 6.457 3.5859 0 7.1758-0.71875 10.762-2.8711l53.816-31.57c6.4609-2.8711 10.766-8.6133 11.484-15.07z" />
+            <path class="arrow"
+              d="M376,329.61c-3.04,0-5.58,1.52-6.6,4.57-9.13,20.3-38.05,87.78-38.05,100.97,0,24.36,20.29,44.65,44.65,44.65s44.65-20.29,44.65-44.65c0-13.19-28.92-80.67-38.05-100.97-1.02-3.04-3.55-4.57-6.6-4.57h0Zm10.65,105.03c0,5.07-4.57,9.64-9.64,9.64-5.07,0-9.64-4.57-9.64-9.64,0-5.07,4.57-9.64,9.64-9.64,5.07,0,9.13,4.06,9.64,9.64Z" />
+            <path class="cell2"
+              d="m360.93 284.16v-62.426c0-6.457-2.8711-12.199-7.8945-16.504-5.0234-4.3047-11.48-5.7422-17.223-5.0234-52.383 9.3281-100.46 37.312-134.9 78.211-4.3047 5.0234-6.457 11.48-5.0195 17.223 1.4336 6.457 5.0234 11.48 10.762 15.07l53.816 31.57c3.5859 2.1523 7.1758 2.8711 10.762 2.8711 5.7422 0 10.762-2.1523 15.07-6.457 15.785-16.504 36.594-27.984 58.121-33.727 10.047-2.1523 16.504-10.766 16.504-20.809z" />
+            <path class="cell4"
+              d="m591.98 348.02c-2.1523-5.7422-6.457-10.762-12.914-12.914-5.7422-2.1523-12.914-1.4336-17.938 1.4336l-54.539 32.289c-8.6094 5.0234-12.914 15.07-10.047 24.398 6.457 21.527 6.457 45.207 0 67.449-2.8711 9.3281 1.4336 19.375 10.047 24.398l53.816 31.57c5.7422 2.8711 12.199 3.5859 17.938 1.4336 5.7422-2.1523 10.762-7.1758 12.914-12.914 18.66-50.945 18.66-106.2 0.72266-157.14z" />
+            <path class="cell1"
+              d="m245.41 368.82-54.535-31.57c-5.7422-2.8711-12.199-3.5859-17.938-1.4336-5.7422 2.1523-10.762 7.1758-12.914 12.914-18.656 50.227-18.656 106.2 0 156.43 2.1523 5.7422 7.1758 10.762 12.914 12.914 5.7422 2.1523 12.914 1.4336 17.938-1.4336l54.535-30.855c8.6094-5.0234 12.914-15.07 10.047-24.398-6.457-22.242-6.457-45.207 0-67.449 2.1523-10.762-2.1523-20.805-10.047-25.113z" />
+            <path class="line1"
+              d="m324.34 497.27c-4.3047 0-7.1758 2.8711-7.1758 7.1758 0 4.3047 2.8711 7.1758 7.1758 7.1758h104.04c4.3047 0 7.1758-2.8711 7.1758-7.1758 0-4.3047-2.8711-7.1758-7.1758-7.1758z" />
+            <path class="line2"
+              d="m452.06 537.45h-152.12c-4.3047 0-7.1758 2.8711-7.1758 7.1758s2.8711 7.1758 7.1758 7.1758h152.12c4.3047 0 7.1758-2.8711 7.1758-7.1758s-3.5898-7.1758-7.1758-7.1758z" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div> //comment line out if legacy is in use               
+  //comment line out if legacy is in use                Animations GSAP //comment line out if legacy is in use               
+  <script>
+    // daStartCount();
+    searchesToday();
+    loading();
+    test();
+    test2();
+    daMac();
+    arrowz()
+    type();
+    //logos();
+    adsPhone();
+    //phoneText();
+    odometerRotate();
+  </script>
+  //comment line out if legacy is in use               Footer does the footer things
+  <footer>
+    <div>
+      <div>
+        <table style="width: 100%; border: none;" id="footer">
+          <tr>
+            <td style="width: 33.33%; border: none;">
+              <svg style="width: 30%; fill:white; margin-left:20%;" id="Layer_1" data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.55 93.37">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                    }
+                  </style>
+                </defs>
+                <path
+                  d="M64.67,81.23h0a1.25,1.25,0,0,1,1.25,1.25h0a1.26,1.26,0,0,1-1.25,1.26h0a1.26,1.26,0,0,1-1.25-1.26h0A1.25,1.25,0,0,1,64.67,81.23Zm0,3.8h0a1.25,1.25,0,0,1,1.25,1.26v7a1.25,1.25,0,0,1-1.25,1.25h0a1.25,1.25,0,0,1-1.25-1.25v-7A1.25,1.25,0,0,1,64.67,85Z"
+                  transform="translate(-23.92 -4)" />
+                <path
+                  d="M75.42,85.91a2.8,2.8,0,0,0-2.32-1,2.49,2.49,0,0,0-1.5.44,3.19,3.19,0,0,0-.84,1v0a1.26,1.26,0,1,0-2.51,0v7a1.26,1.26,0,0,0,2.51,0V88.79a1.5,1.5,0,0,1,.38-1.09,1.42,1.42,0,0,1,1.07-.39,1.57,1.57,0,0,1,1.13.38,1.43,1.43,0,0,1,.4,1.08v4.5a1.26,1.26,0,0,0,2.51,0V88.76A4.38,4.38,0,0,0,75.42,85.91Z"
+                  transform="translate(-23.92 -4)" />
+                <path
+                  d="M82.47,94.66a4.34,4.34,0,0,1-2.06-.52h0a3.44,3.44,0,0,1-1.47-1.5,5.26,5.26,0,0,1-.5-2.38v-1a5.17,5.17,0,0,1,.5-2.36,3.44,3.44,0,0,1,1.47-1.48,4.91,4.91,0,0,1,2.32-.51,6.3,6.3,0,0,1,1.47.17,4.56,4.56,0,0,1,1.23.52,2.12,2.12,0,0,1,.46.34.65.65,0,0,1-.06.88l-.68.67a1,1,0,0,1-.75.22,5,5,0,0,0-.48-.21,2.7,2.7,0,0,0-1-.18,2,2,0,0,0-1.47.51A1.89,1.89,0,0,0,81,89.25v1a1.81,1.81,0,0,0,2,2,2.72,2.72,0,0,0,1-.19,1,1,0,0,0,.36-.2c.44-.32.63-.17.95.17l.66.67a.77.77,0,0,1,.25.45.58.58,0,0,1-.18.41,2.61,2.61,0,0,1-.54.42,4.75,4.75,0,0,1-1.24.51,6.22,6.22,0,0,1-1.46.17Z"
+                  transform="translate(-23.92 -4)" />
+                <path
+                  d="M26.54,85.87a.77.77,0,0,0-.59.67C25.79,88.39,25.18,94.47,24,97c-1.31,2.81,13-11,14.81-12.81a1.21,1.21,0,0,0,.29-.43l5.68-13.25a1.36,1.36,0,0,0,0-1L38.06,53.14a.72.72,0,0,1-.06-.29S37,51,38,51s6.32,11.74,6.32,11.74a.77.77,0,0,0,1.36,0l6.18-11.48a.75.75,0,0,0,.07-.55L49,38a.78.78,0,0,1,1.46-.5l2.85,8.09a.77.77,0,0,0,1.39,0l3.15-6.29.12-.6-.52-13.9A.77.77,0,0,1,59,24.62h0c.15.74,1,8.38,2,8.38s4-10.95,4-10.95,0-.07,0-.11l1.49-5A.77.77,0,0,1,68,17l-.15,1.41a.78.78,0,0,0,.75.59h0a1.33,1.33,0,0,1,.74,2.44l-1.91,1.27a1.34,1.34,0,0,0-.55.79l-1.66,6.63a.77.77,0,0,0,.67,1L72.3,32a.77.77,0,0,1,.07,1.53l-8,.4a.78.78,0,0,0-.57.44l-4.76,9.77a.77.77,0,0,0,.53,1.07l11.52,2.27A.77.77,0,0,1,71,49L57.47,49a.79.79,0,0,0-.66.46L50.56,63.71a.78.78,0,0,0,.83,1.08L59.11,63a.77.77,0,0,1,.44,1.46l-11.28,5.4a.82.82,0,0,0-.39.41l-3.32,8a1.33,1.33,0,0,0,1.91,1.66l5.9-3.54a1.3,1.3,0,0,1,1.28,0l2.53,1.26a1.34,1.34,0,0,0,1.5-.21L68.85,67.14a1.31,1.31,0,0,0,.25-.32l3.84-6.72a1,1,0,0,0,.12-.28c.14-.51.22-2-3.06-2.82a47.31,47.31,0,0,0-9-1,.78.78,0,0,1-.71-1l.35-1A1.34,1.34,0,0,1,62,53.06L76.79,54a1.41,1.41,0,0,0,.46-.05A8.3,8.3,0,0,0,83,47c1-6-8-6-11-3-2.32,2.32-5.84-.14-7.31-1.38a1.3,1.3,0,0,1-.38-1.47C65,39.5,66.47,36,68,36H78.61a1.39,1.39,0,0,0,.74-.22C80.42,35,83.51,32.67,81,31s-9.19-2.75-10.69-3a1.1,1.1,0,0,1-.58-.26c-.83-.72-3.07-3,.27-3.78a60.94,60.94,0,0,0,9.44-3.72,1.25,1.25,0,0,0,.72-1.15c0-.66-.45-1.56-2.16-2.13a22.36,22.36,0,0,0-5.37-.93,1.3,1.3,0,0,1-1.15-1.68A36.46,36.46,0,0,1,74,8c.82-1.15,1-4-3-4s-6,1-6,3c0,.83-.52,3.91-1.13,7.23a1.33,1.33,0,0,1-2.63-.14A21,21,0,0,0,61,11c-.19-.51-3-5-5-5s-3,2.44-3,3,2,15.92,2,15.92a.86.86,0,0,1,0,.16v8.15a.78.78,0,0,1-.77.77h-.64a.78.78,0,0,1-.75-.57l-2-7.47a5.16,5.16,0,0,0-3-3.38,2.94,2.94,0,0,0-1.59-.32,3.49,3.49,0,0,0-2.31,1.22,3.75,3.75,0,0,0-.83,2.7A41.22,41.22,0,0,0,44,33c.78,3,2.85,8.62,2.85,8.62a.77.77,0,0,1-.08.72L44,46.43a1.32,1.32,0,0,1-2.17.06l-1.76-2.34a.79.79,0,0,1-.14-.34s-.74-2.1-1.25-4.1a1.16,1.16,0,0,0-2-.42c-2.25,2.88-5.39,9.57-5.39,9.57a.73.73,0,0,0,0,.58s1.44,5.64,3.14,10.92c1.63,5.07,3.53,9.77,3.52,10.4,0,1.28-3.79,12.82-3.79,12.82a3.06,3.06,0,0,1-.72.8,2.22,2.22,0,0,1-1.14.55Z"
+                  transform="translate(-23.92 -4)" />
+                <path d="M67.71,8.93" transform="translate(-23.92 -4)" />
+                <!-SHOULD BE A COMMENT <path d="M70.23,9.11" transform="translate(-23.92 -4)"/>
+                            <path class="cls-1" d="M66.84,11s1,2.52,3.13.44" transform="translate(-23.92 -4)"/><line class="cls-1" x1="61.89" y1="64.51" x2="62.55" y2="92.73"/> UP UNTILL HERE
+              </svg>
+            </td>
+            <td style="width: 33.33%;  border: none;">
+              <div class="footerContact" style="margin-top: -5%;">
+                <p style="color:white">Useful links</p>
+                <a href="../index.html">Home</a>
+                <br>
+                <a href="../Team/index.html">Team</a>
+                <br>
+                <a href="../career/index.html">Career</a>
+                <br>
+                <a href="../About/index.html">About</a>
+                <br>
+              </div>
+            </td>
+            <td style="width: 33.33%;  border: none;">
+              <p style="margin-top: 5.5%;  color: white;">Contacts</p>
+              <div style="font-size: 50%;">
+                <p style="color:white">Tony@tulsium.com</p>
+                <br>
+                <p style="color:white">+1(702)448-4458</p>
+                <br>
+                <p style="color:white">848 N Rainbow Blvd.</p>
+                <p style="color:white">#3873 Las Vegas,</p>
+                <p style="color:white">NV 89107</p>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </footer> //comment line out if legacy is in use               
+</body>
+
+</html> -->
