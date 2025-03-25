@@ -1,7 +1,7 @@
 import { DocConfig, DocUpdateConfig } from "./types";
 
 export const defaultConfig: Required<DocConfig> = {
-  docsPath: "apps/docs",
+  docsPath: "./docs",
   isMonorepo: true,
   docsRepoOwner: "",
   docsRepoName: "",
